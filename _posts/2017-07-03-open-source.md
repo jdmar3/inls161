@@ -13,7 +13,7 @@ category: class
 media:
   url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png"
   thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/300px-Copyleft.svg.png"
-quiz:https://goo.gl/forms/3KZH2WPLNrtWFlmE3
+quiz: https://goo.gl/forms/3KZH2WPLNrtWFlmE3
 ---
 
 Today we will have a remote class since some of our comrades are not able to be present in the real world. 
