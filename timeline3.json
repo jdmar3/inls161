@@ -146,29 +146,6 @@
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "03",
-                "hour": "11",
-                "minute": "30"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "03",
-                "hour": "13",
-                "minute": "00"
-            },
-            "text": {
-                "headline": "<a href='/class/2017/07/03/open-source/'>Open Source</a>",
-                "text": "<p>Today we will have a remote class since some of our comrades are not able to be present in the real world. \nI would like this to be an opportunity for us to reflect on some of the underlying philosophies of open source and think about how they get expressed in practice. </p>\n\n<p>You should read the references contained in the session notes and then set up a Slack account using the link provided. \nWe will have a discussion on Slack about the topic at hand and familiarize ourselves with that communications platform at the same time. \nI will post some questions relevant to the topic in the #general channel on Slack. </p>"
-            },
-            "unique_id": "2017-07-03-open-source",
-            "group": "class"
-               
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "07",
                 "day": "05",
                 "hour": "11",
                 "minute": "30"
