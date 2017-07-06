@@ -23,46 +23,17 @@ Testing and checking your work is a necessary part of doing any task.
 You don't send a paper off to your professor without proofreading it (you shouldn't, anyway). 
 Similarly, you do not want to put a website online that you haven't tested. 
 
-I've created a repository that has some helper scripts in it. 
-It is called `helper-scripts` and is located in the github organization for the class. 
-I will add to it over the course of rest of the semester. 
+Helpfully, CodeAnywhere has upgraded so that all we need to do destroy the first container we created (don't worry, it's just a virtual machine) and then create a new container using the GitHug Pages stack. 
 
-Open an SSH terminal in your CodeAnywhere container. 
-Then clone the `helper-scripts` repo.
+1. Right click on your old container in the file tree and select "Destroy" from the menu. 
+2. Wait until it finishes. 
+3. Right click on "Connections" and select "New Connection."
+4. Select "Container."
+5. Give your container a name (I would suggest "gh-pages" or somthing similar). 
+6. Search for "github pages" or scroll the list to find the GitHub Pages stack and select it.
+7. Click create and wait for it to finish.
 
-`git clone git@github.com:inls161/helper-scripts.git`
-
-Once you have it, descend into the directory. 
-
-`cd helper-scripts`
-
-Then look at the `README.md`. 
-Remember, you can look at this online, in GitHub, or you can look at it in the terminal (or in your CodeAnywhere text editor). 
-
-You'll need to make sure that the `install-gh-pages.sh` file is executable. 
-
-`ls -lah`
-
-You should see an `x` in the permissions. Is it there?
-
-The filename will also be highlighted as green text if the file is executable. 
-
-Once you have made sure it can be executed, you have to run it as a superuser, or the root user. 
-To do this with any command, type `sudo` before the rest of the command.
-`sudo` is a program that allows you to execute system commands. 
-You only need it when you are doing something that operates on the operating system itself, like installing new software. 
-
-This script installs updates and new software to your system.
-Just category:
-
-`sudo ./install-gh-pages.sh`
-
-The dot and slash specify the location. 
-This is necessary because this executable is not in your normal execution `PATH`. 
-
-That command will run for a few minutes (~10 min). 
-Just let it go. It should work unsupervised. 
-We'll switch to a different tab to continue working while it runs. 
+Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub. 
 
 # Create a branch
 
