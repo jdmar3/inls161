@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Branching and Merging"
+title: "Create a Website"
 era: Web
 category: class
 tags: 
