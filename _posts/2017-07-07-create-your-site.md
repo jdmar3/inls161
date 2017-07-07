@@ -196,7 +196,7 @@ Date:   Thu Jun 30 12:54:27 2016 -0400
 ```
 
 In this way, we can always fix a mistake we have made (or multiple mistakes), even if we've committed and pushed them. 
-This makes git a *very* powerful tool for making sure that you do not lose work.{% marginnote 'nota-bene' '**_Nota bene:_** This is why it is a good rule of thumb to commit early and often. while working on a project.' %}
+This makes git a *very* powerful tool for making sure that you do not lose work.{% marginnote 'nota-bene' '**_Nota bene:_** This is why it is a good rule of thumb to commit early and often while working on a project.' %}
 
 # For Next Time
 
