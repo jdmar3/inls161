@@ -9,13 +9,14 @@ tags:
 category: class
 ---
 
-This lab session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
+This session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
 If you are already very far along, then this is an opportunity for you to finish your work. 
 <excerpt/>
 
 # Troubleshooting
 
 In addition to completing your site and the assignment at hand, we will start looking at ways that you can teach yourself how to fix problems that happen. 
+Being a good beginner is about figuring out how to figure things out.{% sidenote 'beginnerscreed' 'Denning, Peter J. “The Beginner’s Creed.” Communications of the ACM 60, no. 7 (June 26, 2017): 30–31. doi:10.1145/3097352.' %}
 You will always run into issues, no matter what you are working on. 
 This will never stop. 
 
