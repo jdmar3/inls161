@@ -4,4 +4,4 @@
 
 | **Task** | **Components** | **%** | **Due date** |  
 | :------- | :------------- | ----: | -----------: |{% for post in site.categories.assignment reversed %}{% if post.title %}
-| {{ post.era }} | [{{ post.short_description }}](<a href="{{ post.url | prepend: site.baseurl }}) | {{ post.percentage }} | {{ post.start_date | date: "%b %-d at %H:%M" }} |{% endif %}{% endfor %}
+| {{ post.era }} | [{{ post.short_description }}]({{ post.url | prepend: site.baseurl }}) | {{ post.percentage }} | {{ post.start_date | date: "%b %-d at %H:%M" }} |{% endif %}{% endfor %}
