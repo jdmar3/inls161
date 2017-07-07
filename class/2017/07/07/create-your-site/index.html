@@ -175,7 +175,7 @@ We will use this to change the visual style the site and create blog posts. </p>
 You don&#39;t send a paper off to your professor without proofreading it (you shouldn&#39;t, anyway). 
 Similarly, you do not want to put a website online that you haven&#39;t tested. </p>
 
-<p>All we need to do destroy the first container we created (don&#39;t worry, it&#39;s just a virtual machine) and then create a new container using the Ruby stack.{sidenote &#39;&#39; &#39;&quot;Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform).&quot; Last updated 27 April 2015. <a href="http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#x27;">http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#39;</a>} </p>
+<p>All we need to do destroy the first container we created (don&#39;t worry, it&#39;s just a virtual machine) and then create a new container using the Ruby stack.{sidenote &#39;installjekyll&#39; &#39;&quot;Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform).&quot; Last updated 27 April 2015. <a href="http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#x27;">http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#39;</a>} </p>
 
 <ol>
 <li>Right click on your old container in the file tree and select &quot;Destroy&quot; from the menu. </li>
@@ -241,7 +241,7 @@ Change the background color, for instance.</p>
 
 <p><code>git add -v * &amp;&amp; git commit -a -m &quot;edited css to different background color</code></p>
 
-<h1 id="test-your-branch">Test your branch</h1>
+<h2 id="test-your-branch">Test your branch</h2>
 
 <p>We are still in the <code>testing</code> branch. 
 We need to test our code to see if it worked. </p>
@@ -265,7 +265,7 @@ These links let you see applications that your server is running. </p>
 
 <p>Click the first link, which looks like this:</p>
 
-<p><a href="http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com">http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com</a></p>
+<p><a href="http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com">http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com</a></p>
 
 <p>This will give you a 404 error. 
 This is because the default preview port for <code>jekyll</code> is 4000. </p>
@@ -276,12 +276,12 @@ This is because the default preview port for <code>jekyll</code> is 4000. </p>
 
 <p>You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.</p>
 
-<p>This will allow you to see if your changes worked or not. 
+<p>This will allow you to see if your changes worked or not. {marginnote &#39;refresh&#39; &#39;Sometimes your changes will not be visible in the browser tab/window where you are testing your site because the browser has cached older versions of CSS and script files. To fix this, use the appropriate keybinding for your system to clear the cache. This is called a &quot;hard refresh.&quot; It will be something like &quot;CTRL+SHIFT+F5&quot; but differs between operating systems/browsers.<br/><br/><a href="https://xkcd.com/1854/" target="_blank"><img src="https://imgs.xkcd.com/comics/refresh_types.png" /></a><br/>xkcd: Refresh Types <a href="https://xkcd.com/1854/&#x27;">https://xkcd.com/1854/&#39;</a>}
 If they did, and you like them, you can merge them back into the <code>master</code> branch and then they will be live on your site when you push them up to GitHub. </p>
 
 <p>To kill the preview, press <code>CTRL+C</code> in the SSH terminal where <code>jekyll</code> is running. </p>
 
-<h1 id="merge-your-branch-into-master">Merge your branch into master</h1>
+<h2 id="merge-your-branch-into-master">Merge your branch into master</h2>
 
 <p>To merge changes, switch back to the master branch. </p>
 
@@ -304,7 +304,7 @@ Don&#39;t forget to commit and push.</p>
 
 <p><code>git commit -a -m &quot;merged testing into master&quot;</code></p>
 
-<h1 id="roll-back-a-change">Roll back a change</h1>
+<h2 id="roll-back-a-change">Roll back a change</h2>
 
 <p>We can roll back most changes.<label for='revert' class='margin-toggle sidenote-number'></label><input type='checkbox' id='revert' class='margin-toggle'/><span class='sidenote'>jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. <a href="https://github.com/blog/2019-how-to-undo-almost-anything-with-git">https://github.com/blog/2019-how-to-undo-almost-anything-with-git</a>. </span> 
 The simplest way to do this it to just revert the last commit. </p>
