@@ -204,7 +204,7 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/class/2017/07/06/set-up-github-pages/'>Visual styling for the web</a>",
+                "headline": "<a href='/class/2017/07/06/visual-styling/'>Visual styling for the web</a>",
                 "text": "<p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>\n\n<p>We&#39;ll learn about CSS and about linking resources so that they show up where we want them. </p>"
             },
             "unique_id": "2017-07-06-visual-styling-for-the-web",

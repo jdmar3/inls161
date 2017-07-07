@@ -175,19 +175,27 @@ We will use this to change the visual style the site and create blog posts. </p>
 You don&#39;t send a paper off to your professor without proofreading it (you shouldn&#39;t, anyway). 
 Similarly, you do not want to put a website online that you haven&#39;t tested. </p>
 
-<p>Helpfully, CodeAnywhere has upgraded so that all we need to do destroy the first container we created (don&#39;t worry, it&#39;s just a virtual machine) and then create a new container using the GitHug Pages stack. </p>
+<p>All we need to do destroy the first container we created (don&#39;t worry, it&#39;s just a virtual machine) and then create a new container using the Ruby stack.{sidenote &#39;&#39; &#39;&quot;Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform).&quot; Last updated 27 April 2015. <a href="http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#x27;">http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html&#39;</a>} </p>
 
 <ol>
 <li>Right click on your old container in the file tree and select &quot;Destroy&quot; from the menu. </li>
 <li>Wait until it finishes. </li>
 <li>Right click on &quot;Connections&quot; and select &quot;New Connection.&quot;</li>
 <li>Select &quot;Container.&quot;</li>
-<li>Give your container a name (I would suggest &quot;gh-pages&quot; or somthing similar). </li>
-<li>Search for &quot;github pages&quot; or scroll the list to find the GitHub Pages stack and select it.</li>
-<li>Click create and wait for it to finish.</li>
+<li>Give your container a name (I would suggest &quot;jekyll&quot; or somthing similar). </li>
+<li>Search for &quot;ruby&quot; or scroll the list to find the Ruby stack on Ubuntu 14.04 and select it.</li>
+<li>Click &quot;CREATE&quot; and wait for it to finish.</li>
 </ol>
 
 <p>Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub.</p>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+
+<p>Since we created our new container with a Ruby stack installed, all of the dependencies for Jekyll should be installed already. The only thing we need to do is run this command in our SSH terminal:</p>
+
+<p><code>gem install jekyll --no-ri --no-rdoc</code></p>
+
+<p>This installs Jekyll. </p>
 
 <h2 id="clone-your-repository">Clone your repository</h2>
 
@@ -260,18 +268,18 @@ These links let you see applications that your server is running. </p>
 <p><a href="http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com">http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com</a></p>
 
 <p>This will give you a 404 error. 
-This is because the default preview port for Jekyll is 4000. </p>
+This is because the default preview port for <code>jekyll</code> is 4000. </p>
 
 <p>So, edit the link to read:</p>
 
-<p><a href="http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000">http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000</a></p>
+<p><a href="http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com:4000">http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com:4000</a></p>
 
 <p>You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.</p>
 
 <p>This will allow you to see if your changes worked or not. 
 If they did, and you like them, you can merge them back into the <code>master</code> branch and then they will be live on your site when you push them up to GitHub. </p>
 
-<p>To kill the preview, press <code>CTRL+C</code> in the SSH terminal where jekyll is running. </p>
+<p>To kill the preview, press <code>CTRL+C</code> in the SSH terminal where <code>jekyll</code> is running. </p>
 
 <h1 id="merge-your-branch-into-master">Merge your branch into master</h1>
 
@@ -304,7 +312,7 @@ The simplest way to do this it to just revert the last commit. </p>
 <p><code>git revert &lt;SHA&gt;</code></p>
 
 <p><code>&lt;SHA&gt;</code> above refers to the SHA-1 checksum of the git commit. 
-If you look at the git log for a set of recent commits you will see this:</p>
+If you look at the <code>git log</code> for a set of recent commits you will see this:</p>
 <div class="highlight"><pre><code class="language-" data-lang="">cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
 commit 98816f674673b2f6143db724edf71f34f471f164
 Author: john.d.martin.iii &lt;john.d.martin.iii@gmail.com&gt;
@@ -340,7 +348,7 @@ This makes git a <em>very</em> powerful tool for making sure that you do not los
 <h1 id="for-next-time">For Next Time</h1>
 
 <p>We&#39;re going to try a slightly different approach tomorrow. 
-I&#39;m going to cluster you in groups based on where you are in the process of completing assignment #1. 
+I&#39;m going to cluster you in groups based on where you are in the process of completing assignment #2. 
 It is okay if you are still early on: that is fine. 
 I want to be able to collectively help you, though, and that will be easier to do if I know where you are and if you can help each other through tasks that are closer together in the overall workflow. </p>
 
@@ -356,7 +364,7 @@ I want to be able to collectively help you, though, and that will be easier to d
     <footer>
   <div class="larger blognav">
     
-      <a class="prev" href="/class/2017/07/06/set-up-github-pages/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Visual styling for the web</a>
+      <a class="prev" href="/class/2017/07/06/visual-styling/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Visual styling for the web</a>
     
     
       <a class="next" href="/assignment/2017/07/10/assignment-2-build-a-website/"><span class="smaller">Next:</span>&nbsp;Assignment #2: Build a Website&nbsp;&raquo;</a>
