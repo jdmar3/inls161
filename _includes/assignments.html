@@ -1,16 +1,12 @@
-
-
 {% for post in site.categories.assignment reversed %}
 
-<h1>{{ post.title }}</h1>
+<a href="{{ post.url | prepend: site.baseurl }}" ><h1>{{ post.title }}</h1></a>
     
-{{ post.content }}
+{{ post.excerpt }}
 
-{% if post.link %}
   <p>
-    Link to assignment instructions: {{ post.link }}
+    <a href="{{ post.url | prepend: site.baseurl }}" >Link to assignment instructions.</a>
   </p>
-{% endif %}
 
 {% if post.percentage %}
   <p>
