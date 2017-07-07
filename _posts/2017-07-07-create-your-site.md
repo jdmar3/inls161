@@ -24,7 +24,7 @@ Testing and checking your work is a necessary part of doing any task.
 You don't send a paper off to your professor without proofreading it (you shouldn't, anyway). 
 Similarly, you do not want to put a website online that you haven't tested. 
 
-All we need to do destroy the first container we created (don't worry, it's just a virtual machine) and then create a new container using the Ruby stack.{sidenote '' '"Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform)." Last updated 27 April 2015. http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html'} 
+All we need to do destroy the first container we created (don't worry, it's just a virtual machine) and then create a new container using the Ruby stack.{sidenote 'installjekyll' '"Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform)." Last updated 27 April 2015. http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html'} 
 
 1. Right click on your old container in the file tree and select "Destroy" from the menu. 
 2. Wait until it finishes. 
@@ -88,7 +88,7 @@ Once that is done, you can add and commit those changes:
 
 `git add -v * && git commit -a -m "edited css to different background color`
 
-# Test your branch
+## Test your branch
 
 We are still in the `testing` branch. 
 We need to test our code to see if it worked. 
@@ -112,7 +112,7 @@ These links let you see applications that your server is running.
 
 Click the first link, which looks like this:
 
-http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com
+http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com
 
 This will give you a 404 error. 
 This is because the default preview port for `jekyll` is 4000. 
@@ -123,12 +123,12 @@ So, edit the link to read:
 
 You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.
 
-This will allow you to see if your changes worked or not. 
+This will allow you to see if your changes worked or not. {marginnote 'refresh' 'Sometimes your changes will not be visible in the browser tab/window where you are testing your site because the browser has cached older versions of CSS and script files. To fix this, use the appropriate command for your system to clear the cache.<br/><br/><a href="https://xkcd.com/1854/" target="_blank"><img src="https://imgs.xkcd.com/comics/refresh_types.png" /></a><br/>xkcd: Refresh Types https://xkcd.com/1854/'}
 If they did, and you like them, you can merge them back into the `master` branch and then they will be live on your site when you push them up to GitHub. 
 
 To kill the preview, press `CTRL+C` in the SSH terminal where `jekyll` is running. 
 
-# Merge your branch into master
+## Merge your branch into master
 
 To merge changes, switch back to the master branch. 
 
@@ -151,7 +151,7 @@ Don't forget to commit and push.
 
 `git commit -a -m "merged testing into master"`
 
-# Roll back a change
+## Roll back a change
 
 We can roll back most changes.{% sidenote 'revert' 'jaw6. “How to Undo (almost) Anything with Git.” GitHub. Last modified June 8, 2015. https://github.com/blog/2019-how-to-undo-almost-anything-with-git.' %} 
 The simplest way to do this it to just revert the last commit. 
