@@ -227,10 +227,10 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/class/2017/07/07/create-your-site/'>Branching and Merging</a>",
+                "headline": "<a href='/class/2017/07/07/create-your-site/'>Create a Website</a>",
                 "text": "<p>Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. \nWe will use this to change the visual style the site and create blog posts. </p>\n\n<p>This session will be mostly hands-on. </p>"
             },
-            "unique_id": "2017-07-07-branching-and-merging",
+            "unique_id": "2017-07-07-create-a-website",
             "group": "class"
                
         },
@@ -249,7 +249,7 @@
             },
             "text": {
                 "headline": "<a href='/assignment/2017/07/10/assignment-2-build-a-website/'>Assignment #2: Build a Website</a>",
-                "text": "<p>For this assignment, you will create a website based on a Jekyll theme and host it on GitHub Pages. </p>"
+                "text": "<p>For this assignment, you will create a website based on a Jekyll theme and host it on GitHub Pages. This assignment aims to teach you how to use a markup language to style and manipulate text for display online. </p>\n\n<p>You will build and deply a web page using GitHub Pages (Jekyll). Most of this assignment will involve creating content in Markdown and editing style in CSS.</p>\n\n<p>The goal is to make your website an attractive place online where you can place information about yourselves, your interests, or your skills. \nOr your site can be about a project or hobby that you would like to put online. \nThis assignment is intended to help you create an online space that you can actually use while also giving you new skills related to working with web content.</p>"
             },
             "unique_id": "2017-07-10-assignment-#2:-build-a-website",
             "group": "assignment"

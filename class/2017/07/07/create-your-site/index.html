@@ -11,7 +11,7 @@
         window.location.protocol = "https";
   </script>
 
-  <title>Tools for Information Literacy&nbsp;|&nbsp;Branching and Merging</title>
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Create a Website</title>
   <meta name="description" content="Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. We will use this to change the visual...">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -152,7 +152,7 @@
 
 </header>
     <article class="group">
-      <h1>Branching and Merging</h1>
+      <h1>Create a Website</h1>
 
 
 
@@ -169,54 +169,40 @@ We will use this to change the visual style the site and create blog posts. </p>
 <p>This session will be mostly hands-on. 
 <excerpt/></p>
 
-<h1 id="set-up-testing-environment">Set up testing environment</h1>
+<h2 id="set-up-testing-environment">Set up testing environment</h2>
 
 <p>Testing and checking your work is a necessary part of doing any task. 
 You don&#39;t send a paper off to your professor without proofreading it (you shouldn&#39;t, anyway). 
 Similarly, you do not want to put a website online that you haven&#39;t tested. </p>
 
-<p>I&#39;ve created a repository that has some helper scripts in it. 
-It is called <code>helper-scripts</code> and is located in the github organization for the class. 
-I will add to it over the course of rest of the semester. </p>
+<p>Helpfully, CodeAnywhere has upgraded so that all we need to do destroy the first container we created (don&#39;t worry, it&#39;s just a virtual machine) and then create a new container using the GitHug Pages stack. </p>
 
-<p>Open an SSH terminal in your CodeAnywhere container. 
-Then clone the <code>helper-scripts</code> repo.</p>
+<ol>
+<li>Right click on your old container in the file tree and select &quot;Destroy&quot; from the menu. </li>
+<li>Wait until it finishes. </li>
+<li>Right click on &quot;Connections&quot; and select &quot;New Connection.&quot;</li>
+<li>Select &quot;Container.&quot;</li>
+<li>Give your container a name (I would suggest &quot;gh-pages&quot; or somthing similar). </li>
+<li>Search for &quot;github pages&quot; or scroll the list to find the GitHub Pages stack and select it.</li>
+<li>Click create and wait for it to finish.</li>
+</ol>
 
-<p><code>git clone git@github.com:inls161/helper-scripts.git</code></p>
+<p>Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub.</p>
 
-<p>Once you have it, descend into the directory. </p>
+<h2 id="clone-your-repository">Clone your repository</h2>
 
-<p><code>cd helper-scripts</code></p>
+<p>You want to get your website repo down to your CodeAnywhere container so you can work on it there. 
+To start, copy the repo address by selecting the green button in your repository dashboard that says &quot;Clone or download.&quot;</p>
 
-<p>Then look at the <code>README.md</code>. 
-Remember, you can look at this online, in GitHub, or you can look at it in the terminal (or in your CodeAnywhere text editor). </p>
+<p>Make sure that you get the SSH link, and not the HTTPS link. </p>
 
-<p>You&#39;ll need to make sure that the <code>install-gh-pages.sh</code> file is executable. </p>
+<p>Then type the following command into your SSH terminal (while in your ~/workspace directory):</p>
 
-<p><code>ls -lah</code></p>
+<p><code>git clone git@github.com:USERNAME/USERNAME.github.io.git</code></p>
 
-<p>You should see an <code>x</code> in the permissions. Is it there?</p>
+<p>This will copy your repository into a local directory so that you may work on it locally. </p>
 
-<p>The filename will also be highlighted as green text if the file is executable. </p>
-
-<p>Once you have made sure it can be executed, you have to run it as a superuser, or the root user. 
-To do this with any command, type <code>sudo</code> before the rest of the command.
-<code>sudo</code> is a program that allows you to execute system commands. 
-You only need it when you are doing something that operates on the operating system itself, like installing new software. </p>
-
-<p>This script installs updates and new software to your system.
-Just category:</p>
-
-<p><code>sudo ./install-gh-pages.sh</code></p>
-
-<p>The dot and slash specify the location. 
-This is necessary because this executable is not in your normal execution <code>PATH</code>. </p>
-
-<p>That command will run for a few minutes (~10 min). 
-Just let it go. It should work unsupervised. 
-We&#39;ll switch to a different tab to continue working while it runs. </p>
-
-<h1 id="create-a-branch">Create a branch</h1>
+<h2 id="create-a-branch">Create a branch</h2>
 
 <p>To create, or &quot;checkout&quot; a new branch, we can follow Roger Dudler&#39;s guide again.<label for='gitnoshit' class='margin-toggle sidenote-number'></label><input type='checkbox' id='gitnoshit' class='margin-toggle'/><span class='sidenote'>Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging</a>. </span></p>
 
@@ -234,7 +220,7 @@ We&#39;ll switch to a different tab to continue working while it runs. </p>
 
 <p><code>git checkout BRANCH-NAME</code></p>
 
-<h1 id="edit-your-css">Edit your CSS</h1>
+<h2 id="edit-your-css">Edit your CSS</h2>
 
 <p>Find your CSS file. </p>
 
@@ -271,14 +257,14 @@ These links let you see applications that your server is running. </p>
 
 <p>Click the first link, which looks like this:</p>
 
-<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com</a></p>
+<p><a href="http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com">http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com</a></p>
 
 <p>This will give you a 404 error. 
 This is because the default preview port for Jekyll is 4000. </p>
 
 <p>So, edit the link to read:</p>
 
-<p><a href="http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000">http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000</a></p>
+<p><a href="http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000">http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000</a></p>
 
 <p>You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.</p>
 
@@ -366,7 +352,7 @@ I want to be able to collectively help you, though, and that will be easier to d
   </ul> 
 </p>
     </article>
-    <span class="print-footer">Branching and Merging - July 7, 2017 - </span>
+    <span class="print-footer">Create a Website - July 7, 2017 - </span>
     <footer>
   <div class="larger blognav">
     
