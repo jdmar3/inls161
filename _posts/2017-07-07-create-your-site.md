@@ -123,7 +123,7 @@ So, edit the link to read:
 
 You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.
 
-This will allow you to see if your changes worked or not. {marginnote 'refresh' 'Sometimes your changes will not be visible in the browser tab/window where you are testing your site because the browser has cached older versions of CSS and script files. To fix this, use the appropriate command for your system to clear the cache.<br/><br/><a href="https://xkcd.com/1854/" target="_blank"><img src="https://imgs.xkcd.com/comics/refresh_types.png" /></a><br/>xkcd: Refresh Types https://xkcd.com/1854/'}
+This will allow you to see if your changes worked or not. {marginnote 'refresh' 'Sometimes your changes will not be visible in the browser tab/window where you are testing your site because the browser has cached older versions of CSS and script files. To fix this, use the appropriate keybinding for your system to clear the cache. This is called a "hard refresh." It will be something like "CTRL+SHIFT+F5" but differs between operating systems/browsers.<br/><br/><a href="https://xkcd.com/1854/" target="_blank"><img src="https://imgs.xkcd.com/comics/refresh_types.png" /></a><br/>xkcd: Refresh Types https://xkcd.com/1854/'}
 If they did, and you like them, you can merge them back into the `master` branch and then they will be live on your site when you push them up to GitHub. 
 
 To kill the preview, press `CTRL+C` in the SSH terminal where `jekyll` is running. 
