@@ -9,6 +9,7 @@ tags:
 - web development
 - workflows
 category: class
+quiz: https://goo.gl/forms/mBPxrznC99uRkUAO2
 ---
 
 Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. 
@@ -23,17 +24,25 @@ Testing and checking your work is a necessary part of doing any task.
 You don't send a paper off to your professor without proofreading it (you shouldn't, anyway). 
 Similarly, you do not want to put a website online that you haven't tested. 
 
-Helpfully, CodeAnywhere has upgraded so that all we need to do destroy the first container we created (don't worry, it's just a virtual machine) and then create a new container using the GitHug Pages stack. 
+All we need to do destroy the first container we created (don't worry, it's just a virtual machine) and then create a new container using the Ruby stack.{sidenote '' '"Running Jekyll on Codeanywhere (or any Cloud Based Coding Platform)." Last updated 27 April 2015. http://intenseagile.com/2015/04/27/running-jekyll-on-codeanywhere.html'} 
 
 1. Right click on your old container in the file tree and select "Destroy" from the menu. 
 2. Wait until it finishes. 
 3. Right click on "Connections" and select "New Connection."
 4. Select "Container."
-5. Give your container a name (I would suggest "gh-pages" or somthing similar). 
-6. Search for "github pages" or scroll the list to find the GitHub Pages stack and select it.
-7. Click create and wait for it to finish.
+5. Give your container a name (I would suggest "jekyll" or somthing similar). 
+6. Search for "ruby" or scroll the list to find the Ruby stack on Ubuntu 14.04 and select it.
+7. Click "CREATE" and wait for it to finish.
 
 Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub.
+
+## Install Jekyll
+
+Since we created our new container with a Ruby stack installed, all of the dependencies for Jekyll should be installed already. The only thing we need to do is run this command in our SSH terminal:
+
+`gem install jekyll --no-ri --no-rdoc`
+
+This installs Jekyll. 
 
 ## Clone your repository
 
@@ -106,18 +115,18 @@ Click the first link, which looks like this:
 http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com
 
 This will give you a 404 error. 
-This is because the default preview port for Jekyll is 4000. 
+This is because the default preview port for `jekyll` is 4000. 
 
 So, edit the link to read:
 
-[http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000](http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000)
+[http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com:4000](http://CONTAINERNAME-LONGSTRINGOFCHARACTERS.codeanyapp.com:4000)
 
 You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.
 
 This will allow you to see if your changes worked or not. 
 If they did, and you like them, you can merge them back into the `master` branch and then they will be live on your site when you push them up to GitHub. 
 
-To kill the preview, press `CTRL+C` in the SSH terminal where jekyll is running. 
+To kill the preview, press `CTRL+C` in the SSH terminal where `jekyll` is running. 
 
 # Merge your branch into master
 
@@ -150,7 +159,7 @@ The simplest way to do this it to just revert the last commit.
 `git revert <SHA>`
 
 `<SHA>` above refers to the SHA-1 checksum of the git commit. 
-If you look at the git log for a set of recent commits you will see this:
+If you look at the `git log` for a set of recent commits you will see this:
 
 ```
 cabox@box-codeanywhere:~/workspace/inls161.github.io$ git log
@@ -192,6 +201,6 @@ This makes git a *very* powerful tool for making sure that you do not lose work.
 # For Next Time
 
 We're going to try a slightly different approach tomorrow. 
-I'm going to cluster you in groups based on where you are in the process of completing assignment #1. 
+I'm going to cluster you in groups based on where you are in the process of completing assignment #2. 
 It is okay if you are still early on: that is fine. 
 I want to be able to collectively help you, though, and that will be easier to do if I know where you are and if you can help each other through tasks that are closer together in the overall workflow. 
