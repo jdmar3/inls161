@@ -8,6 +8,7 @@ tags:
 - HTML
 - Markdown
 category: class
+quiz: https://goo.gl/forms/jgNSC296plXYFdrk2
 ---
 
 For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. 

@@ -9,6 +9,7 @@ tags:
 - html
 - css
 category: class
+quiz: https://goo.gl/forms/wzMk5jv6FjuQ9WiZ2
 ---
 
 This week's tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. 
