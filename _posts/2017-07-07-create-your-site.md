@@ -17,7 +17,7 @@ We will use this to change the visual style the site and create blog posts.
 This session will be mostly hands-on. 
 <excerpt/>
 
-# Set up testing environment
+## Set up testing environment
 
 Testing and checking your work is a necessary part of doing any task. 
 You don't send a paper off to your professor without proofreading it (you shouldn't, anyway). 
@@ -33,9 +33,22 @@ Helpfully, CodeAnywhere has upgraded so that all we need to do destroy the first
 6. Search for "github pages" or scroll the list to find the GitHub Pages stack and select it.
 7. Click create and wait for it to finish.
 
-Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub. 
+Now you have a container that is ready to be used in testing your site locally before pushing your working changes to production on GitHub.
 
-# Create a branch
+## Clone your repository
+
+You want to get your website repo down to your CodeAnywhere container so you can work on it there. 
+To start, copy the repo address by selecting the green button in your repository dashboard that says "Clone or download."
+
+Make sure that you get the SSH link, and not the HTTPS link. 
+
+Then type the following command into your SSH terminal (while in your ~/workspace directory):
+
+`git clone git@github.com:USERNAME/USERNAME.github.io.git`
+
+This will copy your repository into a local directory so that you may work on it locally. 
+
+## Create a branch
 
 To create, or "checkout" a new branch, we can follow Roger Dudler's guide again.{% sidenote 'gitnoshit' 'Dudler, Roger. “Git: The Simple Guide.” Git: The Simple Guide. Last modified 2015. <http://rogerdudler.github.io/git-guide/>.<br/><br/>Also check this resource out for help with branching and merging: Chacon, Scott, and Ben Straub. “Basic Branching and Merging.” In ProGit. New York, New York: Apress, 2014. https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging.' %}
 
@@ -53,7 +66,7 @@ To switch between branches, simply type (mutatis mutandis):
 
 `git checkout BRANCH-NAME`
 
-# Edit your CSS 
+## Edit your CSS 
 
 Find your CSS file. 
 
@@ -90,14 +103,14 @@ These links let you see applications that your server is running.
 
 Click the first link, which looks like this:
 
-http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com
+http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com
 
 This will give you a 404 error. 
 This is because the default preview port for Jekyll is 4000. 
 
 So, edit the link to read:
 
-[http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000](http://preview.2xgeb3y9x622zkt9z51g8y0twrpy14i6v8n6zf2i7e97ldi.box.codeanywhere.com:4000)
+[http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000](http://preview.LONGSTRINGOFCHARACTERS.box.codeanywhere.com:4000)
 
 You will then be able to see your site online. If you click on the link above while I am demonstrating this in class, you will see my site.
 
