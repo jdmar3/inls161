@@ -4,7 +4,7 @@ title: "Assignment #2: Build a Website"
 era: Web
 short_description: "Build a website hosted on GitHub Pages"
 percentage: "15"
-category: assignment
+category: assignments
 start_date: "2017-07-10 23:59"
 ---
 

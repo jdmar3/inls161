@@ -4,7 +4,7 @@ title: "Assignment #6: Presentation"
 era: Present
 short_description: "Create a presentation using HTML"
 percentage: "15"
-category: assignment
+category: assignments
 start_date: "2017-07-27 23:59"
 ---
 

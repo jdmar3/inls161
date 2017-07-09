@@ -4,7 +4,7 @@ title: "Assignment #5: Create a Database"
 era: Database
 short_description: "Write a script to interact with a database"
 percentage: "10"
-category: assignment
+category: assignments
 start_date: "2017-07-23 23:59"
 ---
 

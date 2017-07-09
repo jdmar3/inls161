@@ -4,7 +4,7 @@ title: "Assignment #4: Collect Data"
 era: Data
 short_description: "Write a script to collect and manipulate data"
 percentage: "5"
-category: assignment
+category: assignments
 start_date: "2017-07-19 23:59"
 ---
 

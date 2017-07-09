@@ -12,12 +12,11 @@
   </script>
   
   {% if page.layout == "timeline" %}
-      {% comment %}{% capture today %}{{site.time | date: "%F"}}{% endcapture %}{% endcomment %}
-      {% capture today %}{{ "2017-07-25 00:00" | date: "%F"}}{% endcapture %}
+      {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
       {% for post in site.categories.class reversed %}
           {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
           {% if datestamp == today %}
-              {% capture hashurl %}{{ post.id | replace: "/", "-" | replace: "-class", "#event" }}{% endcapture %} 
+              {% capture hashurl %}{{ post.id | replace: "/", "-" | replace: "-class", "#event" | replace: "-assignments", "#event" }}{% endcapture %} 
           {% else %}
             {% continue %}
           {% endif %}

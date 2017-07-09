@@ -9,7 +9,7 @@ nav_exclude: true
           "text": {{ site.description | smartify | jsonify }}
         }
     },  
-    "events": [{% for post in site.posts reversed %}{% if post.categories contains "class" or post.categories contains "assignment" %}
+    "events": [{% for post in site.posts reversed %}{% if post.categories contains "class" or post.categories contains "assignments" %}
         {
             "start_date": {
                 "year": "{{ post.date | date : '%Y' }}",
@@ -38,9 +38,8 @@ nav_exclude: true
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
             },
-            "unique_id": "{{ post.id | replace: "/", "-" | remove: "-class-" }},
-            "group": {{ post.category | smartify | jsonify }}{% endif %}
-            {% if post.display_date %},
+            "unique_id": "{{ post.id | replace: "/", "-" | remove: "-class-" | remove: "-assignments-" }}"{% if post.category %},
+            "group": {{ post.category | smartify | jsonify }}{% endif %}{% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
         }{% unless forloop.last == true %},{% endunless %}{% endif %}{% endfor %}
     ],

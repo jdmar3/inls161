@@ -4,7 +4,7 @@ title: "Assignment #1: BASICS"
 era: Basics
 short_description: "Set up GitHub, introduce yourself, read syllabus"
 percentage: "5"
-category: assignment
+category: assignments
 start_date: "2017-06-30 23:59"
 ---
 
