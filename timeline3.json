@@ -25,8 +25,8 @@
                 "headline": "<a href='/class/2017/06/26/intro/'>Welcome to INLS161!</a>",
                 "text": "<p>This is a course about pushing our boundaries and learning new things. \nIt is also about learning new ways of doing things that we might already know how to do. \nSome of the topics and skills covered by the course might be old hat for some of you. \nOthers may not have ever heard of some of these things. </p>"
             },
-            "unique_id": "-class-2017-06-26-intro",
-            "group": "class"   
+            "unique_id": "class-2017-06-26-intro",
+            "group": "class"
         },
         {
             "start_date": {
@@ -47,8 +47,8 @@
                 "headline": "<a href='/class/2017/06/27/clients-servers/'>Clients and Servers</a>",
                 "text": "<p>Today we&#39;ll talk about some of the basic ways that computers work and\ninteract with one another. We&#39;ll also begin discussing the history of\ncomputing in the context of operating systems, UNIX, and Linux.</p>\n\n<p>In class we will also start with some hands-on-keyboards practice with\nmoving around the shell and manipulating files. </p>"
             },
-            "unique_id": "-class-2017-06-27-clients-servers",
-            "group": "class"   
+            "unique_id": "class-2017-06-27-clients-servers",
+            "group": "class"
         },
         {
             "start_date": {
@@ -69,8 +69,8 @@
                 "headline": "<a href='/class/2017/06/28/version-control/'>Version Control</a>",
                 "text": "<p>Version control systems allow us to track and see the changes to a given document or set of files over time. \nThis can be useful in situations where you wish to roll back changes or identify the point of origin for something problematic. </p>\n\n<p>It is also helpful when you are collaborating and want to be able to keep track of the work being done and changes being made by a group of people. </p>\n\n<p>Version control can exist in a standalone system or it can be networked and distributed. </p>"
             },
-            "unique_id": "-class-2017-06-28-version-control",
-            "group": "class"   
+            "unique_id": "class-2017-06-28-version-control",
+            "group": "class"
         },
         {
             "start_date": {
@@ -91,8 +91,8 @@
                 "headline": "<a href='/class/2017/06/29/networks/'>Networks</a>",
                 "text": "<p>We&#39;ve discussed a bit about how servers and clients operate. \nNow we&#39;ll look at what happens when we put lots of servers and lots of clients together. </p>"
             },
-            "unique_id": "-class-2017-06-29-networks",
-            "group": "class"   
+            "unique_id": "class-2017-06-29-networks",
+            "group": "class"
         },
         {
             "start_date": {
@@ -111,8 +111,8 @@
                 "headline": "<a href='/assignments/2017/06/30/assignment-1-basics/'>Assignment #1: BASICS</a>",
                 "text": "<p>This assignment is simple. \nIt consists of 5 tasks:</p>\n\n<ol>\n<li>Sign up for a <a href=\"https://github.com\">GitHub</a> account and log into <a href=\"https://codeanywhere.com\">CodeAnywhere</a> (we did this on the first day of class). </li>\n<li>Take the <a href=\"/quiz\">first quiz</a>. </li>\n<li>Take the <a href=\"https://unc.az1.qualtrics.com/jfe/form/SV_6ulF2GSI4FKFJCR\">beginning questionnaire</a>. </li>\n<li>Return your signed <a href=\"https://inls161.johndmart.in/syllabus/inls161-suii2017-gradecontract.pdf\">grade contract</a>.</li>\n<li>Read the <a href=\"/syllabus\">syllabus</a> all the way to the end. Look out for dinosaurs.</li>\n</ol>\n\n<p>Once you have done these, you have completed the first assignment. \nYou will likely have done these things by the time we finish class at the end of the first week. </p>"
             },
-            "unique_id": "-assignments-2017-06-30-assignment-1-basics",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-06-30-assignment-1-basics",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -133,8 +133,8 @@
                 "headline": "<a href='/class/2017/06/30/version-control-continued-lab/'>Version Control Continued</a>",
                 "text": "<p>Today we&#39;re going to learn how to fork, clone, and push changes to a repository on GitHub using git. \nWe do this in preparation for creating personal websites that will be hosted by GitHub pages. </p>"
             },
-            "unique_id": "-class-2017-06-30-version-control-continued-lab",
-            "group": "class"   
+            "unique_id": "class-2017-06-30-version-control-continued-lab",
+            "group": "class"
         },
         {
             "start_date": {
@@ -155,8 +155,8 @@
                 "headline": "<a href='/class/2017/07/03/open-source/'>Open Source</a>",
                 "text": "<p>Today we will have a remote class since some of our comrades are not able to be present in the real world. \nI would like this to be an opportunity for us to reflect on some of the underlying philosophies of open source and think about how they get expressed in practice. </p>\n\n<p>You should read the references contained in the session notes and then set up a Slack account using the link provided. \nWe will have a discussion on Slack about the topic at hand and familiarize ourselves with that communications platform at the same time. \nI will post some questions relevant to the topic in the #general channel on Slack. </p>"
             },
-            "unique_id": "-class-2017-07-03-open-source",
-            "group": "class"   
+            "unique_id": "class-2017-07-03-open-source",
+            "group": "class"
         },
         {
             "start_date": {
@@ -177,8 +177,8 @@
                 "headline": "<a href='/class/2017/07/05/websites-and-markup/'>Websites, Markup, and Markdown</a>",
                 "text": "<p>This week&#39;s tasks will involve some very simple coding (markup, really) and continued exploration and use of our system administration skills. </p>\n\n<p>Last Friday we learned how to set up a very basic website using Jekyll and GitHub pasges. \nThis week we will expand on that significantly, learn how to use markup to change the style of our content, and then learn to publish content to the web. </p>"
             },
-            "unique_id": "-class-2017-07-05-websites-and-markup",
-            "group": "class"   
+            "unique_id": "class-2017-07-05-websites-and-markup",
+            "group": "class"
         },
         {
             "start_date": {
@@ -199,8 +199,8 @@
                 "headline": "<a href='/class/2017/07/06/visual-styling/'>Visual styling for the web</a>",
                 "text": "<p>For most of class today, we will spend time creating our base site and then exploring ways that we can change and customize the style to our liking. </p>\n\n<p>We&#39;ll learn about CSS and about linking resources so that they show up where we want them. </p>"
             },
-            "unique_id": "-class-2017-07-06-visual-styling",
-            "group": "class"   
+            "unique_id": "class-2017-07-06-visual-styling",
+            "group": "class"
         },
         {
             "start_date": {
@@ -221,8 +221,8 @@
                 "headline": "<a href='/class/2017/07/07/create-your-site/'>Create a Website</a>",
                 "text": "<p>Today we will set up a testing workflow and learn how to create branches for adding and changing features on our sites. \nWe will use this to change the visual style the site and create blog posts. </p>\n\n<p>This session will be mostly hands-on. </p>"
             },
-            "unique_id": "-class-2017-07-07-create-your-site",
-            "group": "class"   
+            "unique_id": "class-2017-07-07-create-your-site",
+            "group": "class"
         },
         {
             "start_date": {
@@ -241,8 +241,8 @@
                 "headline": "<a href='/assignments/2017/07/10/assignment-2-build-a-website/'>Assignment #2: Build a Website</a>",
                 "text": "<p>For this assignment, you will create a website based on a Jekyll theme and host it on GitHub Pages. This assignment aims to teach you how to use a markup language to style and manipulate text for display online. </p>\n\n<p>You will build and deply a web page using GitHub Pages (Jekyll). Most of this assignment will involve creating content in Markdown and editing style in CSS.</p>\n\n<p>The goal is to make your website an attractive place online where you can place information about yourselves, your interests, or your skills. \nOr your site can be about a project or hobby that you would like to put online. \nThis assignment is intended to help you create an online space that you can actually use while also giving you new skills related to working with web content.</p>"
             },
-            "unique_id": "-assignments-2017-07-10-assignment-2-build-a-website",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-07-10-assignment-2-build-a-website",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -263,8 +263,8 @@
                 "headline": "<a href='/class/2017/07/10/troubleshooting/'>Troubleshooting</a>",
                 "text": "<p>This session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. \nIf you are already very far along, then this is an opportunity for you to finish your work. </p>"
             },
-            "unique_id": "-class-2017-07-10-troubleshooting",
-            "group": "class"   
+            "unique_id": "class-2017-07-10-troubleshooting",
+            "group": "class"
         },
         {
             "start_date": {
@@ -285,8 +285,8 @@
                 "headline": "<a href='/class/2017/07/11/text-conversion/'>Text Conversion</a>",
                 "text": "<h1 id=\"plaintext-markup-and-formatted-text\">Plaintext, markup, and formatted text</h1>\n\n<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>\n\n<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>"
             },
-            "unique_id": "-class-2017-07-11-text-conversion",
-            "group": "class"   
+            "unique_id": "class-2017-07-11-text-conversion",
+            "group": "class"
         },
         {
             "start_date": {
@@ -307,8 +307,8 @@
                 "headline": "<a href='/class/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
                 "text": "<p>We&#39;ve briefly discussed Pandoc now. \nIt bills itself as the &quot;Universal Document Converter.&quot; \nThis is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>\n\n<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. \nWe&#39;ll talk more about this as we go forward. </p>"
             },
-            "unique_id": "-class-2017-07-12-single-multiple-outputs",
-            "group": "class"   
+            "unique_id": "class-2017-07-12-single-multiple-outputs",
+            "group": "class"
         },
         {
             "start_date": {
@@ -329,8 +329,8 @@
                 "headline": "<a href='/class/2017/07/13/scripting/'>Introduction to scripting</a>",
                 "text": "<p>Today we will learn how to convert our plaintext Markdown into a PDF. \nTo do this we will have to install some more software, which may take a while. </p>\n\n<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. </p>"
             },
-            "unique_id": "-class-2017-07-13-scripting",
-            "group": "class"   
+            "unique_id": "class-2017-07-13-scripting",
+            "group": "class"
         },
         {
             "start_date": {
@@ -351,8 +351,8 @@
                 "headline": "<a href='/class/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
                 "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>"
             },
-            "unique_id": "-class-2017-07-14-lab-automation",
-            "group": "class"   
+            "unique_id": "class-2017-07-14-lab-automation",
+            "group": "class"
         },
         {
             "start_date": {
@@ -371,8 +371,8 @@
                 "headline": "<a href='/assignments/2017/07/16/assignment-3-text-conversion/'>Assignment #3: Text Conversion</a>",
                 "text": "<p>For this assignment, you will write a bash script to convert text files written in Markdown into other formats, such as DOCX, HTML, and PDF. </p>"
             },
-            "unique_id": "-assignments-2017-07-16-assignment-3-text-conversion",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-07-16-assignment-3-text-conversion",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -393,8 +393,8 @@
                 "headline": "<a href='/class/2017/07/17/data-handling/'>Handling data</a>",
                 "text": "<p>Today we are going to discuss the creation of data and learn how manipulate data structures. </p>\n\n<p><p>We will learn some things about using pipes to redirect output and learn some commands for working with data. </p>\n</p>"
             },
-            "unique_id": "-class-2017-07-17-data-handling",
-            "group": "class"   
+            "unique_id": "class-2017-07-17-data-handling",
+            "group": "class"
         },
         {
             "start_date": {
@@ -415,8 +415,8 @@
                 "headline": "<a href='/class/2017/07/18/data-cleaning/'>Data cleaning and spreadsheet software</a>",
                 "text": "<p>Today we&#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. </p>"
             },
-            "unique_id": "-class-2017-07-18-data-cleaning",
-            "group": "class"   
+            "unique_id": "class-2017-07-18-data-cleaning",
+            "group": "class"
         },
         {
             "start_date": {
@@ -435,8 +435,8 @@
                 "headline": "<a href='/assignments/2017/07/19/assignment-4-data/'>Assignment #4: Collect Data</a>",
                 "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. </p>"
             },
-            "unique_id": "-assignments-2017-07-19-assignment-4-data",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-07-19-assignment-4-data",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -457,8 +457,8 @@
                 "headline": "<a href='/class/2017/07/19/sql-bootcamp/'>Database software and MySQL</a>",
                 "text": "<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  </p>"
             },
-            "unique_id": "-class-2017-07-19-sql-bootcamp",
-            "group": "class"   
+            "unique_id": "class-2017-07-19-sql-bootcamp",
+            "group": "class"
         },
         {
             "start_date": {
@@ -479,8 +479,8 @@
                 "headline": "<a href='/class/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
                 "text": "<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>\n\n<p><img src=\"/assets/img/learnallthesql.jpg\" alt=\"LEARN ALL THE SQL\" /></p>"
             },
-            "unique_id": "-class-2017-07-20-database-tables-queries",
-            "group": "class"   
+            "unique_id": "class-2017-07-20-database-tables-queries",
+            "group": "class"
         },
         {
             "start_date": {
@@ -501,8 +501,8 @@
                 "headline": "<a href='/class/2017/07/21/lab-from-data-to-databases/'>From data to database</a>",
                 "text": "<h1 id=\"mysql-in-bash-scripts\">MySQL in Bash scripts</h1>\n\n<p>In today&#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. </p>"
             },
-            "unique_id": "-class-2017-07-21-lab-from-data-to-databases",
-            "group": "class"   
+            "unique_id": "class-2017-07-21-lab-from-data-to-databases",
+            "group": "class"
         },
         {
             "start_date": {
@@ -521,8 +521,8 @@
                 "headline": "<a href='/assignments/2017/07/23/assignment-5-database/'>Assignment #5: Create a Database</a>",
                 "text": "<p>For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.</p>"
             },
-            "unique_id": "-assignments-2017-07-23-assignment-5-database",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-07-23-assignment-5-database",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -543,8 +543,8 @@
                 "headline": "<a href='/class/2017/07/24/presentation-basics/'>Presentation Basics</a>",
                 "text": "<p>Today we&#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.</p>"
             },
-            "unique_id": "-class-2017-07-24-presentation-basics",
-            "group": "class"   
+            "unique_id": "class-2017-07-24-presentation-basics",
+            "group": "class"
         },
         {
             "start_date": {
@@ -565,8 +565,8 @@
                 "headline": "<a href='/class/2017/07/25/reveal-js/'>Reveal.js</a>",
                 "text": "<p>Today we will look at Reveal.js more closely and start working with it in your presentation teams. \nWe will also cover converting your text from Markdown into Reveal-ready HTML5 using our old friend, Pandoc.</p>"
             },
-            "unique_id": "-class-2017-07-25-reveal-js",
-            "group": "class"   
+            "unique_id": "class-2017-07-25-reveal-js",
+            "group": "class"
         },
         {
             "start_date": {
@@ -587,8 +587,8 @@
                 "headline": "<a href='/class/2017/07/26/recording-and-editing-audio/'>Adding audio for narration and video to your slides</a>",
                 "text": "<p>Today we are going to work with Audacity to create and edit some audio to embed in our presentations. </p>"
             },
-            "unique_id": "-class-2017-07-26-recording-and-editing-audio",
-            "group": "class"   
+            "unique_id": "class-2017-07-26-recording-and-editing-audio",
+            "group": "class"
         },
         {
             "start_date": {
@@ -607,8 +607,8 @@
                 "headline": "<a href='/assignments/2017/07/27/assignment-6-presentation/'>Assignment #6: Presentation</a>",
                 "text": "<p>For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. </p>"
             },
-            "unique_id": "-assignments-2017-07-27-assignment-6-presentation",
-            "group": "assignments"   
+            "unique_id": "assignments-2017-07-27-assignment-6-presentation",
+            "group": "assignments"
         },
         {
             "start_date": {
@@ -629,8 +629,8 @@
                 "headline": "<a href='/class/2017/07/27/what-do-we-know/'>Wrap-up: what do we know now?</a>",
                 "text": "<p>Today we are going to wrap up the class and talk about the skills that you are taking away from this experience. </p>"
             },
-            "unique_id": "-class-2017-07-27-what-do-we-know",
-            "group": "class"   
+            "unique_id": "class-2017-07-27-what-do-we-know",
+            "group": "class"
         },
         {
             "start_date": {
@@ -651,8 +651,8 @@
                 "headline": "<a href='/class/2017/07/31/presentations/'>Final</a>",
                 "text": "<p>In lieu of a traditional final, we will collectively screen everyone&#39;s final presentation. \nWe will also take a final questionnaire/quiz related to some of the overall themes in the course. </p>"
             },
-            "unique_id": "-class-2017-07-31-presentations",
-            "group": "class"   
+            "unique_id": "class-2017-07-31-presentations",
+            "group": "class"
         }
     ],
     "eras": [

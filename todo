@@ -20,7 +20,7 @@
       {% endfor %}
   {% endif %}
   
-    <script type="text/javascript"> 
+  <script type="text/javascript"> 
   // Redirect to "#about" if there is no hash in the URL. 
     if (window.location.hash == '') { 
       window.location.href = '{{ hashurl | prepend: site.baseurl | prepend: site.url }}'; 
