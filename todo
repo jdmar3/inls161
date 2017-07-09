@@ -6,3 +6,17 @@
 6. Add type for era to enable era sectioning of course for JSON renderer
 7. Fix front page to use variables. 
 8. Document everything (eff)
+
+  {% comment %}
+  {% if page.layout == "timeline" %}
+  {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
+  {% for post in site.categories.class %}
+    {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
+    {% if %}
+  {% endfor %}
+  <meta http-equiv="refresh" content="1; url={{  }}">
+        <script type="text/javascript">
+            window.location.href = "http://example.com"
+        </script>
+  {% endif %}
+  {% endcomment %}

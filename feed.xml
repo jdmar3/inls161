@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Jul 2017 15:55:29 -0400</pubDate>
-    <lastBuildDate>Fri, 07 Jul 2017 15:55:29 -0400</lastBuildDate>
+    <pubDate>Sun, 09 Jul 2017 00:00:33 -0400</pubDate>
+    <lastBuildDate>Sun, 09 Jul 2017 00:00:33 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -1642,11 +1642,11 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
         <description>&lt;p&gt;For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. &lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignment/2017/07/27/assignment-6-presentation/</link>
-        <guid isPermaLink="true">/assignment/2017/07/27/assignment-6-presentation/</guid>
+        <link>/assignments/2017/07/27/assignment-6-presentation/</link>
+        <guid isPermaLink="true">/assignments/2017/07/27/assignment-6-presentation/</guid>
         
         
-        <category>assignment</category>
+        <category>assignments</category>
         
       </item>
     
@@ -2076,8 +2076,8 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;p&gt;We will work together on editing audio in class tomorrow. &lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/25/reveal-basics/</link>
-        <guid isPermaLink="true">/class/2017/07/25/reveal-basics/</guid>
+        <link>/class/2017/07/25/reveal-js/</link>
+        <guid isPermaLink="true">/class/2017/07/25/reveal-js/</guid>
         
         <category>reveal.js</category>
         
@@ -2242,11 +2242,11 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
         <description>&lt;p&gt;For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignment/2017/07/23/assignment-5-database/</link>
-        <guid isPermaLink="true">/assignment/2017/07/23/assignment-5-database/</guid>
+        <link>/assignments/2017/07/23/assignment-5-database/</link>
+        <guid isPermaLink="true">/assignments/2017/07/23/assignment-5-database/</guid>
         
         
-        <category>assignment</category>
+        <category>assignments</category>
         
       </item>
     
