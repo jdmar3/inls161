@@ -11,24 +11,6 @@
         window.location.protocol = "https";
   </script>
   
-  {% if page.layout == "timeline" %}
-      {% capture today %}{{site.time | date: "%F"}}{% endcapture %}
-      {% for post in site.categories.class reversed %}
-          {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
-          {% if datestamp == today %}
-              {% capture hashurl %}{{ post.id | replace: "/", "-" | replace: "-class", "#event" | replace: "-assignments", "#event" }}{% endcapture %} 
-  <script type="text/javascript"> 
-  // Redirect to "#about" if there is no hash in the URL. 
-    if (window.location.hash == '') { 
-      window.location.href = '{{ hashurl | prepend: site.baseurl | prepend: site.url }}'; 
-    } 
-  </script>
-          {% else %}
-            {% continue %}
-          {% endif %}
-      {% endfor %}
-  {% endif %}
-  
   <title>{% if page.title %}{{ site.title }}&nbsp;|&nbsp;{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 

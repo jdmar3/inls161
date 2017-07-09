@@ -38,7 +38,7 @@ nav_exclude: true
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
             },
-            "unique_id": "{{ post.id | replace: "/", "-" | remove: "-class-" | remove: "-assignments-" }}"{% if post.category %},
+            "unique_id": "{{ post.id | replace: "/", "-" }}"{% if post.category %},
             "group": {{ post.category | smartify | jsonify }}{% endif %}{% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   
         }{% unless forloop.last == true %},{% endunless %}{% endif %}{% endfor %}
