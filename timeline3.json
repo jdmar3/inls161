@@ -228,28 +228,6 @@
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "09",
-                "hour": "11",
-                "minute": "30"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "09",
-                "hour": "13",
-                "minute": "00"
-            },
-            "text": {
-                "headline": "<a href='/class/2017/07/09/test/'>Test</a>",
-                "text": ""
-            },
-            "unique_id": "class-2017-07-09-test",
-            "group": "class"
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "07",
                 "day": "10",
                 "hour": "23",
                 "minute": "59"

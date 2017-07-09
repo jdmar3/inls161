@@ -892,6 +892,45 @@ hr.slender {
   .wrap .tag:visited {
     color: #ffffff; }
 
+/* --- TIMELINEJS3 changes from standard --- */
+.tl-timeline h1.tl-headline-title {
+  font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif;
+  letter-spacing: .03em !important;
+  font-style: normal !important;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+  line-height: 0.95 !important;
+  /*line-height: 0.784;*/ }
+
+.tl-timeline a {
+  text-decoration: none !important;
+  color: #166DAB !important; }
+
+.tl-timeline a:hover {
+  text-decoration: none !important;
+  color: #56A0D3 !important; }
+
+.tl-timeera.tl-timeera-color0 .tl-timeera-background {
+  background-color: #A9A9A9 !important; }
+
+.tl-timeera.tl-timeera-color1 .tl-timeera-background {
+  background-color: #787878 !important; }
+
+.tl-timeera.tl-timeera-color2 .tl-timeera-background {
+  background-color: #989898 !important; }
+
+.tl-timeera.tl-timeera-color3 .tl-timeera-background {
+  background-color: #686868 !important; }
+
+.tl-timeera.tl-timeera-color4 .tl-timeera-background {
+  background-color: #808080 !important; }
+
+.tl-timeera.tl-timeera-color5 .tl-timeera-background {
+  background-color: #505050 !important; }
+
 /* --- Icomoon icon fonts CSS --*/
 @font-face {
   font-family: 'icomoon';
