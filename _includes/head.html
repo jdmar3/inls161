@@ -17,17 +17,16 @@
           {% capture datestamp %}{{post.date | date: "%F"}}{% endcapture %}
           {% if datestamp == today %}
               {% capture hashurl %}{{ post.id | replace: "/", "-" | replace: "-class", "#event" | replace: "-assignments", "#event" }}{% endcapture %} 
-          {% else %}
-            {% continue %}
-          {% endif %}
-      {% endfor %}
-  
   <script type="text/javascript"> 
   // Redirect to "#about" if there is no hash in the URL. 
     if (window.location.hash == '') { 
       window.location.href = '{{ hashurl | prepend: site.baseurl | prepend: site.url }}'; 
     } 
   </script>
+          {% else %}
+            {% continue %}
+          {% endif %}
+      {% endfor %}
   {% endif %}
   
   <title>{% if page.title %}{{ site.title }}&nbsp;|&nbsp;{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
