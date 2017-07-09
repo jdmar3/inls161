@@ -859,6 +859,51 @@ hr.slender {
 
 //.icon-tags{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAuklEQVQ4jbXTrxJBQRTH8RsEQfAINwqiKHoEUfAYgiaIoiiIHsMDCKIgCIIgCILwEewd15/LXjN+M6fs7Pc755ydTZJ/BRV0UQvVxxSzUBM0i+AG1kHQxs77bIrgXQ4+5YAjhlhmB2VgGIR7dZwfBBEwLMJuOg8dRMJZDvmRysLPmSduC+mF1rYl4D3SBKsgqIbDWLiRzd90H6GLSzRc8AKfJK9wCUkxHCH5DuckKUZuH6iFMdIo+JdcAcegeBZTaArHAAAAAElFTkSuQmCC)}
 
+/* --- TIMELINEJS3 changes from standard --- */
+
+.tl-timeline h1.tl-headline-title {
+		font-family: $sans-font; //added by JDM 
+    letter-spacing: .03em !important; //added by JDM 
+    font-style: normal !important; //added by JDM 
+    text-transform: uppercase !important; //added by JDM 
+    font-weight: 400 !important;
+    text-align: left !important;
+    //margin-top: 1.568rem;
+    //margin-bottom: 1.568rem;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+    //font-size: 1.25rem !important;
+    line-height: 0.95 !important; /*line-height: 0.784;*/
+}
+
+.tl-timeline a {
+    text-decoration: none !important;
+    color: $contrast-color !important;
+}
+.tl-timeline a:hover {
+    text-decoration: none !important;
+    color: $contrast-color-dark !important;
+}
+
+.tl-timeera.tl-timeera-color0 .tl-timeera-background {
+    background-color: #A9A9A9 !important;
+}
+.tl-timeera.tl-timeera-color1 .tl-timeera-background {
+    background-color: #787878 !important;
+}
+.tl-timeera.tl-timeera-color2 .tl-timeera-background {
+    background-color: #989898 !important;
+}
+.tl-timeera.tl-timeera-color3 .tl-timeera-background {
+    background-color: #686868 !important;
+}
+.tl-timeera.tl-timeera-color4 .tl-timeera-background {
+    background-color: #808080 !important;
+}
+.tl-timeera.tl-timeera-color5 .tl-timeera-background {
+    background-color: #505050 !important;
+}
+
 /* --- Icomoon icon fonts CSS --*/
 @font-face {
   font-family: 'icomoon';
