@@ -157,6 +157,8 @@ Assignment tasks are broken down in the grade contract.
 They build on one another, so it is impossible to do one without first having completed the one before. 
 You will find descriptions and instructions for the assignments on the [/schedule](schedule page).
 
+{% include assignment-table.md %} 
+
 ### Due Dates
 
 Each task is due at the date and time specified in the schedule. 
