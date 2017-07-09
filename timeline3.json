@@ -38,7 +38,7 @@ nav_exclude: true
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
             },
-            "unique_id": "{{ post.date | date : '%Y-%m-%d' }}-{{ post.title | downcase | replace: " ", "-" }}"{% if post.category %},
+            "unique_id": "{{ post.date | date : '%Y-%m-%d' }}-{{ post.title | downcase | replace: " ", "-" | replace: ".", "-" | remove: "#" | remove: "," | remove: ":" | remove: ";" | remove: "!" | remove: "&" }}"{% if post.category %},
             "group": {{ post.category | smartify | jsonify }}{% endif %}
             {% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}   

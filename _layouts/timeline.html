@@ -6,16 +6,15 @@
     {% include header.html %}
     </div>
 <!-- Timeline -->
-    <div id="timeline-embed" style="width: 100%; margin-top: 2em"></div>   
+    <div id="timeline-embed" style="width: 100%; height: 75%; margin-top: 2em"></div>
     <div class="wrap">
 <!-- Content -->
     <article>
       {{ content }}
     </article> 
-    {% include print-footer.html %}
-    {% include footer.html %}
     </div>
 <!-- JavaScript -->
+ 
     <script src="{{ '/js/timeline.js' | prepend: baseurl }}">     </script>
 
     <script>
@@ -26,8 +25,7 @@
           debug: true,
           scale_factor: 2,
           trackResize: true,
-          dragging: true,
-          start_at_closest: true
+          dragging: true
         }
         var timeline = new TL.Timeline('timeline-embed', '{{ "/timeline3.json" | prepend: baseurl }}', additionalOptions);
     </script>
