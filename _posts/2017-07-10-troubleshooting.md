@@ -27,6 +27,15 @@ At that point, you have two options:
 
 Guess which one goes further in the course of your academic and work lives.
 
+## Rules v. Conventions
+
+There is a hierarchy of rules that you need to be aware of when troubleshooting issues. 
+
+1. Rules - explicit conditions without which something will not work (syntax of commands or markup, etc.). Failure to comply with these will result in code not being able to run/compile.
+2. Conventions - common ways of doing things that are agreeable to others (tabs v. spaces, heirarchical indents, etc.). Failure to comply with these will not produce broken code, but might irritate your colleagues.
+3. Customs - practices that a lot of people do, but for which there exist no specified guidelines.
+4. "Best" practices - recommendations from expert or more experienced users/developers to improve performance, ease of use, usability, etc. These vary wildly.
+
 ## Sources of information are myriad
 
 It is really difficult to recommend places to get help with troubleshooting online. 
@@ -68,9 +77,9 @@ Take this approach first and keep these things in mind:
 [Stack Overflow](http://stackoverflow.org) is generally a useful resource for recovering from errors. 
 It is well curated and lots of people use it to figure things out. 
 
-# Next week
+# For Next Time 
 
-Next week we are going to start working on manipulating and formatting text.{% marginnote 'word' 'Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf.<br/><br/>Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html.<br/><br/>Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html.' %}  
+Next time we will start working on manipulating and formatting text.{% marginnote 'word' 'Wiens, John A. “Word Processing versus Writing.” The Auk 100 (1983): 758. https://sora.unm.edu/sites/default/files/journals/auk/v100n03/p0758-p0758.pdf.<br/><br/>Caleb McDaniel, W. “Why (and How) I Wrote My Academic Book in Plain Text | W. Caleb McDaniel.” Last modified September 28, 2012. http://wcm1.web.rice.edu/my-academic-book-in-plain-text.html.<br/><br/>Stross, Charlie. “Why Microsoft Word Must Die.” Charlie’s Diary. Last modified October 12, 2013. http://www.antipope.org/charlie/blog-static/2013/10/why-microsoft-word-must-die.html.' %}  
 
 To prepare for this philosophically, I would like you to read a few blog posts and a very short article. 
 
