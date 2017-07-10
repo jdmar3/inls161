@@ -861,21 +861,6 @@ hr.slender {
 
 /* --- TIMELINEJS3 changes from standard --- */
 
-.tl-timeline h1.tl-headline-title {
-		font-family: $sans-font; //added by JDM 
-    letter-spacing: .03em !important; //added by JDM 
-    font-style: normal !important; //added by JDM 
-    text-transform: uppercase !important; //added by JDM 
-    font-weight: 400 !important;
-    text-align: left !important;
-    //margin-top: 1.568rem;
-    //margin-bottom: 1.568rem;
-    margin-top: 1.25rem !important;
-    margin-bottom: 1.25rem !important;
-    //font-size: 1.25rem !important;
-    line-height: 0.95 !important; /*line-height: 0.784;*/
-}
-
 .tl-timeline a {
     text-decoration: none !important;
     color: $contrast-color !important;
