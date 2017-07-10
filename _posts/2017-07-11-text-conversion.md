@@ -11,17 +11,18 @@ tags:
 category: class
 ---
 
-# Plaintext, markup, and formatted text
-
 This week we will discuss the uses of plaintext and markup for creating formatted documents. 
 
 Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. 
-<excerpt/>
 
 All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. 
 They can also be used to make our lives harder. 
 That is not the intent of this course. 
 We're here to learn about new and flexible ways of completing tasks that involve the communication of information. 
+
+<excerpt/>
+
+## Plaintext, Markup, and Flexible Workflows
 
 Inevitably, someone (usually a boss or instructor) will demand that you use a specific tool to complete a task. 
 On that day, knowing what you know after taking this class, you will be able to not only suggest alternatives, but you will also be able to make a compelling argument as to why those alternatives are better, more flexible and will save work in the long run. 
@@ -98,6 +99,23 @@ web browser [for viewing outputs]
 
 ## Pandoc
 
+Today we're going to try out a new tool that allows us to convert almost any format into any other format. 
+
+The workflow goes: 
+
+`plaintext.md > formatted-text.html + formatted-text.docx + formatted-text.pdf`
+
+The toolchain that we have been using is:
+
+```
+CodeAnywhere text editor [for authoring and editing] > 
+git [for version control] >
+GitHub [for storage, sharing, and disseminating] >
+pandoc [for document conversion] > 
+(sometimes LaTeX for conversion to PDF) >
+web browser / LibreOffice Writer / PDF viewer [for viewing outputs] 
+```
+
 [Pandoc](http://pandoc.org/) is a universal document converter. 
 
 Without oversimplifying matters too much, it suffices to say that Pandoc is an awesome tool to have in our arsenal. 
@@ -119,7 +137,7 @@ All of the commands for today are linked from the [reference page]({{ site.url }
 
 # For next time
 
-For tomorrow, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.{% marginnote 'pandoc' 'Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. http://www.anghyflawn.net/teaching/2015/ilw-pandoc/.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. http://pandoc.org/README.html.' %}
+For next time, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.{% marginnote 'pandoc' 'Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. http://www.anghyflawn.net/teaching/2015/ilw-pandoc/.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. http://pandoc.org/README.html.' %}
 
 I would also like you to have a look at the examples in the link below:
 
