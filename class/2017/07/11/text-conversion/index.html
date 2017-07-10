@@ -14,7 +14,7 @@
     
   
   <title>Tools for Information Literacy&nbsp;|&nbsp;Text Conversion</title>
-  <meta name="description" content="Plaintext, markup, and formatted textThis week we will discuss the uses of plaintext and markup for creating formatted documents. Today we are going to brief...">
+  <meta name="description" content="This week we will discuss the uses of plaintext and markup for creating formatted documents. Today we are going to briefly introduce Pandoc and then tomorrow...">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   
@@ -165,17 +165,18 @@ var date = document.getElementById("span")[0];
 alert(p.childNodes[1].textContent)
 </script>
 
-<h1 id="plaintext-markup-and-formatted-text">Plaintext, markup, and formatted text</h1>
-
 <p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>
 
-<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. 
-<excerpt/></p>
+<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>
 
 <p>All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. 
 They can also be used to make our lives harder. 
 That is not the intent of this course. 
 We&#39;re here to learn about new and flexible ways of completing tasks that involve the communication of information. </p>
+
+<p><excerpt/></p>
+
+<h2 id="plaintext-markup-and-flexible-workflows">Plaintext, Markup, and Flexible Workflows</h2>
 
 <p>Inevitably, someone (usually a boss or instructor) will demand that you use a specific tool to complete a task. 
 On that day, knowing what you know after taking this class, you will be able to not only suggest alternatives, but you will also be able to make a compelling argument as to why those alternatives are better, more flexible and will save work in the long run. </p>
@@ -251,6 +252,20 @@ web browser [for viewing outputs]
 </code></pre></div>
 <h2 id="pandoc">Pandoc</h2>
 
+<p>Today we&#39;re going to try out a new tool that allows us to convert almost any format into any other format. </p>
+
+<p>The workflow goes: </p>
+
+<p><code>plaintext.md &gt; formatted-text.html + formatted-text.docx + formatted-text.pdf</code></p>
+
+<p>The toolchain that we have been using is:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">CodeAnywhere text editor [for authoring and editing] &gt; 
+git [for version control] &gt;
+GitHub [for storage, sharing, and disseminating] &gt;
+pandoc [for document conversion] &gt; 
+(sometimes LaTeX for conversion to PDF) &gt;
+web browser / LibreOffice Writer / PDF viewer [for viewing outputs] 
+</code></pre></div>
 <p><a href="http://pandoc.org/">Pandoc</a> is a universal document converter. </p>
 
 <p>Without oversimplifying matters too much, it suffices to say that Pandoc is an awesome tool to have in our arsenal. </p>
@@ -272,7 +287,7 @@ You will need to do this in your CodeAnywhere container.</p>
 
 <h1 id="for-next-time">For next time</h1>
 
-<p>For tomorrow, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.<label for='pandoc' class='margin-toggle'> &#8853;</label><input type='checkbox' id='pandoc' class='margin-toggle'/><span class='marginnote'>Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. <a href="http://www.anghyflawn.net/teaching/2015/ilw-pandoc/">http://www.anghyflawn.net/teaching/2015/ilw-pandoc/</a>.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. <a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a>. </span></p>
+<p>For next time, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.<label for='pandoc' class='margin-toggle'> &#8853;</label><input type='checkbox' id='pandoc' class='margin-toggle'/><span class='marginnote'>Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. <a href="http://www.anghyflawn.net/teaching/2015/ilw-pandoc/">http://www.anghyflawn.net/teaching/2015/ilw-pandoc/</a>.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. <a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a>. </span></p>
 
 <p>I would also like you to have a look at the examples in the link below:</p>
 

@@ -283,7 +283,7 @@
             },
             "text": {
                 "headline": "<a href='/class/2017/07/11/text-conversion/'>Text Conversion</a>",
-                "text": "<h1 id=\"plaintext-markup-and-formatted-text\">Plaintext, markup, and formatted text</h1>\n\n<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>\n\n<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>"
+                "text": "<p>This week we will discuss the uses of plaintext and markup for creating formatted documents. </p>\n\n<p>Today we are going to briefly introduce Pandoc and then tomorrow we are going to see what it can really do with our documents when we learn some interesting switches and tricks. We will also some hand-on-keyboards excercises that will demonstrate the power of using marked-up plaintext for creating formatted documents. </p>\n\n<p>All of the tools and tasks that we cover in this course can be used to make our lives easier and our workflows simpler. \nThey can also be used to make our lives harder. \nThat is not the intent of this course. \nWe&#39;re here to learn about new and flexible ways of completing tasks that involve the communication of information. </p>"
             },
             "unique_id": "class-2017-07-11-text-conversion",
             "group": "class"
