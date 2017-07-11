@@ -135,6 +135,19 @@ You will need to do this in your CodeAnywhere container.
 
 All of the commands for today are linked from the [reference page]({{ site.url }}/refsheets/pandoc-ref/).
 
+# In-class Exercise
+
+1. Create a new repository in your GitHub account named like this: USERNAME-text-conversion
+2. Clone your repository into your CodeAnywhere container.
+2. Find a highly structured document on [Project Gutenberg](https://gutenberg.org). Highly structured == lots of headings, subheadings, chapters, etc. Think [US Constitution](http://www.gutenberg.org/ebooks/5) or some [poetry](http://www.gutenberg.org/ebooks/1459).
+4. Use `wget` to download the plaintext file into your repository directory. 
+5. `git add` and `git commit` the file. 
+6. Open the file in the CodeAnywhere text editor and add markup to it using Markdown. Refer to your cheatsheet. 
+7. Add links to other resources as well as structural and stylistic elements. 
+8. `git commit` your changes and then `git push` them to your new repo. 
+
+Later we will work with this source file, so make sure that it is something you like. 
+
 # For next time
 
 For next time, I would like you to review a blog post tutorial by Pavel Iosad and the the main documentation page for Pandoc.{% marginnote 'pandoc' 'Iosad, Pavel. “Getting off the Word Standard: Your Academic Life in Plain Text.” Pavel Iosad. Last modified February 2015. http://www.anghyflawn.net/teaching/2015/ilw-pandoc/.<br/><br/>“Pandoc User’s Guide.” Pandoc. Accessed July 5, 2016. http://pandoc.org/README.html.' %}
