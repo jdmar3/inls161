@@ -75,7 +75,7 @@ Take this approach first and keep these things in mind:
 2. Learn to spot the difference. 
 3. READ.
 
-[Stack Overflow](http://stackoverflow.org) is generally a useful resource for recovering from errors. 
+[Stack Overflow](http://stackoverflow.com) is generally a useful resource for recovering from errors. 
 It is well curated and lots of people use it to figure things out. 
 
 # For Next Time 

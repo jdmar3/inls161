@@ -87,7 +87,9 @@ nav_include: true
 
 <a href="http://packetlife.net/media/library/16/Markdown.pdf" target="_blank">Markdown Cheat Sheet - Packetlife.net</a>
 
-<a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482" target="_blank">Makdown: The Ins and Outs - Dan Harper</a>
+<a href="http://code.tutsplus.com/tutorials/markdown-the-ins-and-outs--net-25482" target="_blank">Markdown: The Ins and Outs - Dan Harper</a>
+
+<a href="http://www.markdowntutorial.com/" target="_blank">Markdown Tutorial</a> _This is an awesome tutorial page to get you started or to round out your new ability to work with Markdown._
 
 ## HTML5
 

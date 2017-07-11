@@ -142,11 +142,11 @@ All of the commands for today are linked from the [reference page]({{ site.url }
 2. Find a highly structured document on [Project Gutenberg](https://gutenberg.org). Highly structured == lots of headings, subheadings, chapters, etc. Think [US Constitution](http://www.gutenberg.org/ebooks/5) or some [poetry](http://www.gutenberg.org/ebooks/1459).
 4. Use `wget` to download the plaintext file into your repository directory. 
 5. `git add` and `git commit` the file. 
-6. Open the file in the CodeAnywhere text editor and add markup to it using Markdown. Refer to your cheatsheet. 
+6. Open the file in the CodeAnywhere text editor and add markup to it using Markdown. Refer to your cheatsheet.{% marginnote 'mdtutorial' 'The Markdown Tutorial page is a GREAT way to get yourselves comfortable with using Markdown very, very quickly. I recommend going through the entire thing ASAP. http://www.markdowntutorial.com/' %} 
 7. Add links to other resources as well as structural and stylistic elements. 
 8. `git commit` your changes and then `git push` them to your new repo. 
 
-Later we will work with this source file, so make sure that it is something you like. 
+Later we will work with this source file, so make sure that it is something you like.
 
 # For next time
 
