@@ -10,13 +10,24 @@ tags:
 category: class
 ---
 
+We will spend today exploring making different types of output from a single input file. 
+There are many advantages to this approach to creating files:
+
+1. You only have to change one source file.
+2. No need to worry about conflicting information resulting from changes made in one file but not another.
+3. The hierarchy of headers (i.e. the document structure) is easy to read. This structure persists across conversion to different types.
+4. Source to multiple outputs is easily automated. 
+
+We will pay a lot of attention to automation this week.
+
+<excerpt/>
+
 We've briefly discussed Pandoc now. 
 It bills itself as the "Universal Document Converter." 
 This is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. 
 
 The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. 
 We'll talk more about this as we go forward. 
-<excerpt/>
 
 # Source to output conversion
 
@@ -27,7 +38,7 @@ We can also manipulate the styles of the headers and other structural elements t
 
 One convenient effect of starting with plaintext marked up with Markdown is that we have those structural elements when we convert them into another format and then edit them elsewhere. It is certainly possible to start in the GUI editor and define the same things, but after becoming acquainted with Markdown, it should feel somewhat more burdensome to use the GUI. Arguably, it is. There is a great deal more that goes into a DOCX or an ODT file, structurally, than in a plaintext file with Markdown in it. 
 
-We also have the disadvantage of only being able to operate on thost files in limited ways on headless or remote systems. 
+We also have the disadvantage of only being able to operate on those GUI-created files in limited ways on headless or remote systems. 
 
 If we keep plaintext at the core of our workflows and GUI editors toward the periphery, we will be served in the end as we will always have access to our work, on any system, without any huge barriers to editing and changing. 
 
@@ -39,7 +50,7 @@ First, we need to get some files.
 
 Fork and clone this repository into your CodeAnywhere container:
 
-https://github.com/inls161/pandoc-practice
+`https://github.com/inls161/pandoc-practice`
 
 Once you have the files in your CodeAnywhere container, I will show you some things in class and then in your groups you will answer and mark up the `example.md` file using the instructions in the file. 
 
@@ -110,6 +121,6 @@ You can also use an ODT or OTT for reference:
 
 Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. 
 
-I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
+I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
 This will show you the basics of scripting. 
 The scripts that we will write will be very, very simple, but it is good to have looked over this before we start. 

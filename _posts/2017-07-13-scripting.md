@@ -15,6 +15,7 @@ Today we will learn how to convert our plaintext Markdown into a PDF.
 To do this we will have to install some more software, which may take a while. 
 
 In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. 
+BASH scripting is a good skill to have exposure to if you ever use any Linux/UNIX-based system and have repetitive tasks that you could script instead of completing manually. 
 <excerpt/>
 
 # Texlive
@@ -194,5 +195,5 @@ cabox@box-codeanywhere:~/workspace/helper-scripts$
 ## Tomorrow
 
 We will pick up where we left off tomorrow during lab and get to work creating our scripts for the next assignment. 
-Please review the tutorial on writing shell scripts again.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
+Please review the tutorial on writing shell scripts again.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
 Also, we'll use another tutorial so that we can learn to create prompts for user input.{% sidenote 'user-input' 'Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php.' %}

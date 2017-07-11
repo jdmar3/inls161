@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lab #3: Automation and Scripting"
+title: "Automation and Scripting"
 era: Text
 tags: 
 - scripting
@@ -10,9 +10,16 @@ category: class
 ---
 
 Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
+
+Automation is all the rage these days. 
+As such, we're going to work for the rest of the semester at attempting to automate processes as much as we possibly can. 
+We will start by automating the conversion of your source files into different formatted outputs. 
+
+We can also look at automating the way that you post to the class blog and also to your own blogs. 
+
 <excerpt/>
 
-We will use a few online tutorials for reference.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. Accessed July 6, 2016. http://linuxcommand.org/lc3_writing_shell_scripts.php.<br/><br/>Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php.' %} 
+We will use a few online tutorials for reference.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. http://linuxcommand.org/lc3_writing_shell_scripts.php.<br/><br/>Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php.' %} 
 
 ## Adding user input
 
