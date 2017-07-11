@@ -305,7 +305,7 @@
             },
             "text": {
                 "headline": "<a href='/class/2017/07/12/single-multiple-outputs/'>Single input, multiple outputs</a>",
-                "text": "<p>We&#39;ve briefly discussed Pandoc now. \nIt bills itself as the &quot;Universal Document Converter.&quot; \nThis is reasonably true, but it might require some creative combinations of switches within Pandoc commands as well as multiple commands strung together or intermediate commands to get the desired output. </p>\n\n<p>The benefit of troubleshooting and understanding this process is that once we do, we can more easily optimize our conversions and automate them. \nWe&#39;ll talk more about this as we go forward. </p>"
+                "text": "<p>We will spend today exploring making different types of output from a single input file. \nThere are many advantages to this approach to creating files:</p>\n\n<ol>\n<li>You only have to change one source file.</li>\n<li>No need to worry about conflicting information resulting from changes made in one file but not another.</li>\n<li>The hierarchy of headers (i.e. the document structure) is easy to read. This structure persists across conversion to different types.</li>\n<li>Source to multiple outputs is easily automated. </li>\n</ol>\n\n<p>We will pay a lot of attention to automation this week.</p>"
             },
             "unique_id": "class-2017-07-12-single-multiple-outputs",
             "group": "class"
@@ -327,7 +327,7 @@
             },
             "text": {
                 "headline": "<a href='/class/2017/07/13/scripting/'>Introduction to scripting</a>",
-                "text": "<p>Today we will learn how to convert our plaintext Markdown into a PDF. \nTo do this we will have to install some more software, which may take a while. </p>\n\n<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. </p>"
+                "text": "<p>Today we will learn how to convert our plaintext Markdown into a PDF. \nTo do this we will have to install some more software, which may take a while. </p>\n\n<p>In the mean time, we will cover some of the basics of scripting in order to be able to automate our workflows a little bit better. \nBASH scripting is a good skill to have exposure to if you ever use any Linux/UNIX-based system and have repetitive tasks that you could script instead of completing manually. </p>"
             },
             "unique_id": "class-2017-07-13-scripting",
             "group": "class"
@@ -348,10 +348,10 @@
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/class/2017/07/14/lab-automation/'>Lab #3: Automation and Scripting</a>",
-                "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>"
+                "headline": "<a href='/class/2017/07/14/automation/'>Automation and Scripting</a>",
+                "text": "<p>Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. </p>\n\n<p>Automation is all the rage these days. \nAs such, we&#39;re going to work for the rest of the semester at attempting to automate processes as much as we possibly can. \nWe will start by automating the conversion of your source files into different formatted outputs. </p>\n\n<p>We can also look at automating the way that you post to the class blog and also to your own blogs. </p>"
             },
-            "unique_id": "class-2017-07-14-lab-automation",
+            "unique_id": "class-2017-07-14-automation",
             "group": "class"
         },
         {
