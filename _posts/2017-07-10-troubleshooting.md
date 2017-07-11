@@ -7,6 +7,7 @@ tags:
 - websites
 - trial and error
 category: class
+quiz: https://goo.gl/forms/dpHJoM15Umgs8NHB2
 ---
 
 This session will be primarily dedicated to helping you work out kinks and wrinkles in the process of getting your site online and completing the second assignment. 
