@@ -118,9 +118,9 @@ You can also use an ODT or OTT for reference:
 
 `pandoc -S --reference-odt=./template.ott -o example.odt example.md`
 
-# For tomorrow
+# For Next Time
 
-Tomorrow, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. 
+Next time, we are going to learn one more output format and then learn how to script all of our outputs together so that we can save ourselves time. 
 
 I would like you to go through the Writing Shell Scripts tutorial by William Shotts for tomorrow.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
 This will show you the basics of scripting. 
