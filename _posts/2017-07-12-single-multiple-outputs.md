@@ -8,6 +8,7 @@ tags:
 - conversion
 - LaTeX
 category: class
+quiz: https://goo.gl/forms/XGJk1LuHOvDjVtWm2
 ---
 
 We will spend today exploring making different types of output from a single input file. 

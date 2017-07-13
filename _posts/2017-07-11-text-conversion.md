@@ -9,6 +9,7 @@ tags:
 - documents
 - conversion
 category: class
+quiz: https://goo.gl/forms/hryTkBWrr9TA90M93
 ---
 
 This week we will discuss the uses of plaintext and markup for creating formatted documents. 

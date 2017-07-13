@@ -9,6 +9,7 @@ tags:
 - Bash
 - Scripts
 category: class
+quiz: https://goo.gl/forms/6jQTCWkh8x0SKDec2
 ---
 
 Today we will learn how to convert our plaintext Markdown into a PDF. 
