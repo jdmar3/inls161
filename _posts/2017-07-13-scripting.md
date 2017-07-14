@@ -193,8 +193,10 @@ Hello, jdmar3!
 cabox@box-codeanywhere:~/workspace/helper-scripts$
 ```
 
-## Tomorrow
+## For Next Time
 
-We will pick up where we left off tomorrow during lab and get to work creating our scripts for the next assignment. 
+We will pick up where we left off next time and get to work creating our scripts for the next assignment. 
 Please review the tutorial on writing shell scripts again.{% sidenote 'shell-scripts' 'Shotts, William, Jr. “Writing Shell Scripts.” LinuxCommand.org. http://linuxcommand.org/lc3_writing_shell_scripts.php.' %} 
 Also, we'll use another tutorial so that we can learn to create prompts for user input.{% sidenote 'user-input' 'Chadwick, Ryan. “User Input - Bash Scripting Tutorial.” Ryan’s Tutorials. http://ryanstutorials.net/bash-scripting-tutorial/bash-input.php.' %}
+
+Finally, if you want to look over what we did in this session together and look at the examples that I created, you can do so from the repository linked on the right.{% marginnote 'scriptpractice' '<a href="https://github.com/inls161/scripting-practice">Scripting Practice Repository for INLS 161 https://github.com/inls161/scripting-practice' %}
