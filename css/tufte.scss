@@ -174,7 +174,7 @@ blockquote p {  font-size: 1rem; //1.1rem;
                 line-height: 1.25; //1.78181818;
                 margin-top: 1.78181818rem;
                 margin-bottom: 1.78181818rem;
-                width: 45%;
+                //width: 45%;
                 padding-left: 2.5%;
                 padding-right: 2.5%; }
 
@@ -399,7 +399,7 @@ div.table-wrapper { overflow-x: auto } //changed all overflow values to 'auto' s
     figure { max-width: 90%; }
     figcaption, figure.fullwidth figcaption { margin-right: 0%;
         max-width: none; }
-    blockquote p, blockquote footer {  width: 80%;
+    blockquote p, blockquote footer {  //width: 80%;
         padding-left: 5%;
         padding-right: 5%; }
 	}
