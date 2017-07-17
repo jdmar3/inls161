@@ -295,7 +295,6 @@ body {
     line-height: 1.25;
     margin-top: 1.78181818rem;
     margin-bottom: 1.78181818rem;
-    width: 45%;
     padding-left: 2.5%;
     padding-right: 2.5%; }
   .wrap blockquote footer {
@@ -495,7 +494,6 @@ article div.table-wrapper {
     margin-right: 0%;
     max-width: none; }
   article blockquote p, article blockquote footer {
-    width: 80%;
     padding-left: 5%;
     padding-right: 5%; } }
 article .marginnote code, article .sidenote code {
