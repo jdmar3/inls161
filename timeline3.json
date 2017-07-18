@@ -413,30 +413,10 @@
             },
             "text": {
                 "headline": "<a href='/class/2017/07/18/data-cleaning/'>Data cleaning and spreadsheet software</a>",
-                "text": "<p>Today we&#39;re going to look at one common way of manipulating CSV and other data files: the spreadsheet. </p>"
+                "text": "<p>Today we&#39;re going to look at one common way of manipulating CSV and other flat data files. \nWe&#39;ll look at a few more command line tools to do help us, and review how <code>paste</code> works once again. </p>\n\n<p>Then we will look at the result of a compiled CSV file in a GUI environment, to be able to better understand what we&#39;re doing in the command line. </p>"
             },
             "unique_id": "class-2017-07-18-data-cleaning",
             "group": "class"
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "19",
-                "hour": "23",
-                "minute": "59"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "19"
-            },
-            "text": {
-                "headline": "<a href='/assignments/2017/07/19/assignment-4-data/'>Assignment #4: Collect Data</a>",
-                "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. </p>"
-            },
-            "unique_id": "assignments-2017-07-19-assignment-4-data",
-            "group": "assignments"
         },
         {
             "start_date": {
@@ -518,10 +498,10 @@
                 "day": "23"
             },
             "text": {
-                "headline": "<a href='/assignments/2017/07/23/assignment-5-database/'>Assignment #5: Create a Database</a>",
-                "text": "<p>For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.</p>"
+                "headline": "<a href='/assignments/2017/07/23/assignment-4-data/'>Assignment #4: Collect Data and Make a Database</a>",
+                "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. </p>"
             },
-            "unique_id": "assignments-2017-07-23-assignment-5-database",
+            "unique_id": "assignments-2017-07-23-assignment-4-data",
             "group": "assignments"
         },
         {
@@ -604,10 +584,10 @@
                 "day": "27"
             },
             "text": {
-                "headline": "<a href='/assignments/2017/07/27/assignment-6-presentation/'>Assignment #6: Presentation</a>",
+                "headline": "<a href='/assignments/2017/07/27/assignment-5-presentation/'>Assignment #5: Presentation</a>",
                 "text": "<p>For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. </p>"
             },
-            "unique_id": "assignments-2017-07-27-assignment-6-presentation",
+            "unique_id": "assignments-2017-07-27-assignment-5-presentation",
             "group": "assignments"
         },
         {

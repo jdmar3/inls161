@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jul 2017 08:57:24 -0400</pubDate>
-    <lastBuildDate>Mon, 17 Jul 2017 08:57:24 -0400</lastBuildDate>
+    <pubDate>Tue, 18 Jul 2017 10:30:11 -0400</pubDate>
+    <lastBuildDate>Tue, 18 Jul 2017 10:30:11 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -1638,12 +1638,12 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
       </item>
     
       <item>
-        <title>Assignment #6: Presentation</title>
+        <title>Assignment #5: Presentation</title>
         <description>&lt;p&gt;For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. &lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/27/assignment-6-presentation/</link>
-        <guid isPermaLink="true">/assignments/2017/07/27/assignment-6-presentation/</guid>
+        <link>/assignments/2017/07/27/assignment-5-presentation/</link>
+        <guid isPermaLink="true">/assignments/2017/07/27/assignment-5-presentation/</guid>
         
         
         <category>assignments</category>
@@ -2238,12 +2238,12 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
       </item>
     
       <item>
-        <title>Assignment #5: Create a Database</title>
-        <description>&lt;p&gt;For this assignment, you will start with the script from your last assignment and enhance it with the ability to interact with a database.&lt;/p&gt;
+        <title>Assignment #4: Collect Data and Make a Database</title>
+        <description>&lt;p&gt;For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. &lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/23/assignment-5-database/</link>
-        <guid isPermaLink="true">/assignments/2017/07/23/assignment-5-database/</guid>
+        <link>/assignments/2017/07/23/assignment-4-data/</link>
+        <guid isPermaLink="true">/assignments/2017/07/23/assignment-4-data/</guid>
         
         
         <category>assignments</category>
