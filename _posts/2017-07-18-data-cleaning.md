@@ -15,9 +15,19 @@ We'll look at a few more command line tools to do help us, and review how `paste
 Then we will look at the result of a compiled CSV file in a GUI environment, to be able to better understand what we're doing in the command line. 
 <excerpt/>
 
-# Concatenate and Translate
+We'll look at a few different ways of converting a TSV file in to a CSV file.
 
-# Editing on the command line
+Here are some exercises:
+
+## Translate, Edit, and Text-Processing
+
+Use `tr`, `sed` and `awk` to change all the tabs in your TSV file to another separator character.{% sidenote 'convert' '"ANSWER: How do I convert a tab-separated values (TSV) file to a comma-separated values (CSV) file in BASH?," StackOverflow, Last updated 15 March 2017. https://stackoverflow.com/questions/22419979/how-do-i-convert-a-tab-separated-values-tsv-file-to-a-comma-separated-values/22421445#22421445'}
+
+Figure out what these do and explain it to the class. 
+
+## Editing on the command line
+
+Use `vi` to open and match replace all the tab separators in your file. (Make sure to make a backup copy of your original file.)
 
 # CSV to spreadsheet
 
@@ -34,7 +44,7 @@ That said, spreadsheets are a powerful tool and should be used in certain tasks 
 
 Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.
 
-# Caveats and pitfalls of using spreadsheets
+## Caveats and pitfalls of using spreadsheets
 
 This forum post is a good guide to things that you should be aware of when using spreadsheets:
 
