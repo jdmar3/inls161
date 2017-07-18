@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Assignment #6: Presentation"
+title: "Assignment #5: Presentation"
 era: Present
 short_description: "Create a presentation using HTML"
 percentage: "15"

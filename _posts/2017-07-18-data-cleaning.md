@@ -9,8 +9,15 @@ tags:
 category: class
 ---
 
-Today we're going to look at one common way of manipulating CSV and other data files: the spreadsheet. 
+Today we're going to look at one common way of manipulating CSV and other flat data files. 
+We'll look at a few more command line tools to do help us, and review how `paste` works once again. 
+
+Then we will look at the result of a compiled CSV file in a GUI environment, to be able to better understand what we're doing in the command line. 
 <excerpt/>
+
+# Concatenate and Translate
+
+# Editing on the command line
 
 # CSV to spreadsheet
 
