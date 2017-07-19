@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Jul 2017 11:56:39 -0400</pubDate>
-    <lastBuildDate>Tue, 18 Jul 2017 11:56:39 -0400</lastBuildDate>
+    <pubDate>Wed, 19 Jul 2017 01:07:43 -0400</pubDate>
+    <lastBuildDate>Wed, 19 Jul 2017 01:07:43 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -2240,6 +2240,58 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
       <item>
         <title>Assignment #4: Collect Data and Make a Database</title>
         <description>&lt;p&gt;For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. &lt;/p&gt;
+
+&lt;p&gt;This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. &lt;/p&gt;
+
+&lt;p&gt;You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.&lt;/p&gt;
+
+&lt;h2 id=&quot;skillsets&quot;&gt;Skillsets&lt;/h2&gt;
+
+&lt;p&gt;You will be exposed to the following skillsets;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Scripting user input&lt;/li&gt;
+&lt;li&gt;Saving data to csv file&lt;/li&gt;
+&lt;li&gt;Writing to temporary files&lt;/li&gt;
+&lt;li&gt;Scripting database interface&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;expectations&quot;&gt;Expectations&lt;/h2&gt;
+
+&lt;p&gt;I expect you to create two scripts 
+1. One that will take input from users and then store their responses to a CSV file. It must aggregate the responses of multiple users and therefore needs to have some form of disambiguation involved in the data generation process. 
+2. A second script that will allow you to write the information gathered into a MySQL database instead of into a CSV file as the final output form. &lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;The only thing that you will need is Bash and text files, and MySQL, all of which are available in CodeAnywhere (you can use the MySQL stack to start your project).&lt;/p&gt;
+
+&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
+
+&lt;p&gt;You will need to do the following for this assignment to be considered complete. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a list of five survey-type questions.&lt;/li&gt;
+&lt;li&gt;Write a script that will do the following:
+
+&lt;ul&gt;
+&lt;li&gt;Ask each question of the user running the script.&lt;/li&gt;
+&lt;li&gt;Write a random string of characters to a variable as a unique identifier.&lt;/li&gt;
+&lt;li&gt;Write the datestamp to a variable.&lt;/li&gt;
+&lt;li&gt;Accept text input from the user and write each answer as a variable.&lt;/li&gt;
+&lt;li&gt;Save all answers and other data to a CSV file.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Create a database that has the appropriate variables and variable types (NB: You can script this: it might be an accessory script or a conditional statement in your script).&lt;/li&gt;
+&lt;li&gt;Write a script to write your data into a MySQL database (you can call this script from your other one, or vice versa):
+
+&lt;ul&gt;
+&lt;li&gt;connect to a MySQL database (HINT: this will involve setting variables for MySQL USERNAME, PASSWORD, and LOCATION)&lt;/li&gt;
+&lt;li&gt;enter the data input by users into a MySQL database &lt;/li&gt;
+&lt;li&gt;dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with new data (IMPORTANT: make sure the filename has a timestamp)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Collect some data from your peers: collect at least 5 responses to your survey. Each time someone new takes, the script should add a response to your database.&lt;/li&gt;
+&lt;li&gt;Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. &lt;/li&gt;
+&lt;/ol&gt;
 </description>
         <pubDate>Sun, 23 Jul 2017 00:00:00 -0400</pubDate>
         <link>/assignments/2017/07/23/assignment-4-data/</link>
