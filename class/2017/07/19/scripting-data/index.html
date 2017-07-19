@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script type="text/javascript">
+    var host = "inls161.johndmart.in";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+  
+    
+  
+  <title>Tools for Information Literacy&nbsp;|&nbsp;Spreadsheets and Scripting Data</title>
+  <meta name="description" content="Today we will look at two different ways to handle data:Using a spreadsheet.Writing a script.Both approaches have their advantages and we will discuss these....">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+  
+  <!-- Load Moment.js for dates if option set in /_data/optins.yml file-->
+   
+     <script type="text/javascript" src="//momentjs.com/downloads/moment.js"></script> 
+    
+   
+  
+     <script type="text/javascript" src="//storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/datejs/date.js"></script>
+  
+  
+<link rel="stylesheet" href="/css/tufte.css"> 
+
+  
+  
+<link rel="/apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/manifest.json">
+<link rel="mask-icon" href="/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="/class/2017/07/19/scripting-data/">
+
+<link rel="alternate" type="application/rss+xml" title="Tools for Information Literacy" href="/feed.xml" />
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="/css/timeline.css">
+    <!--FONT-->
+    <link rel="stylesheet" href="/css/fonts/font.tufte.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='https://html5shim.googlecode.com/svn/trunk/html5.js')
+    
+    -->
+
+
+</head>
+
+  <body>
+    <div class="wrap">
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/"><img class="badge" src="/assets/img/161icon.png" alt="UNC"></a>
+	
+	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/">Tools for Information Literacy</a>
+		    
+	    
+  	
+		
+  	
+		
+		    
+		      <a href="/syllabus/">Syllabus</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/schedule/">Schedule</a>
+		    
+	    
+  	
+		
+  	
+		
+  	
+		
+		    
+		      <a href="/quiz/">Quiz</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/assignments/">Assignments</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/refsheets/">Reference</a>
+		    
+	    
+  	
+	</nav>
+
+</header>
+    <article class="group">
+      <h1>Spreadsheets and Scripting Data</h1>
+
+
+
+<p class="subtitle"><span id="date">Wednesday, 19 July 2017</span><span class="smaller date contrast"></span></p>
+
+<script>
+var date = document.getElementById("span")[0];
+alert(p.childNodes[1].textContent)
+</script>
+
+<p>Today we will look at two different ways to handle data:</p>
+
+<ol>
+<li>Using a spreadsheet.</li>
+<li>Writing a script.</li>
+</ol>
+
+<p>Both approaches have their advantages and we will discuss these. 
+This is a day when we will talk about what tool is right for what job. </p>
+
+<p>Spreadsheets are very good as calculators. 
+In fact, that is what they are designed to do. 
+All other uses for spreadsheets are adaptations and should be used with caution.</p>
+
+<p>Scripts are sets of instructions that you can use replicate and automate tasks. 
+That is their only real purpose. 
+They can be adapted to other purposes as well: perhaps become a rudimentary interface, for instance.</p>
+
+<h2 id="csv-to-spreadsheet">CSV to spreadsheet</h2>
+
+<p>Spreadsheets appear to operate in a very simple manner, storing data in rows and columns just like any other table, but looks can be deceiving.<label for='spreadsheet' class='margin-toggle'> &#8853;</label><input type='checkbox' id='spreadsheet' class='margin-toggle'/><span class='marginnote'> </span> </p>
+
+<p>Just like with DOCX and ODT files when compared with plaintext files, spreadsheets hide a lot of metadata underneath what appears on the surface. </p>
+
+<p>Unlike with the relationship between plaintext and interface-wrapped formatted text files, it is more difficult to get all of the information out of the spreadsheet. </p>
+
+<p>As mentioned in the piece by Paul Ford, spreadsheets can hide a lot of things from us, including errors. 
+If our code to perform the same kinds of operations is visible to us, it is easier to check for errors. </p>
+
+<p>That said, spreadsheets are a powerful tool and should be used in certain tasks in preference over other tools. </p>
+
+<p>Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.</p>
+
+<h2 id="caveats-and-pitfalls-of-using-spreadsheets">Caveats and pitfalls of using spreadsheets</h2>
+
+<p>This forum post is a good guide to things that you should be aware of when using spreadsheets:</p>
+
+<p><a href="https://forum.openoffice.org/en/forum/viewtopic.php?t=39529">https://forum.openoffice.org/en/forum/viewtopic.php?t=39529</a></p>
+
+<p>It pertains to OpenOffice, which is the productivity suite that LibreOffice was forked from some years ago. 
+OpenOffice is now owned by Oracle and some of the community was not happy with licensing changes that had occured, so they jumped ship and moved their development to LibreOffice under the umbrella of the Open Document Foundation. 
+The software still operates similarly enough that the information is relevant to us. 
+This is because both suites use ODF at their core. </p>
+
+<p>It will also be a good idea to have a look at the LibreOffice documentation to familiarize yourself with it as a reference: <a href="https://www.libreoffice.org/get-help/documentation/">https://www.libreoffice.org/get-help/documentation/</a></p>
+
+<p>Finally, here is a compendium of all of the functions available to you in LibreOffice Calc: <a href="https://help.libreoffice.org/Calc/Spreadsheet_Functions">https://help.libreoffice.org/Calc/Spreadsheet_Functions</a></p>
+
+<h1 id="scripting-data-collection-and-handling">Scripting data collection and handling</h1>
+
+<p>Your next assignment is to collect data and store it using a BASH script. </p>
+
+<p>Today we will look at how you can write scripts that take user input and write that input to a CSV file. </p>
+
+<p>For starters, we need to look more closely at variables. </p>
+
+<h2 id="in-class-exercise">In-class exercise</h2>
+
+<p>With a partner, I want you to find a script on GitHub or elsewhere and look at how it uses variables. 
+You can use the faceted search on GitHub to specify langauge as &quot;Shell&quot; since we are looking for shell scripts. </p>
+
+<p>Here is a great example of a script that does something seemingly very difficult in a reasonably straightforward manner: <a href="http://www.sbprojects.net/projects/raspberrypi/sms.php">http://www.sbprojects.net/projects/raspberrypi/sms.php</a></p>
+
+<p>We&#39;ll look at it together in class and look at the scripts that you found. We will also begin writing our own for the next assignment. </p>
+
+<h1 id="for-next-time">For next time</h1>
+
+<p>We&#39;re going to break into databases next time and have a MySQL crash course. 
+I would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.<label for='sql' class='margin-toggle sidenote-number'></label><input type='checkbox' id='sql' class='margin-toggle'/><span class='sidenote'>Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. <a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial</a>. </span> </p>
+
+
+<p>
+  <br/>
+  <ul class="tags">
+    <li><a href="/topics#data" class="tag">data</a></li><li><a href="/topics#Bash" class="tag">Bash</a></li><li><a href="/topics#scripting" class="tag">scripting</a></li><li><a href="/topics#spreadsheets" class="tag">spreadsheets</a></li>
+  </ul> 
+</p>
+    </article>
+    <span class="print-footer">Spreadsheets and Scripting Data - July 19, 2017 - </span>
+    <footer>
+  <div class="larger blognav">
+    
+      <a class="prev" href="/class/2017/07/18/data-cleaning/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Data cleaning and spreadsheet software</a>
+    
+    
+      <a class="next" href="/class/2017/07/19/sql-bootcamp/"><span class="smaller">Next:</span>&nbsp;Database software and MySQL&nbsp;&raquo;</a>
+    
+  </div>
+  <hr class="slender">
+  <ul class="footer-links">
+    
+    
+      <li>
+        <a href="http://johndmart.in" title="Instructor home page"><span class="ico-user"></span>&nbsp;John D. Martin III</a>
+      </li>
+    
+    
+      <li>
+        <a href="mailto:john.d.martin.iii@unc.edu" title="Email instructor"><span class="ico-envelope"></span>&nbsp;john.d.martin.iii@unc.edu</a>
+      </li>
+    
+    
+      <li>
+        <span class="ico-clock"></span>&nbsp;11:30-13:00
+      </li>
+    
+    
+      <li>
+        <span class="ico-calendar"></span>&nbsp;MoTuWeThFr
+      </li>
+    
+    
+      <li>
+        <span class="ico-library"></span>&nbsp;117 Manning Hall
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/inls161" title="GitHub organization for this course"><span class="ico-github"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="https://inls161.slack.com" title="Join the Slack conversations for this course"><span class="ico-slack"></span></a>
+      </li>
+    
+    
+      <li>
+        <a href="/feed" title="Add RSS feed"><span class="ico-rss"></span></a>
+      </li>
+      
+  </ul>
+<div class="credits">
+  <span>TOOLS FOR INFORMATION LITERACY &nbsp;&nbsp;|&nbsp;&nbsp; INLS161-001 (Summer II)
+    <br/> 
+  <span class="smaller">Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</span>
+  <br/><br/>
+  <span class="smaller">All content licensed under a <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</span>
+  <br/>
+  <span class="smaller"><a href="credits/">Content &copy; 2017 John D. Martin III</a></span>
+</div>  
+</footer>
+    </div>
+  </body>
+</html>

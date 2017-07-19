@@ -434,6 +434,28 @@
                 "minute": "00"
             },
             "text": {
+                "headline": "<a href='/class/2017/07/19/scripting-data/'>Spreadsheets and Scripting Data</a>",
+                "text": "<p>Today we will look at two different ways to handle data:</p>\n\n<ol>\n<li>Using a spreadsheet.</li>\n<li>Writing a script.</li>\n</ol>\n\n<p>Both approaches have their advantages and we will discuss these. \nThis is a day when we will talk about what tool is right for what job. </p>\n\n<p>Spreadsheets are very good as calculators. \nIn fact, that is what they are designed to do. \nAll other uses for spreadsheets are adaptations and should be used with caution.</p>\n\n<p>Scripts are sets of instructions that you can use replicate and automate tasks. \nThat is their only real purpose. \nThey can be adapted to other purposes as well: perhaps become a rudimentary interface, for instance.</p>\n\n<h2 id=\"csv-to-spreadsheet\">CSV to spreadsheet</h2>\n\n<p>Spreadsheets appear to operate in a very simple manner, storing data in rows and columns just like any other table, but looks can be deceiving.<label for=\"spreadsheet\" class=\"margin-toggle\"> &#8853;</label><input type=\"checkbox\" id=\"spreadsheet\" class=\"margin-toggle\" /><span class=\"marginnote\"> </span> </p>\n\n<p>Just like with DOCX and ODT files when compared with plaintext files, spreadsheets hide a lot of metadata underneath what appears on the surface. </p>\n\n<p>Unlike with the relationship between plaintext and interface-wrapped formatted text files, it is more difficult to get all of the information out of the spreadsheet. </p>\n\n<p>As mentioned in the piece by Paul Ford, spreadsheets can hide a lot of things from us, including errors. \nIf our code to perform the same kinds of operations is visible to us, it is easier to check for errors. </p>\n\n<p>That said, spreadsheets are a powerful tool and should be used in certain tasks in preference over other tools. </p>\n\n<p>Once you have learned to do basic math in a spreadsheet, there is absolutely no reason to ever use a calculator (or calculator app) for instance.</p>\n\n<h2 id=\"caveats-and-pitfalls-of-using-spreadsheets\">Caveats and pitfalls of using spreadsheets</h2>\n\n<p>This forum post is a good guide to things that you should be aware of when using spreadsheets:</p>\n\n<p><a href=\"https://forum.openoffice.org/en/forum/viewtopic.php?t=39529\">https://forum.openoffice.org/en/forum/viewtopic.php?t=39529</a></p>\n\n<p>It pertains to OpenOffice, which is the productivity suite that LibreOffice was forked from some years ago. \nOpenOffice is now owned by Oracle and some of the community was not happy with licensing changes that had occured, so they jumped ship and moved their development to LibreOffice under the umbrella of the Open Document Foundation. \nThe software still operates similarly enough that the information is relevant to us. \nThis is because both suites use ODF at their core. </p>\n\n<p>It will also be a good idea to have a look at the LibreOffice documentation to familiarize yourself with it as a reference: <a href=\"https://www.libreoffice.org/get-help/documentation/\">https://www.libreoffice.org/get-help/documentation/</a></p>\n\n<p>Finally, here is a compendium of all of the functions available to you in LibreOffice Calc: <a href=\"https://help.libreoffice.org/Calc/Spreadsheet_Functions\">https://help.libreoffice.org/Calc/Spreadsheet_Functions</a></p>\n\n<h1 id=\"scripting-data-collection-and-handling\">Scripting data collection and handling</h1>\n\n<p>Your next assignment is to collect data and store it using a BASH script. </p>\n\n<p>Today we will look at how you can write scripts that take user input and write that input to a CSV file. </p>\n\n<p>For starters, we need to look more closely at variables. </p>\n\n<h2 id=\"in-class-exercise\">In-class exercise</h2>\n\n<p>With a partner, I want you to find a script on GitHub or elsewhere and look at how it uses variables. \nYou can use the faceted search on GitHub to specify langauge as &quot;Shell&quot; since we are looking for shell scripts. </p>\n\n<p>Here is a great example of a script that does something seemingly very difficult in a reasonably straightforward manner: <a href=\"http://www.sbprojects.net/projects/raspberrypi/sms.php\">http://www.sbprojects.net/projects/raspberrypi/sms.php</a></p>\n\n<p>We&#39;ll look at it together in class and look at the scripts that you found. We will also begin writing our own for the next assignment. </p>\n\n<h1 id=\"for-next-time\">For next time</h1>\n\n<p>We&#39;re going to break into databases next time and have a MySQL crash course. \nI would like you to look over some basic MySQL tutorials on your own so that we are prepared to dig into this.<label for=\"sql\" class=\"margin-toggle sidenote-number\"></label><input type=\"checkbox\" id=\"sql\" class=\"margin-toggle\" /><span class=\"sidenote\">Sverdlov, Etel. “A Basic MySQL Tutorial.” DigitalOcean. Last modified June 12, 2012. <a href=\"https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial\">https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial</a>. </span> </p>"
+            },
+            "unique_id": "class-2017-07-19-scripting-data",
+            "group": "class"
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "19",
+                "hour": "11",
+                "minute": "30"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "19",
+                "hour": "13",
+                "minute": "00"
+            },
+            "text": {
                 "headline": "<a href='/class/2017/07/19/sql-bootcamp/'>Database software and MySQL</a>",
                 "text": "<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  </p>"
             },
@@ -444,44 +466,22 @@
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "20",
+                "day": "21",
                 "hour": "11",
                 "minute": "30"
             },
             "end_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "20",
+                "day": "21",
                 "hour": "13",
                 "minute": "00"
             },
             "text": {
-                "headline": "<a href='/class/2017/07/20/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
+                "headline": "<a href='/class/2017/07/21/database-tables-queries/'>Databases, tables, queries, and relationships</a>",
                 "text": "<p>Today we will continue with our discussion of databases and then learn ALL THE SQL. </p>\n\n<p><img src=\"/assets/img/learnallthesql.jpg\" alt=\"LEARN ALL THE SQL\" /></p>"
             },
-            "unique_id": "class-2017-07-20-database-tables-queries",
-            "group": "class"
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "21",
-                "hour": "11",
-                "minute": "30"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "21",
-                "hour": "13",
-                "minute": "00"
-            },
-            "text": {
-                "headline": "<a href='/class/2017/07/21/lab-from-data-to-databases/'>From data to database</a>",
-                "text": "<h1 id=\"mysql-in-bash-scripts\">MySQL in Bash scripts</h1>\n\n<p>In today&#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. </p>"
-            },
-            "unique_id": "class-2017-07-21-lab-from-data-to-databases",
+            "unique_id": "class-2017-07-21-database-tables-queries",
             "group": "class"
         },
         {

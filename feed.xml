@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jul 2017 01:07:43 -0400</pubDate>
-    <lastBuildDate>Wed, 19 Jul 2017 01:07:43 -0400</lastBuildDate>
+    <pubDate>Wed, 19 Jul 2017 10:25:04 -0400</pubDate>
+    <lastBuildDate>Wed, 19 Jul 2017 10:25:04 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -2303,85 +2303,6 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
       </item>
     
       <item>
-        <title>From data to database</title>
-        <description>&lt;h1 id=&quot;mysql-in-bash-scripts&quot;&gt;MySQL in Bash scripts&lt;/h1&gt;
-
-&lt;p&gt;In today&amp;#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;p&gt;I would suggest looking at the the manual page for the MySQL client to see what you can do on the command line.&lt;label for=&#39;mysql-man&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;mysql-man&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“mysql(1): MySQL Tool.” Linux Man Page. Accessed July 15, 2016. &lt;a href=&quot;http://linux.die.net/man/1/mysql&quot;&gt;http://linux.die.net/man/1/mysql&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;You will be expected in class to be looking up other resources as well. 
-If you find something useful, share it with me and I will put links here.&lt;/p&gt;
-
-&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
-
-&lt;p&gt;On Monday we are going to begin talking about presentations and creating good presentation materials in earnest. &lt;/p&gt;
-
-&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the stupidity of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&quot;&gt;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
-
-&lt;h2 id=&quot;exemplars&quot;&gt;Exemplars&lt;/h2&gt;
-
-&lt;p&gt;I would also like you to view the following video of a talk by Lawrence Lessig.
-We will look at parts of this in class as well, but it would be good if you could sit down and view the whole thing over the course of the weekend.
-It exists in four parts linked below.&lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Qk_5UccWm3o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/piLXKUE_Bzo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ajv0Lxaqoys&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xSbWG2LFrOk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;reveal-js&quot;&gt;Reveal.js&lt;/h2&gt;
-
-&lt;p&gt;We will be using reveal.js to create presentations. 
-Please click through this demo presentation and see what is possible to do with it.&lt;label for=&#39;reveal&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;reveal&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;El Hattab, Hakim. Reveal.js: The HTML5 Presentation Framework. &lt;a href=&quot;http://lab.hakim.se/reveal-js/#/&quot;&gt;http://lab.hakim.se/reveal-js/#/&lt;/a&gt;. &lt;/span&gt; 
-You can also view the source code for the demo presentation. 
-We will look at this together in detail. &lt;/p&gt;
-
-&lt;h2 id=&quot;thought-leaders-and-ted-talks&quot;&gt;Thought leaders and TED Talks&lt;/h2&gt;
-
-&lt;p&gt;You should also give the following video a watch.
-It will help put into perspective what is really happening when we watch TED Talks and similar presentations. &lt;/p&gt;
-
-&lt;div class=&quot;video-container&quot;&gt;
-  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_ZBKX-6Gz6A&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/21/lab-from-data-to-databases/</link>
-        <guid isPermaLink="true">/class/2017/07/21/lab-from-data-to-databases/</guid>
-        
-        <category>database</category>
-        
-        <category>tables</category>
-        
-        <category>queries</category>
-        
-        <category>SQL</category>
-        
-        <category>MySQL</category>
-        
-        <category>Bash</category>
-        
-        <category>scripting</category>
-        
-        
-        <category>class</category>
-        
-      </item>
-    
-      <item>
         <title>Databases, tables, queries, and relationships</title>
         <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
@@ -2647,19 +2568,180 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;mysql -u root -p booksinfo &amp;lt; booksinfo.sql&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;next-time&quot;&gt;Next time&lt;/h1&gt;
+&lt;h1 id=&quot;mysql-in-bash-scripts&quot;&gt;MySQL in Bash scripts&lt;/h1&gt;
 
-&lt;p&gt;You are going to work in your groups to create a new script, based on your last assignment, that will write the data you have collected into a MySQL database. That assignment will be the focus of our lab session. &lt;/p&gt;
+&lt;p&gt;In today&amp;#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. 
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;I would suggest looking at the the manual page for the MySQL client to see what you can do on the command line.&lt;label for=&#39;mysql-man&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;mysql-man&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“mysql(1): MySQL Tool.” Linux Man Page. Accessed July 15, 2016. &lt;a href=&quot;http://linux.die.net/man/1/mysql&quot;&gt;http://linux.die.net/man/1/mysql&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;You will be expected in class to be looking up other resources as well. 
+If you find something useful, share it with me and I will put links here.&lt;/p&gt;
+
+&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
+
+&lt;p&gt;On Monday we are going to begin talking about presentations and creating good presentation materials in earnest. &lt;/p&gt;
+
+&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the stupidity of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&quot;&gt;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;exemplars&quot;&gt;Exemplars&lt;/h2&gt;
+
+&lt;p&gt;I would also like you to view the following video of a talk by Lawrence Lessig.
+We will look at parts of this in class as well, but it would be good if you could sit down and view the whole thing over the course of the weekend.
+It exists in four parts linked below.&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Qk_5UccWm3o&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/piLXKUE_Bzo&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ajv0Lxaqoys&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xSbWG2LFrOk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;reveal-js&quot;&gt;Reveal.js&lt;/h2&gt;
+
+&lt;p&gt;We will be using reveal.js to create presentations. 
+Please click through this demo presentation and see what is possible to do with it.&lt;label for=&#39;reveal&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;reveal&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;El Hattab, Hakim. Reveal.js: The HTML5 Presentation Framework. &lt;a href=&quot;http://lab.hakim.se/reveal-js/#/&quot;&gt;http://lab.hakim.se/reveal-js/#/&lt;/a&gt;. &lt;/span&gt; 
+You can also view the source code for the demo presentation. 
+We will look at this together in detail. &lt;/p&gt;
+
+&lt;h2 id=&quot;thought-leaders-and-ted-talks&quot;&gt;Thought leaders and TED Talks&lt;/h2&gt;
+
+&lt;p&gt;You should also give the following video a watch.
+It will help put into perspective what is really happening when we watch TED Talks and similar presentations. &lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_ZBKX-6Gz6A&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 </description>
-        <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/20/database-tables-queries/</link>
-        <guid isPermaLink="true">/class/2017/07/20/database-tables-queries/</guid>
+        <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/class/2017/07/21/database-tables-queries/</link>
+        <guid isPermaLink="true">/class/2017/07/21/database-tables-queries/</guid>
         
         <category>database</category>
         
         <category>tables</category>
         
         <category>queries</category>
+        
+        <category>SQL</category>
+        
+        <category>MySQL</category>
+        
+        
+        <category>class</category>
+        
+      </item>
+    
+      <item>
+        <title>Database software and MySQL</title>
+        <description>&lt;p&gt;Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.&lt;br&gt;
+&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;p&gt;A &amp;quot;database&amp;quot; is a collection of information, arranged or organized in some meaningful way so as to aid the retrieval of that information. 
+The types of information stored in databases vary based on the purpose and application. &lt;/p&gt;
+
+&lt;p&gt;When we refer to databases now, we usually mean electronic databases or DataBase Management Systems (DBMS). 
+However, databases can exist in a number of non-electonic forms (and have for much of human history).&lt;/p&gt;
+
+&lt;p&gt;What are some examples of non-electronic databases?&lt;/p&gt;
+
+&lt;h1 id=&quot;what-goes-into-a-database&quot;&gt;What goes into a database?&lt;/h1&gt;
+
+&lt;p&gt;Pieces of information, or objects, are stored in a database in a structured way. 
+The objects are sorted into classes according to type. 
+This approach is referred to as &amp;quot;object-oriented,&amp;quot; which we have briefly touched on over the course of the semester. &lt;/p&gt;
+
+&lt;p&gt;When data are entered into a database, each object, or chunk of information, is assigned a class that allows for sorting and recall. &lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-the-information-go-in&quot;&gt;How does the information go in?&lt;/h2&gt;
+
+&lt;p&gt;There are a number of different ways to get data into a database. &lt;/p&gt;
+
+&lt;p&gt;We can import tables directly from files. 
+We can also input data one at a time using an entry form. 
+We will do both of these things over the next few days. &lt;/p&gt;
+
+&lt;p&gt;Today we will start by experimenting with opening the CSV we made the other day as a table. &lt;/p&gt;
+
+&lt;h2 id=&quot;electronic-dbms&quot;&gt;Electronic DBMS&lt;/h2&gt;
+
+&lt;p&gt;There are myriad choices for DMBS implementations. 
+A commonly used system is called MySQL, which is based in a database language called SQL (Structured Query Language). &lt;/p&gt;
+
+&lt;p&gt;You will also hear of NoSQL databases, such as MongoDB. 
+These use an entirely different internal logic to store and recall data that that of SQL-based systems. &lt;/p&gt;
+
+&lt;p&gt;There are a great many front-end user interfaces for these systems. 
+MSAccess has been used for years for all sorts of applications. &lt;/p&gt;
+
+&lt;p&gt;We will use the LibreOffice Base package. 
+It is an open-source analog to Access and will allow us to do the same things. 
+One major benefit of this is that we will be able to open our database without being locked to MSAccess. 
+At present, there is no way to open an Access DB in another program. 
+We wish to avoid that. &lt;/p&gt;
+
+&lt;h1 id=&quot;install-mysql&quot;&gt;Install MySQL&lt;/h1&gt;
+
+&lt;p&gt;We will install MySQL so that we can create and explore a database using the SQL shell in our CodeAnywhere containers.&lt;/p&gt;
+
+&lt;h1 id=&quot;system-maintenance&quot;&gt;System maintenance&lt;/h1&gt;
+
+&lt;p&gt;First update and upgrade all packages:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will need to make some space on our containers to install MySQL. &lt;/p&gt;
+
+&lt;p&gt;We no longer need &lt;code&gt;unoconv&lt;/code&gt;, so let&amp;#39;s get rid of it:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get remove unoconv&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;When that is done, we can remove all of its dependencies:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get autoremove --purge&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And then just for good measure, let&amp;#39;s clean out our package cache:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get autoclean &amp;amp;&amp;amp; sudo apt-get clean&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;install-the-mysql-client-and-server-packages&quot;&gt;Install the MySQL client and server packages&lt;/h1&gt;
+
+&lt;p&gt;Then we have to install one dependency, without which the install will fail:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install bsdutils&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then install both the MySQL server and client packages in separate commands. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will ask you to create a password for the MySQL root user. 
+Since we are only trying things out today and not installing this for the purpose of running a real SQL server, just put &lt;code&gt;changethis&lt;/code&gt; as the root password. &lt;/p&gt;
+
+&lt;p&gt;Then install the client:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install mysql-client&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
+
+&lt;p&gt;Tomorrow, we will return to databases and discuss the conceptual and theoretical underpinnings of what we worked on today. 
+I would like you to read something about databases.&lt;label for=&#39;db&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;db&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“What Is a Database?” BBC Guides. &lt;a href=&quot;http://www.bbc.co.uk/guides/z8yk87h&quot;&gt;http://www.bbc.co.uk/guides/z8yk87h&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
+</description>
+        <pubDate>Wed, 19 Jul 2017 11:30:00 -0400</pubDate>
+        <link>/class/2017/07/19/sql-bootcamp/</link>
+        <guid isPermaLink="true">/class/2017/07/19/sql-bootcamp/</guid>
+        
+        <category>database</category>
         
         <category>SQL</category>
         
