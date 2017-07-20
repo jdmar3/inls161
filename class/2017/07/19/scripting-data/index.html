@@ -223,12 +223,61 @@ This is because both suites use ODF at their core. </p>
 
 <h2 id="in-class-exercise">In-class exercise</h2>
 
-<p>With a partner, I want you to find a script on GitHub or elsewhere and look at how it uses variables. 
-You can use the faceted search on GitHub to specify langauge as &quot;Shell&quot; since we are looking for shell scripts. </p>
+<p>Today we cleaned and compiled the data that we generated earlier in the week. 
+Instead of doing this in a spreadsheet, we wrote a script that would handle all of the necessary changes, write a new file with a header row of variable names, and then cleaned up temporary files created in the process. 
+We did all of this without ever overwriting our original files. </p>
 
-<p>Here is a great example of a script that does something seemingly very difficult in a reasonably straightforward manner: <a href="http://www.sbprojects.net/projects/raspberrypi/sms.php">http://www.sbprojects.net/projects/raspberrypi/sms.php</a></p>
+<h3 id="why-did-this-work">Why did this work?</h3>
 
-<p>We&#39;ll look at it together in class and look at the scripts that you found. We will also begin writing our own for the next assignment. </p>
+<p>A BASH script (or any script) is a set of instructions. 
+In the case of BASH, the instructions are the same as the commands that we can put right into the terminal.
+So anything that we can do in a terminal, we can do in a script, meaning that we can automate any process that we can run in the terminal. </p>
+
+<p>You can view the script and look at the comments which explain step by step what the script does. It is linked here: <a href="https://github.com/jdmar3/data-practice">https://github.com/jdmar3/data-practice</a></p>
+<div class="highlight"><pre><code class="language-" data-lang="">
+<span class="c">#!/bin/bash</span>
+<span class="c">#############################################################################</span>
+<span class="c"># This script cleans and compiles the data that we collected in class this</span>
+<span class="c"># week without ever actually opening or operating on the files themselves.</span>
+<span class="c"># In this form, it only operates on the CSV files, but could easily be </span>
+<span class="c"># modified to handle other types. </span>
+<span class="c"># </span>
+<span class="c"># The script also adds a header row to the file with names for the variables.</span>
+<span class="c">#############################################################################</span>
+
+<span class="c"># specify temp directory variable</span>
+<span class="nv">TEMPDIR</span><span class="o">=</span><span class="s2">"./temp"</span>
+<span class="c"># specify names of variables in a CSV list</span>
+<span class="nv">VARNAMES</span><span class="o">=</span><span class="s2">"ghusername,heightcm,wakeuptime,semestersleft,distancefromhome"</span>
+<span class="c"># make temp directory</span>
+mkdir <span class="nv">$TEMPDIR</span>/
+<span class="c"># copy all CSV files into temp directory</span>
+cp ./CSV/<span class="k">*</span>.csv <span class="nv">$TEMPDIR</span>/
+<span class="c"># convert sepideharc.csv to csv</span>
+cp <span class="nv">$TEMPDIR</span>/sepideharc.csv <span class="nv">$TEMPDIR</span>/sepideharc.csv.bck
+paste -d, -s <span class="nv">$TEMPDIR</span>/sepideharc.csv &gt; <span class="nv">$TEMPDIR</span>/sepideharc.csv.tmp
+cp <span class="nv">$TEMPDIR</span>/sepideharc.csv.tmp <span class="nv">$TEMPDIR</span>/sepideharc.csv
+<span class="c"># replace pipes in shantank03.csv with commas</span>
+cp <span class="nv">$TEMPDIR</span>/shantank03.csv <span class="nv">$TEMPDIR</span>/shantank03.csv.bck
+tr <span class="s2">"|"</span> <span class="s2">","</span> &lt; <span class="nv">$TEMPDIR</span>/shantank03.csv &gt; <span class="nv">$TEMPDIR</span>/shantank03.csv.tmp
+cp <span class="nv">$TEMPDIR</span>/shantank03.csv.tmp <span class="nv">$TEMPDIR</span>/shantank03.csv
+<span class="c"># replace double comma in jdmar3.csv with single commas</span>
+cp <span class="nv">$TEMPDIR</span>/jdmar3.csv <span class="nv">$TEMPDIR</span>/jdmar3.csv.bck
+tr <span class="s2">",,"</span> <span class="s2">","</span> &lt; <span class="nv">$TEMPDIR</span>/jdmar3.csv &gt; <span class="nv">$TEMPDIR</span>/jdmar3.csv.tmp
+cp <span class="nv">$TEMPDIR</span>/jdmar3.csv.tmp <span class="nv">$TEMPDIR</span>/jdmar3.csv
+<span class="c"># reformat time in marhass.csv</span>
+cp <span class="nv">$TEMPDIR</span>/marhass.csv <span class="nv">$TEMPDIR</span>/marhass.csv.bck
+sed <span class="s1">'s/,0645,/,06:45,/g'</span> <span class="nv">$TEMPDIR</span>/marhass.csv &gt; <span class="nv">$TEMPDIR</span>/marhass.csv.tmp
+cp <span class="nv">$TEMPDIR</span>/marhass.csv.tmp <span class="nv">$TEMPDIR</span>/marhass.csv
+<span class="c"># Create a new csv with variables in a header row</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$VARNAMES</span><span class="s2">"</span> &gt; <span class="nv">$TEMPDIR</span>/00varheader.csv
+<span class="c"># concatenate all data</span>
+cat <span class="nv">$TEMPDIR</span>/<span class="k">*</span>.csv &gt; ./<span class="sb">`</span>date --iso-8601<span class="sb">`</span>-class-data-compiled.csv
+<span class="c"># clean up temp files</span>
+rm -r <span class="nv">$TEMPDIR</span>
+
+</code></pre></div>
+<p>You should clone the repository and run the script to see what it does. </p>
 
 <h1 id="for-next-time">For next time</h1>
 
@@ -250,7 +299,7 @@ I would like you to look over some basic MySQL tutorials on your own so that we 
       <a class="prev" href="/class/2017/07/18/data-cleaning/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Data cleaning and spreadsheet software</a>
     
     
-      <a class="next" href="/class/2017/07/19/sql-bootcamp/"><span class="smaller">Next:</span>&nbsp;Database software and MySQL&nbsp;&raquo;</a>
+      <a class="next" href="/class/2017/07/20/sql-bootcamp/"><span class="smaller">Next:</span>&nbsp;Database software and MySQL&nbsp;&raquo;</a>
     
   </div>
   <hr class="slender">

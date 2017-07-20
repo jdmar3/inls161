@@ -1496,8 +1496,8 @@ There is a ton of relevant information on this topic out in the Internet.&lt;/p&
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Jul 2017 10:25:04 -0400</pubDate>
-    <lastBuildDate>Wed, 19 Jul 2017 10:25:04 -0400</lastBuildDate>
+    <pubDate>Thu, 20 Jul 2017 02:15:26 -0400</pubDate>
+    <lastBuildDate>Thu, 20 Jul 2017 02:15:26 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -2245,6 +2245,8 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 
 &lt;p&gt;You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.&lt;/p&gt;
 
+&lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;skillsets&quot;&gt;Skillsets&lt;/h2&gt;
 
 &lt;p&gt;You will be exposed to the following skillsets;&lt;/p&gt;
@@ -2737,9 +2739,9 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
 
 &lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
 </description>
-        <pubDate>Wed, 19 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/class/2017/07/19/sql-bootcamp/</link>
-        <guid isPermaLink="true">/class/2017/07/19/sql-bootcamp/</guid>
+        <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/class/2017/07/20/sql-bootcamp/</link>
+        <guid isPermaLink="true">/class/2017/07/20/sql-bootcamp/</guid>
         
         <category>database</category>
         
