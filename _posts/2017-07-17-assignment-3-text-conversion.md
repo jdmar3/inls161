@@ -14,6 +14,8 @@ This assignment is also intended to show you that you do not need to have expens
 
 We will use Pandoc, TeXLive, and Bash scripts to complete this assignment. You will write a bash script to convert text files written in Markdown into other formats, such as DOCX, HTML, and PDF. 
 
+<excerpt/>
+
 ## Skillsets
 
 You will be exposed to the following skillsets;

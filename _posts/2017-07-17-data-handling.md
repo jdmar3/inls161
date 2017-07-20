@@ -10,6 +10,7 @@ tags:
 date: 2017-07-17 11:30
 end_date: 2017-07-17 13:00
 category: class
+quiz: https://goo.gl/forms/ONU6vBj1r4qaBhWv2
 ---
 
 <p>Today we are going to discuss the creation of data and learn how manipulate data structures. </p>

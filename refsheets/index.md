@@ -31,6 +31,8 @@ nav_include: true
 
 <a href="http://bconnelly.net/working-with-csvs-on-the-command-line/" target="_blank">Working with CSVs on the Command Line - Brian Connelly</a>
 
+<a href="http://steve-parker.org/sh/cheatsheet.pdf" target="_blank">Shell Scripting Cheat Sheet for Unix and Linux - Steve Parker</a>
+
 ## VIM (UNIX text editor)
 
 {% marginnote 'vim' '**VIM** is a text-only, command-based text editor that is meant to be used when no graphical user environment is available. When making commits in git, if you forget to add a message in the command, this is the editor that pops up automatically. It is good to know this and other text editors just in case you are using a Linux system that only has a command line interface. ' %}

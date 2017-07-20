@@ -14,6 +14,8 @@ This assignment aims at strengthening our scripting skills and learning how to c
 
 You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.
 
+<excerpt/>
+
 ## Skillsets
 
 You will be exposed to the following skillsets;

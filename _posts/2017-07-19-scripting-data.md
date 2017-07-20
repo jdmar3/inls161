@@ -8,6 +8,7 @@ tags:
 - scripting
 - spreadsheets
 category: class
+quiz: https://goo.gl/forms/BmYowGVGEeLYdmQC3
 ---
 
 Today we will look at two different ways to handle data:
@@ -66,12 +67,64 @@ For starters, we need to look more closely at variables.
 
 ## In-class exercise
 
-With a partner, I want you to find a script on GitHub or elsewhere and look at how it uses variables. 
-You can use the faceted search on GitHub to specify langauge as "Shell" since we are looking for shell scripts. 
+Today we cleaned and compiled the data that we generated earlier in the week. 
+Instead of doing this in a spreadsheet, we wrote a script that would handle all of the necessary changes, write a new file with a header row of variable names, and then cleaned up temporary files created in the process. 
+We did all of this without ever overwriting our original files. 
 
-Here is a great example of a script that does something seemingly very difficult in a reasonably straightforward manner: http://www.sbprojects.net/projects/raspberrypi/sms.php
+### Why did this work? 
 
-We'll look at it together in class and look at the scripts that you found. We will also begin writing our own for the next assignment. 
+A BASH script (or any script) is a set of instructions. 
+In the case of BASH, the instructions are the same as the commands that we can put right into the terminal.
+So anything that we can do in a terminal, we can do in a script, meaning that we can automate any process that we can run in the terminal. 
+
+You can view the script and look at the comments which explain step by step what the script does. It is linked here: https://github.com/jdmar3/data-practice
+
+```
+
+#!/bin/bash
+#############################################################################
+# This script cleans and compiles the data that we collected in class this
+# week without ever actually opening or operating on the files themselves.
+# In this form, it only operates on the CSV files, but could easily be 
+# modified to handle other types. 
+# 
+# The script also adds a header row to the file with names for the variables.
+#############################################################################
+
+# specify temp directory variable
+TEMPDIR="./temp"
+# specify names of variables in a CSV list
+VARNAMES="ghusername,heightcm,wakeuptime,semestersleft,distancefromhome"
+# make temp directory
+mkdir $TEMPDIR/
+# copy all CSV files into temp directory
+cp ./CSV/*.csv $TEMPDIR/
+# convert sepideharc.csv to csv
+cp $TEMPDIR/sepideharc.csv $TEMPDIR/sepideharc.csv.bck
+paste -d, -s $TEMPDIR/sepideharc.csv > $TEMPDIR/sepideharc.csv.tmp
+cp $TEMPDIR/sepideharc.csv.tmp $TEMPDIR/sepideharc.csv
+# replace pipes in shantank03.csv with commas
+cp $TEMPDIR/shantank03.csv $TEMPDIR/shantank03.csv.bck
+tr "|" "," < $TEMPDIR/shantank03.csv > $TEMPDIR/shantank03.csv.tmp
+cp $TEMPDIR/shantank03.csv.tmp $TEMPDIR/shantank03.csv
+# replace double comma in jdmar3.csv with single commas
+cp $TEMPDIR/jdmar3.csv $TEMPDIR/jdmar3.csv.bck
+tr ",," "," < $TEMPDIR/jdmar3.csv > $TEMPDIR/jdmar3.csv.tmp
+cp $TEMPDIR/jdmar3.csv.tmp $TEMPDIR/jdmar3.csv
+# reformat time in marhass.csv
+cp $TEMPDIR/marhass.csv $TEMPDIR/marhass.csv.bck
+sed 's/,0645,/,06:45,/g' $TEMPDIR/marhass.csv > $TEMPDIR/marhass.csv.tmp
+cp $TEMPDIR/marhass.csv.tmp $TEMPDIR/marhass.csv
+# Create a new csv with variables in a header row
+echo "$VARNAMES" > $TEMPDIR/00varheader.csv
+# concatenate all data
+cat $TEMPDIR/*.csv > ./`date --iso-8601`-class-data-compiled.csv
+# clean up temp files
+rm -r $TEMPDIR
+
+```
+
+You should clone the repository and run the script to see what it does. 
 
 # For next time
 

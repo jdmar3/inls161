@@ -6,8 +6,6 @@ tags:
 - database
 - SQL
 - MySQL
-date: 2017-07-19 11:30
-end_date: 2017-07-19 13:00
 category: class
 ---
 

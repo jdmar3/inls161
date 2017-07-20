@@ -9,15 +9,17 @@ tags:
 - data conversion
 - search and replace
 category: class
+quiz: https://goo.gl/forms/rRWhcrI2Dup6sRaN2
 ---
 
 Today we're going to look at one common way of manipulating CSV and other flat data files. 
 We'll look at a few more command line tools to do help us, and review how `paste` works once again. 
 
-Then we will look at the result of a compiled CSV file in a GUI environment, to be able to better understand what we're doing in the command line. 
-<excerpt/>
-
 We'll look at a few different ways of converting a TSV file in to a CSV file.
+
+Then we will look at the result of a compiled CSV file in a GUI environment, to be able to better understand what we're doing in the command line. 
+
+<excerpt/>
 
 Here are some exercises:
 

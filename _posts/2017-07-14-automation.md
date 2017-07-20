@@ -7,6 +7,7 @@ tags:
 - Bash
 - Pandoc
 category: class
+quiz: https://goo.gl/forms/TwMfSFDW9px0qwTP2
 ---
 
 Today we are going to go over more scripting tricks this morning and then work on our next assignment for the remainder of the session. 
@@ -115,12 +116,10 @@ Hello, YOUR-GITHUB-USERNAME!
 cabox@box-codeanywhere:~/workspace/helper-scripts$ 
 ```
 
-# Lab
-
 You can use the techniques above to create a script to automate your document conversion workflow. 
 Use the assignment text to make sure that you have gotten each of the required parts to work properly. 
 
-# For next week
+# For next time
 
 Next week we will use similar methods to help to automate the collection and formatting of data in flat data tables. 
 Through this we will learn more about pipes and redirecting output.{% sidenote 'csv' 'Connelly, Brian. “Working with CSVs on the Command Line.” http://bconnelly.net/. Last modified September 23, 2013. http://bconnelly.net/working-with-csvs-on-the-command-line/.' %} 
