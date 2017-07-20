@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jul 2017 02:38:35 -0400</pubDate>
-    <lastBuildDate>Thu, 20 Jul 2017 02:38:35 -0400</lastBuildDate>
+    <pubDate>Thu, 20 Jul 2017 11:39:47 -0400</pubDate>
+    <lastBuildDate>Thu, 20 Jul 2017 11:39:47 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -820,147 +820,6 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
 &lt;excerpt/&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;parts-of-a-database&quot;&gt;Parts of a database&lt;/h1&gt;
-
-&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
-
-&lt;p&gt;The basic storage template in a database is a table. &lt;/p&gt;
-
-&lt;p&gt;This is simply a set of data arranged into columns and rows. 
-Just like with the data that we generated previously, the rows represent lists of information that are related to a specific thing. &lt;/p&gt;
-
-&lt;p&gt;The rows in our tables are called &amp;quot;records.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;The columns then represent the types of information that we are organizing. &lt;/p&gt;
-
-&lt;p&gt;Tables on their own are fine for storing a collection of data, but what if we have a lot of repeating data that we do not want to have to store over and over again in the same table?&lt;/p&gt;
-
-&lt;h2 id=&quot;relationships&quot;&gt;Relationships&lt;/h2&gt;
-
-&lt;p&gt;The primary method of reducing this sort of data is by creating more tables and then defining relationships between them. 
-This is why we refer to this type of database as &amp;quot;relational.&amp;quot;&lt;label for=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle sidenote-number&amp;#39;&amp;gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle&amp;#39;/&amp;gt;&lt;span class=&#39;sidenote&#39;&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;There are three categories of relationship:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;One-to-One: Each record in a table has only one relationship to one other record in another table&lt;/li&gt;
-&lt;li&gt;One-to-Many: Each record (by primary key) in a table can have zero, one, or many relationships to records in other tables. &lt;/li&gt;
-&lt;li&gt;Many-to-Many: Each record in a table can have any number of (or zero) relationships to records in other tables. &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Can you think of any examples of relationships like this? &lt;/p&gt;
-
-&lt;h3 id=&quot;primary-keys&quot;&gt;Primary Keys&lt;/h3&gt;
-
-&lt;p&gt;A primary key, as mentioned above, is a designator associated with each record that distinguishes it from all other records. 
-When creating a table with a one-to-many relationship, you will need to create a primary key for each new record. &lt;/p&gt;
-
-&lt;p&gt;What are some possible pieces of existing information that might be used as a primary key?&lt;/p&gt;
-
-&lt;p&gt;What might be some problems with using an existing piece of information as a primary key?&lt;/p&gt;
-
-&lt;h2 id=&quot;queries&quot;&gt;Queries&lt;/h2&gt;
-
-&lt;p&gt;Queries take a set of instructions and use them to sort and categorize data across multiple variables and tables. &lt;/p&gt;
-
-&lt;p&gt;We will look at different possibilities for queries and try some together in class. &lt;/p&gt;
-
-&lt;p&gt;When we define relationships in the query designer, you&amp;#39;ll notice that there are different joins available to you. &lt;/p&gt;
-
-&lt;h2 id=&quot;joins&quot;&gt;Joins&lt;/h2&gt;
-
-&lt;p&gt;These are logical inclusion/exclusion criteria for your query at the table level. 
-It is a good idea to have some understanding of what they do on a logical level.&lt;label for=&#39;joins&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;joins&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. &lt;a href=&quot;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&quot;&gt;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This visual  guide can help you to better understand each join and what they do. &lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;Today, we will only use right joins in our example queries. &lt;/p&gt;
-
-&lt;p&gt;Why would we do that?&lt;/p&gt;
-
-&lt;h1 id=&quot;sql-boot-camp&quot;&gt;SQL Boot Camp&lt;/h1&gt;
-
-&lt;h2 id=&quot;get-some-data&quot;&gt;Get some data&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;#39;s download some CSV files that I prepared with a list of books in them. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblBook.csv&lt;/code&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblPub.csv&lt;/code&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;the-mysql-prompt&quot;&gt;The MySQL prompt&lt;/h1&gt;
-
-&lt;p&gt;Once we are all installed, issue the &lt;code&gt;mysql&lt;/code&gt; command to get into the &lt;code&gt;mysql&amp;gt;&lt;/code&gt; prompt:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;mysql -u root -p&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This specifies that you want to use the root user to login to the MySQL prompt. &lt;/p&gt;
-
-&lt;p&gt;Next let&amp;#39;s create a new DB. Make sure that your prompt looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;mysql&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;If it does, then you can category:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;CREATE DATABASE booksinfo;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Commands in the mysql&amp;gt; prompt are &lt;em&gt;case-sensitive,&lt;/em&gt; so pay attention to the case of the commands. &lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s list our DBs:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;show databases;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We should see the DB with the name that we created in the list. Let&amp;#39;s move into it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;USE booksinfo;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;add-tables&quot;&gt;Add tables&lt;/h2&gt;
-
-&lt;p&gt;Now we have to create two tables so that we can import data from our CSV files.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;CREATE TABLE tblBook (ID INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;CREATE TABLE tblPub (ID INT, Publisher VARCHAR(255), City VARCHAR(255), State VARCHAR(255), Country VARCHAR(255));&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;See what tables we have just created:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;show tables;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s import some tables from the files we downloaded earlier:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblBook.csv&amp;#39; INTO TABLE tblBook FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This should give us some output. 
-If we notice a warning, type the following to view the warnings:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;SHOW WARNINGS;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;So, it looks like we have a missing date. 
-No big deal. 
-We&amp;#39;ll deal with that later. 
-Let&amp;#39;s import our other table. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblPub.csv&amp;#39; INTO TABLE tblPub FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s see what is in our tables:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblBook;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblPub;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;We&amp;#39;ll notice that we have no key set for either table. 
-We need to do this, right?&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ALTER TABLE tblBook ADD PRIMARY KEY (ID);&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now look at the table again and see that it has changed:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblBook;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Now do the same for the other table:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblPub;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;ALTER TABLE tblPub ADD PRIMARY KEY (ID);&lt;/code&gt;&lt;/p&gt;
-
 &lt;h2 id=&quot;define-relationships&quot;&gt;Define relationships&lt;/h2&gt;
 
 &lt;p&gt;We need to tell MySQL that the PubID column in tblBook refers to the primary key in tblPub. This action is called a constraint and the reference is called a foreign key. &lt;/p&gt;
@@ -1183,7 +1042,63 @@ We will do both of these things over the next few days. &lt;/p&gt;
 
 &lt;p&gt;Today we will start by experimenting with opening the CSV we made the other day as a table. &lt;/p&gt;
 
-&lt;h2 id=&quot;electronic-dbms&quot;&gt;Electronic DBMS&lt;/h2&gt;
+&lt;h1 id=&quot;parts-of-a-database&quot;&gt;Parts of a database&lt;/h1&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;The basic storage template in a database is a table. &lt;/p&gt;
+
+&lt;p&gt;This is simply a set of data arranged into columns and rows. 
+Just like with the data that we generated previously, the rows represent lists of information that are related to a specific thing. &lt;/p&gt;
+
+&lt;p&gt;The rows in our tables are called &amp;quot;records.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;The columns then represent the types of information that we are organizing. &lt;/p&gt;
+
+&lt;p&gt;Tables on their own are fine for storing a collection of data, but what if we have a lot of repeating data that we do not want to have to store over and over again in the same table?&lt;/p&gt;
+
+&lt;h2 id=&quot;relationships&quot;&gt;Relationships&lt;/h2&gt;
+
+&lt;p&gt;The primary method of reducing this sort of data is by creating more tables and then defining relationships between them. 
+This is why we refer to this type of database as &amp;quot;relational.&amp;quot;&lt;label for=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle sidenote-number&amp;#39;&amp;gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;Harkins, Susan. “Relational Databases: Defining Relationships between Database Tables.” TechRepublic. Last modified April 30, 2003. http://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/.&lt;br/&gt;&lt;br/&gt;Harkins, Susan. “Relational Databases: The Inspiration behind the Theory.” TechRepublic. Last modified April 2, 2003. &lt;a href=&quot;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&quot;&gt;http://www.techrepublic.com/article/relational-databases-the-inspiration-behind-the-theory/&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;The whole TechRepublic series on relational databases is useful. It would be worthwhile to read all of it. &amp;#39; class=&amp;#39;margin-toggle&amp;#39;/&amp;gt;&lt;span class=&#39;sidenote&#39;&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three categories of relationship:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One-to-One: Each record in a table has only one relationship to one other record in another table&lt;/li&gt;
+&lt;li&gt;One-to-Many: Each record (by primary key) in a table can have zero, one, or many relationships to records in other tables. &lt;/li&gt;
+&lt;li&gt;Many-to-Many: Each record in a table can have any number of (or zero) relationships to records in other tables. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Can you think of any examples of relationships like this? &lt;/p&gt;
+
+&lt;h3 id=&quot;primary-keys&quot;&gt;Primary Keys&lt;/h3&gt;
+
+&lt;p&gt;A primary key, as mentioned above, is a designator associated with each record that distinguishes it from all other records. 
+When creating a table with a one-to-many relationship, you will need to create a primary key for each new record. &lt;/p&gt;
+
+&lt;p&gt;What are some possible pieces of existing information that might be used as a primary key?&lt;/p&gt;
+
+&lt;p&gt;What might be some problems with using an existing piece of information as a primary key?&lt;/p&gt;
+
+&lt;h2 id=&quot;queries&quot;&gt;Queries&lt;/h2&gt;
+
+&lt;p&gt;Queries take a set of instructions and use them to sort and categorize data across multiple variables and tables. &lt;/p&gt;
+
+&lt;p&gt;We will look at different possibilities for queries and try some together in class. &lt;/p&gt;
+
+&lt;p&gt;When we define relationships in the query designer, you&amp;#39;ll notice that there are different joins available to you. &lt;/p&gt;
+
+&lt;h2 id=&quot;joins&quot;&gt;Joins&lt;/h2&gt;
+
+&lt;p&gt;These are logical inclusion/exclusion criteria for your query at the table level. 
+It is a good idea to have some understanding of what they do on a logical level.&lt;label for=&#39;joins&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;joins&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Moffatt, C. L. “Visual Representation of SQL Joins.” CodeProject. &lt;a href=&quot;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&quot;&gt;http://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;This visual  guide can help you to better understand each join and what they do. &lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Today, we will only use right joins in our example queries. &lt;/p&gt;
+
+&lt;p&gt;Why would we do that?&lt;/p&gt;
+
+&lt;h1 id=&quot;electronic-dbms&quot;&gt;Electronic DBMS&lt;/h1&gt;
 
 &lt;p&gt;There are myriad choices for DMBS implementations. 
 A commonly used system is called MySQL, which is based in a database language called SQL (Structured Query Language). &lt;/p&gt;
@@ -1200,31 +1115,25 @@ One major benefit of this is that we will be able to open our database without b
 At present, there is no way to open an Access DB in another program. 
 We wish to avoid that. &lt;/p&gt;
 
-&lt;h1 id=&quot;install-mysql&quot;&gt;Install MySQL&lt;/h1&gt;
+&lt;h1 id=&quot;sql-boot-camp&quot;&gt;SQL Boot Camp&lt;/h1&gt;
+
+&lt;h2 id=&quot;install-mysql&quot;&gt;Install MySQL&lt;/h2&gt;
 
 &lt;p&gt;We will install MySQL so that we can create and explore a database using the SQL shell in our CodeAnywhere containers.&lt;/p&gt;
 
-&lt;h1 id=&quot;system-maintenance&quot;&gt;System maintenance&lt;/h1&gt;
+&lt;p&gt;Destroy your container and create a new blank one.&lt;/p&gt;
 
-&lt;p&gt;First update and upgrade all packages:&lt;/p&gt;
+&lt;h2 id=&quot;system-maintenance&quot;&gt;System maintenance&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;First update the software package repositories:&lt;/p&gt;
 
-&lt;p&gt;We will need to make some space on our containers to install MySQL. &lt;/p&gt;
-
-&lt;p&gt;We no longer need &lt;code&gt;unoconv&lt;/code&gt;, so let&amp;#39;s get rid of it:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get remove unoconv&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;When that is done, we can remove all of its dependencies:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get autoremove --purge&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get update&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;And then just for good measure, let&amp;#39;s clean out our package cache:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;sudo apt-get autoclean &amp;amp;&amp;amp; sudo apt-get clean&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;install-the-mysql-client-and-server-packages&quot;&gt;Install the MySQL client and server packages&lt;/h1&gt;
+&lt;h2 id=&quot;install-the-mysql-client-and-server-packages&quot;&gt;Install the MySQL client and server packages&lt;/h2&gt;
 
 &lt;p&gt;Then we have to install one dependency, without which the install will fail:&lt;/p&gt;
 
@@ -1240,6 +1149,89 @@ Since we are only trying things out today and not installing this for the purpos
 &lt;p&gt;Then install the client:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;sudo apt-get install mysql-client&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;get-some-data&quot;&gt;Get some data&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;#39;s download some CSV files that I prepared with a list of books in them. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblBook.csv&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblPub.csv&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-mysql-prompt&quot;&gt;The MySQL prompt&lt;/h1&gt;
+
+&lt;p&gt;Once we are all installed, issue the &lt;code&gt;mysql&lt;/code&gt; command to get into the &lt;code&gt;mysql&amp;gt;&lt;/code&gt; prompt:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mysql -u root -p&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This specifies that you want to use the root user to login to the MySQL prompt. &lt;/p&gt;
+
+&lt;p&gt;Next let&amp;#39;s create a new DB. Make sure that your prompt looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mysql&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If it does, then you can category:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;CREATE DATABASE booksinfo;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Commands in the mysql&amp;gt; prompt are &lt;em&gt;case-sensitive,&lt;/em&gt; so pay attention to the case of the commands. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s list our DBs:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;show databases;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We should see the DB with the name that we created in the list. Let&amp;#39;s move into it:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;USE booksinfo;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;add-tables&quot;&gt;Add tables&lt;/h2&gt;
+
+&lt;p&gt;Now we have to create two tables so that we can import data from our CSV files.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;CREATE TABLE tblBook (ID INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;CREATE TABLE tblPub (ID INT, Publisher VARCHAR(255), City VARCHAR(255), State VARCHAR(255), Country VARCHAR(255));&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;See what tables we have just created:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;show tables;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s import some tables from the files we downloaded earlier:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblBook.csv&amp;#39; INTO TABLE tblBook FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This should give us some output. 
+If we notice a warning, type the following to view the warnings:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;SHOW WARNINGS;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So, it looks like we have a missing date. 
+No big deal. 
+We&amp;#39;ll deal with that later. 
+Let&amp;#39;s import our other table. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblPub.csv&amp;#39; INTO TABLE tblPub FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s see what is in our tables:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblBook;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblPub;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ll notice that we have no key set for either table. 
+We need to do this, right?&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ALTER TABLE tblBook ADD PRIMARY KEY (ID);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now look at the table again and see that it has changed:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblBook;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now do the same for the other table:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;SHOW COLUMNS FROM tblPub;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ALTER TABLE tblPub ADD PRIMARY KEY (ID);&lt;/code&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;for-next-time&quot;&gt;For next time&lt;/h1&gt;
 
