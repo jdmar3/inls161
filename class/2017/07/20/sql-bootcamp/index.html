@@ -310,6 +310,12 @@ Since we are only trying things out today and not installing this for the purpos
 
 <p><code>wget http://inls161.johndmart.in/raw-material/tblPub.csv</code></p>
 
+<p>In order to avoid errors (due to restricted default priviliges settings in our MySQL installation) we need to move these files to a special location so that they can be loaded later. </p>
+
+<p><code>cp tblBook.csv tblPub.csv /var/lib/mysql-files/</code></p>
+
+<p>This will allow us to load the data in the files in a later step.</p>
+
 <h1 id="the-mysql-prompt">The MySQL prompt</h1>
 
 <p>Once we are all installed, issue the <code>mysql</code> command to get into the <code>mysql&gt;</code> prompt:</p>
@@ -350,7 +356,7 @@ Since we are only trying things out today and not installing this for the purpos
 
 <p>Let&#39;s import some tables from the files we downloaded earlier:</p>
 
-<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblBook.csv&#39; INTO TABLE tblBook FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+<p><code>LOAD DATA INFILE &#39;/var/lib/mysql-files/tblBook.csv&#39; INTO TABLE tblBook FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
 
 <p>This should give us some output. 
 If we notice a warning, type the following to view the warnings:</p>
@@ -362,7 +368,7 @@ No big deal.
 We&#39;ll deal with that later. 
 Let&#39;s import our other table. </p>
 
-<p><code>LOAD DATA INFILE &#39;/home/cabox/workspace/tblPub.csv&#39; INTO TABLE tblPub FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
+<p><code>LOAD DATA INFILE &#39;/var/lib/mysql-files/tblPub.csv&#39; INTO TABLE tblPub FIELDS TERMINATED BY &#39;,&#39; OPTIONALLY ENCLOSED BY &#39;&quot;&#39;;</code></p>
 
 <p>Let&#39;s see what is in our tables:</p>
 

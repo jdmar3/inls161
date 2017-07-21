@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jul 2017 11:39:47 -0400</pubDate>
-    <lastBuildDate>Thu, 20 Jul 2017 11:39:47 -0400</lastBuildDate>
+    <pubDate>Fri, 21 Jul 2017 11:23:25 -0400</pubDate>
+    <lastBuildDate>Fri, 21 Jul 2017 11:23:25 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -871,7 +871,14 @@ This new index just happens to be non-unique. &lt;/p&gt;
 &lt;span class=&quot;k&quot;&gt;MAX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RetailPrice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AS&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Highest Price&#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tblBook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;make-queries&quot;&gt;Make queries&lt;/h2&gt;
+&lt;h2 id=&quot;make-queries-using-joins&quot;&gt;Make queries using joins&lt;/h2&gt;
+
+&lt;p&gt;Joins in SQL logic merge two different but related tables together so that the data can be queries across them.&lt;label for=&#39;sqljoins&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;sqljoins&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;&amp;quot;A Visual Explanation of SQL Joins,&amp;quot; Coding Horror, 11 October 2007 &lt;a href=&quot;https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/&quot;&gt;https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/&lt;/a&gt; &lt;/span&gt; 
+Joins seem complex to think about, but they are really very simple. 
+They make sets of data based on conditions.
+For our practice data, which deals with book lists, we might want to find books published by certain publishers, which is contained in a different table. &lt;/p&gt;
+
+&lt;p&gt;Here are some examples. &lt;/p&gt;
 
 &lt;p&gt;I want to list out all the books in the list that were published by Oxford University Press. &lt;/p&gt;
 
@@ -896,15 +903,16 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &amp;#39;Oxford University Press&amp;#39; AND p.Country = &amp;#39;US&amp;#39;;&lt;/code&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;output-from-mysql-queries-as-tables&quot;&gt;Output from MySQL queries as tables&lt;/h1&gt;
+&lt;h1 id=&quot;output-from-mysql-queries-as-views&quot;&gt;Output from MySQL queries as views&lt;/h1&gt;
 
-&lt;p&gt;We can take any of the above queries and output the results to a table. &lt;/p&gt;
+&lt;p&gt;We can take any of the above queries and output the results to a virtual table called a &lt;em&gt;view&lt;/em&gt;. 
+Views let you create and drop tables on the fly without as much risk of accidentally dropping a real table from your database. &lt;/p&gt;
 
-&lt;p&gt;We need to add &lt;code&gt;CREATE TABLE qryName&lt;/code&gt; to the front of any of our query commands. &lt;/p&gt;
+&lt;p&gt;We need to add &lt;code&gt;CREATE VIEW qryName AS&lt;/code&gt; to the front of any of our query commands. &lt;/p&gt;
 
 &lt;p&gt;Here is an example using our price summary from above:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS &amp;#39;Average Price&amp;#39;, MIN(RetailPrice) AS &amp;#39;Lowest Price&amp;#39;, MAX(RetailPrice) AS &amp;#39;Highest Price&amp;#39; FROM tblBook;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;CREATE VIEW qryPrices AS SELECT AVG(RetailPrice) AS &amp;#39;Average Price&amp;#39;, MIN(RetailPrice) AS &amp;#39;Lowest Price&amp;#39;, MAX(RetailPrice) AS &amp;#39;Highest Price&amp;#39; FROM tblBook;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;See if it worked by listing the tables:&lt;/p&gt;
 
@@ -915,6 +923,8 @@ I have to specify an additional criterion. &lt;/p&gt;
 &lt;p&gt;&lt;code&gt;SELECT * FROM qryPrices&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;It should match the output from when you ran the query before. &lt;/p&gt;
+
+&lt;p&gt;Try to writes some other views to tables &lt;/p&gt;
 
 &lt;h2 id=&quot;output-from-mysql-queries-in-other-formats&quot;&gt;Output from MySQL queries in other formats&lt;/h2&gt;
 
@@ -940,19 +950,34 @@ I have to specify an additional criterion. &lt;/p&gt;
 
 &lt;h1 id=&quot;mysql-in-bash-scripts&quot;&gt;MySQL in Bash scripts&lt;/h1&gt;
 
-&lt;p&gt;In today&amp;#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. 
-&lt;excerpt/&gt;&lt;/p&gt;
-
 &lt;p&gt;I would suggest looking at the the manual page for the MySQL client to see what you can do on the command line.&lt;label for=&#39;mysql-man&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;mysql-man&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;“mysql(1): MySQL Tool.” Linux Man Page. Accessed July 15, 2016. &lt;a href=&quot;http://linux.die.net/man/1/mysql&quot;&gt;http://linux.die.net/man/1/mysql&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;You will be expected in class to be looking up other resources as well. 
 If you find something useful, share it with me and I will put links here.&lt;/p&gt;
 
-&lt;h1 id=&quot;next-week&quot;&gt;Next week&lt;/h1&gt;
+&lt;p&gt;To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the &lt;code&gt;-e&lt;/code&gt; switch for &amp;quot;execute,&amp;quot; like this:&lt;/p&gt;
 
-&lt;p&gt;On Monday we are going to begin talking about presentations and creating good presentation materials in earnest. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysqldump -u root -p &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the stupidity of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&quot;&gt;http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+&lt;p&gt;This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mysqldump -u root -p&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;mysqldump -u root --password=&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;#1/bin/bash
+# set MySQL credentials
+SQLUSER=root
+SQLPASS=root
+# show all databases 
+mysqldump -u SQLUSER --password=&quot;$SQLPASS&quot; &quot;SHOW DATABASES&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;for-next-time&quot;&gt;For Next Time&lt;/h1&gt;
+
+&lt;p&gt;Next time we are going to begin talking about presentations and creating good presentation materials. &lt;/p&gt;
+
+&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the stupidity of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;https://paperpile.com/shared/gQqL5P&quot;&gt;https://paperpile.com/shared/gQqL5P&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 
 &lt;h2 id=&quot;exemplars&quot;&gt;Exemplars&lt;/h2&gt;
 
@@ -986,7 +1011,8 @@ We will look at this together in detail. &lt;/p&gt;
 &lt;h2 id=&quot;thought-leaders-and-ted-talks&quot;&gt;Thought leaders and TED Talks&lt;/h2&gt;
 
 &lt;p&gt;You should also give the following video a watch.
-It will help put into perspective what is really happening when we watch TED Talks and similar presentations. &lt;/p&gt;
+It will help put into perspective what is really happening when we watch TED Talks and similar presentations. 
+Also, it is amusing.&lt;/p&gt;
 
 &lt;div class=&quot;video-container&quot;&gt;
   &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_ZBKX-6Gz6A&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
@@ -1158,6 +1184,12 @@ Since we are only trying things out today and not installing this for the purpos
 
 &lt;p&gt;&lt;code&gt;wget http://inls161.johndmart.in/raw-material/tblPub.csv&lt;/code&gt;&lt;/p&gt;
 
+&lt;p&gt;In order to avoid errors (due to restricted default priviliges settings in our MySQL installation) we need to move these files to a special location so that they can be loaded later. &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cp tblBook.csv tblPub.csv /var/lib/mysql-files/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will allow us to load the data in the files in a later step.&lt;/p&gt;
+
 &lt;h1 id=&quot;the-mysql-prompt&quot;&gt;The MySQL prompt&lt;/h1&gt;
 
 &lt;p&gt;Once we are all installed, issue the &lt;code&gt;mysql&lt;/code&gt; command to get into the &lt;code&gt;mysql&amp;gt;&lt;/code&gt; prompt:&lt;/p&gt;
@@ -1198,7 +1230,7 @@ Since we are only trying things out today and not installing this for the purpos
 
 &lt;p&gt;Let&amp;#39;s import some tables from the files we downloaded earlier:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblBook.csv&amp;#39; INTO TABLE tblBook FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/var/lib/mysql-files/tblBook.csv&amp;#39; INTO TABLE tblBook FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;This should give us some output. 
 If we notice a warning, type the following to view the warnings:&lt;/p&gt;
@@ -1210,7 +1242,7 @@ No big deal.
 We&amp;#39;ll deal with that later. 
 Let&amp;#39;s import our other table. &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/home/cabox/workspace/tblPub.csv&amp;#39; INTO TABLE tblPub FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LOAD DATA INFILE &amp;#39;/var/lib/mysql-files/tblPub.csv&amp;#39; INTO TABLE tblPub FIELDS TERMINATED BY &amp;#39;,&amp;#39; OPTIONALLY ENCLOSED BY &amp;#39;&amp;quot;&amp;#39;;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Let&amp;#39;s see what is in our tables:&lt;/p&gt;
 

@@ -221,7 +221,14 @@ This new index just happens to be non-unique. </p>
 <span class="k">MAX</span><span class="p">(</span><span class="n">RetailPrice</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">'Highest Price'</span>
 <span class="k">FROM</span> <span class="n">tblBook</span><span class="p">;</span>
 </code></pre></div>
-<h2 id="make-queries">Make queries</h2>
+<h2 id="make-queries-using-joins">Make queries using joins</h2>
+
+<p>Joins in SQL logic merge two different but related tables together so that the data can be queries across them.<label for='sqljoins' class='margin-toggle sidenote-number'></label><input type='checkbox' id='sqljoins' class='margin-toggle'/><span class='sidenote'>&quot;A Visual Explanation of SQL Joins,&quot; Coding Horror, 11 October 2007 <a href="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/">https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/</a> </span> 
+Joins seem complex to think about, but they are really very simple. 
+They make sets of data based on conditions.
+For our practice data, which deals with book lists, we might want to find books published by certain publishers, which is contained in a different table. </p>
+
+<p>Here are some examples. </p>
 
 <p>I want to list out all the books in the list that were published by Oxford University Press. </p>
 
@@ -246,15 +253,16 @@ I have to specify an additional criterion. </p>
 
 <p><code>SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = &#39;Oxford University Press&#39; AND p.Country = &#39;US&#39;;</code></p>
 
-<h1 id="output-from-mysql-queries-as-tables">Output from MySQL queries as tables</h1>
+<h1 id="output-from-mysql-queries-as-views">Output from MySQL queries as views</h1>
 
-<p>We can take any of the above queries and output the results to a table. </p>
+<p>We can take any of the above queries and output the results to a virtual table called a <em>view</em>. 
+Views let you create and drop tables on the fly without as much risk of accidentally dropping a real table from your database. </p>
 
-<p>We need to add <code>CREATE TABLE qryName</code> to the front of any of our query commands. </p>
+<p>We need to add <code>CREATE VIEW qryName AS</code> to the front of any of our query commands. </p>
 
 <p>Here is an example using our price summary from above:</p>
 
-<p><code>CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;</code></p>
+<p><code>CREATE VIEW qryPrices AS SELECT AVG(RetailPrice) AS &#39;Average Price&#39;, MIN(RetailPrice) AS &#39;Lowest Price&#39;, MAX(RetailPrice) AS &#39;Highest Price&#39; FROM tblBook;</code></p>
 
 <p>See if it worked by listing the tables:</p>
 
@@ -265,6 +273,8 @@ I have to specify an additional criterion. </p>
 <p><code>SELECT * FROM qryPrices</code></p>
 
 <p>It should match the output from when you ran the query before. </p>
+
+<p>Try to writes some other views to tables </p>
 
 <h2 id="output-from-mysql-queries-in-other-formats">Output from MySQL queries in other formats</h2>
 
@@ -290,19 +300,34 @@ I have to specify an additional criterion. </p>
 
 <h1 id="mysql-in-bash-scripts">MySQL in Bash scripts</h1>
 
-<p>In today&#39;s lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. 
-<excerpt/></p>
-
 <p>I would suggest looking at the the manual page for the MySQL client to see what you can do on the command line.<label for='mysql-man' class='margin-toggle sidenote-number'></label><input type='checkbox' id='mysql-man' class='margin-toggle'/><span class='sidenote'>“mysql(1): MySQL Tool.” Linux Man Page. Accessed July 15, 2016. <a href="http://linux.die.net/man/1/mysql">http://linux.die.net/man/1/mysql</a>. </span></p>
 
 <p>You will be expected in class to be looking up other resources as well. 
 If you find something useful, share it with me and I will put links here.</p>
 
-<h1 id="next-week">Next week</h1>
+<p>To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the <code>-e</code> switch for &quot;execute,&quot; like this:</p>
 
-<p>On Monday we are going to begin talking about presentations and creating good presentation materials in earnest. </p>
+<p><code>mysqldump -u root -p &quot;SHOW DATABASES&quot;</code></p>
 
-<p>I would like you to read/deep skim Edward Tufte&#39;s piece on the stupidity of PowerPoint.<label for='powerpoint' class='margin-toggle sidenote-number'></label><input type='checkbox' id='powerpoint' class='margin-toggle'/><span class='sidenote'>Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. <a href="http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf">http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf</a>. </span> </p>
+<p>This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:</p>
+
+<p><code>mysqldump -u root -p&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
+
+<p><code>mysqldump -u root --password=&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
+
+<p>This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: </p>
+<div class="highlight"><pre><code class="language-" data-lang="">#1/bin/bash
+# set MySQL credentials
+SQLUSER=root
+SQLPASS=root
+# show all databases 
+mysqldump -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
+</code></pre></div>
+<h1 id="for-next-time">For Next Time</h1>
+
+<p>Next time we are going to begin talking about presentations and creating good presentation materials. </p>
+
+<p>I would like you to read/deep skim Edward Tufte&#39;s piece on the stupidity of PowerPoint.<label for='powerpoint' class='margin-toggle sidenote-number'></label><input type='checkbox' id='powerpoint' class='margin-toggle'/><span class='sidenote'>Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. <a href="https://paperpile.com/shared/gQqL5P">https://paperpile.com/shared/gQqL5P</a>. </span> </p>
 
 <h2 id="exemplars">Exemplars</h2>
 
@@ -336,7 +361,8 @@ We will look at this together in detail. </p>
 <h2 id="thought-leaders-and-ted-talks">Thought leaders and TED Talks</h2>
 
 <p>You should also give the following video a watch.
-It will help put into perspective what is really happening when we watch TED Talks and similar presentations. </p>
+It will help put into perspective what is really happening when we watch TED Talks and similar presentations. 
+Also, it is amusing.</p>
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZBKX-6Gz6A" frameborder="0" allowfullscreen></iframe>
