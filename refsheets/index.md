@@ -157,6 +157,8 @@ The help/manpage file for Pandoc is linked here: <a href="http://pandoc.org/READ
 
 <a href="http://www.digilife.be/quickreferences/QRC/MySQL-4.02a.pdf" target="_blank">A Quick Guide to MySQL Tables and Queries - Embnet</a>
 
+<a href="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/">A Visual Explanation of SQL Joins - Coding Horror</a>
+
 # Presentations
 
 ## Reveal.js

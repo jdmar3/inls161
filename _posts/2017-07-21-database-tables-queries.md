@@ -71,7 +71,14 @@ MAX(RetailPrice) AS 'Highest Price'
 FROM tblBook;
 `````````
 
-## Make queries
+## Make queries using joins
+
+Joins in SQL logic merge two different but related tables together so that the data can be queries across them.{% sidenote 'sqljoins' '"A Visual Explanation of SQL Joins," Coding Horror, 11 October 2007 https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/' %} 
+Joins seem complex to think about, but they are really very simple. 
+They make sets of data based on conditions.
+For our practice data, which deals with book lists, we might want to find books published by certain publishers, which is contained in a different table. 
+
+Here are some examples. 
 
 I want to list out all the books in the list that were published by Oxford University Press. 
 
@@ -96,15 +103,16 @@ I wonder if books cost more from the OUP GB location than from the OUP US locati
 
 ```SELECT AVG(RetailPrice) FROM tblBook b RIGHT JOIN tblPub p ON b.PubID = p.ID WHERE p.Publisher = 'Oxford University Press' AND p.Country = 'US';```
 
-# Output from MySQL queries as tables
+# Output from MySQL queries as views
 
-We can take any of the above queries and output the results to a table. 
+We can take any of the above queries and output the results to a virtual table called a *view*. 
+Views let you create and drop tables on the fly without as much risk of accidentally dropping a real table from your database. 
 
-We need to add ```CREATE TABLE qryName``` to the front of any of our query commands. 
+We need to add ```CREATE VIEW qryName AS``` to the front of any of our query commands. 
 
 Here is an example using our price summary from above:
 
-```CREATE TABLE qryPrices SELECT AVG(RetailPrice) AS 'Average Price', MIN(RetailPrice) AS 'Lowest Price', MAX(RetailPrice) AS 'Highest Price' FROM tblBook;```
+```CREATE VIEW qryPrices AS SELECT AVG(RetailPrice) AS 'Average Price', MIN(RetailPrice) AS 'Lowest Price', MAX(RetailPrice) AS 'Highest Price' FROM tblBook;```
 
 See if it worked by listing the tables:
 
@@ -115,6 +123,8 @@ Look at what is in the new table:
 ```SELECT * FROM qryPrices```
 
 It should match the output from when you ran the query before. 
+
+Try to writes some other views to tables 
 
 ## Output from MySQL queries in other formats
 
@@ -140,19 +150,37 @@ If you want to then import that same database somewhere else, the command is ver
 
 # MySQL in Bash scripts
 
-In today's lab you are going to work in your teams to modify your questinonaire scripts to write your data into a MySQL database. 
-<excerpt/>
-
 I would suggest looking at the the manual page for the MySQL client to see what you can do on the command line.{% sidenote 'mysql-man' '“mysql(1): MySQL Tool.” Linux Man Page. Accessed July 15, 2016. http://linux.die.net/man/1/mysql.' %}
 
 You will be expected in class to be looking up other resources as well. 
 If you find something useful, share it with me and I will put links here.
 
-# Next week
+To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the `-e` switch for "execute," like this:
 
-On Monday we are going to begin talking about presentations and creating good presentation materials in earnest. 
+```mysqldump -u root -p "SHOW DATABASES"```
 
-I would like you to read/deep skim Edward Tufte's piece on the stupidity of PowerPoint.{% sidenote 'powerpoint' 'Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf.' %} 
+This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:
+
+```mysqldump -u root -p"root" "SHOW DATABASES"```
+
+```mysqldump -u root --password="root" "SHOW DATABASES"```
+
+This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: 
+
+```
+#1/bin/bash
+# set MySQL credentials
+SQLUSER=root
+SQLPASS=root
+# show all databases 
+mysqldump -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
+```
+
+# For Next Time
+
+Next time we are going to begin talking about presentations and creating good presentation materials. 
+
+I would like you to read/deep skim Edward Tufte's piece on the stupidity of PowerPoint.{% sidenote 'powerpoint' 'Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. https://paperpile.com/shared/gQqL5P.' %} 
 
 ## Exemplars
 
@@ -184,6 +212,7 @@ We will look at this together in detail.
 
 You should also give the following video a watch.
 It will help put into perspective what is really happening when we watch TED Talks and similar presentations. 
+Also, it is amusing.
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZBKX-6Gz6A" frameborder="0" allowfullscreen></iframe>

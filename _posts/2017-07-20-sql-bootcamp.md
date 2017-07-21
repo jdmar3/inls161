@@ -152,6 +152,12 @@ Let's download some CSV files that I prepared with a list of books in them.
 
 ```wget http://inls161.johndmart.in/raw-material/tblPub.csv```
 
+In order to avoid errors (due to restricted default priviliges settings in our MySQL installation) we need to move these files to a special location so that they can be loaded later. 
+
+```cp tblBook.csv tblPub.csv /var/lib/mysql-files/```
+
+This will allow us to load the data in the files in a later step.
+
 # The MySQL prompt
 
 Once we are all installed, issue the ```mysql``` command to get into the ```mysql>``` prompt:
@@ -192,7 +198,7 @@ See what tables we have just created:
 
 Let's import some tables from the files we downloaded earlier:
 
-```LOAD DATA INFILE '/home/cabox/workspace/tblBook.csv' INTO TABLE tblBook FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';```
+```LOAD DATA INFILE '/var/lib/mysql-files/tblBook.csv' INTO TABLE tblBook FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';```
 
 This should give us some output. 
 If we notice a warning, type the following to view the warnings:
@@ -204,7 +210,7 @@ No big deal.
 We'll deal with that later. 
 Let's import our other table. 
 
-```LOAD DATA INFILE '/home/cabox/workspace/tblPub.csv' INTO TABLE tblPub FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';```
+```LOAD DATA INFILE '/var/lib/mysql-files/tblPub.csv' INTO TABLE tblPub FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"';```
 
 Let's see what is in our tables:
 
@@ -226,7 +232,6 @@ Now do the same for the other table:
 ```SHOW COLUMNS FROM tblPub;```
 
 ```ALTER TABLE tblPub ADD PRIMARY KEY (ID);```
-
 
 # For next time
 
