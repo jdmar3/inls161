@@ -9,11 +9,15 @@ tags:
 - SQL
 - MySQL
 category: class
+media:
+  url: /assets/img/learnallthesql.jpg
+  thumbnail: /assets/img/learnallthesql.jpg
 ---
 
 Today we will continue with our discussion of databases and then learn ALL THE SQL. 
 
-![LEARN ALL THE SQL]({{ site.url}}/assets/img/learnallthesql.jpg)
+We'll cover importing tables, setting keys, reporting, querying data, creating views, and writing shell commands that interact with a MySQL database. 
+
 <excerpt/>
 
 

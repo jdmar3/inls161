@@ -37,7 +37,15 @@ nav_exclude: true
             "text": {
                 "headline": "<a href='{{ post.url }}'>{{ post.title }}</a>",
                 "text": {{ post.excerpt | smartify | jsonify }}
-            },
+            },{% if post.media %}
+            "media": {
+                "url": "{{ post.media.url }}"{% if post.media.caption %},
+                "caption": "{{ post.media.caption }}"{% endif %}{% if post.media.credit %},
+                "credit": "{{ post.media.credit }}"{% endif %}{% if post.media.thumbnail %},
+                "thumbnail": "{{ post.media.thumbnail }}"{% endif %}{% if post.media.alt %},
+                "alt": "{{ post.media.alt }}"{% endif %}{% if post.media.title %},
+                "title": "{{ post.media.title }}"{% endif %}
+            },{% endif %}
             "unique_id": "{{ post.id | replace: "/", "-" | replace_first: "-", "" }}"{% if post.category %},
             "group": {{ post.category | smartify | jsonify }}{% endif %}{% if post.display_date %},
             "display_date": {{ post.display_date | smartify | jsonify }}{% endif %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spreadsheets and Scripting Data"
+title: "Scripting Data Cleaning"
 era: Data
 tags: 
 - data
@@ -13,11 +13,13 @@ quiz: https://goo.gl/forms/BmYowGVGEeLYdmQC3
 
 Today we will look at two different ways to handle data:
 
-1. Using a spreadsheet.
-2. Writing a script.
+1. Writing a script.
+2. Using a spreadsheet.
 
 Both approaches have their advantages and we will discuss these. 
 This is a day when we will talk about what tool is right for what job. 
+
+<excerpt/>
 
 Spreadsheets are very good as calculators. 
 In fact, that is what they are designed to do. 
