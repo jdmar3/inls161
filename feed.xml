@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jul 2017 23:06:02 -0400</pubDate>
-    <lastBuildDate>Fri, 21 Jul 2017 23:06:02 -0400</lastBuildDate>
+    <pubDate>Sat, 22 Jul 2017 00:58:45 -0400</pubDate>
+    <lastBuildDate>Sat, 22 Jul 2017 00:58:45 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -817,8 +817,9 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
         <title>Databases, tables, queries, and relationships</title>
         <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/learnallthesql.jpg&quot; alt=&quot;LEARN ALL THE SQL&quot;&gt;
-&lt;excerpt/&gt;&lt;/p&gt;
+&lt;p&gt;We&amp;#39;ll cover importing tables, setting keys, reporting, querying data, creating views, and writing shell commands that interact with a MySQL database. &lt;/p&gt;
+
+&lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;define-relationships&quot;&gt;Define relationships&lt;/h2&gt;
 
