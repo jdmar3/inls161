@@ -157,13 +157,13 @@ If you find something useful, share it with me and I will put links here.
 
 To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the `-e` switch for "execute," like this:
 
-```mysqldump -u root -p "SHOW DATABASES"```
+```mysql -u root -p "SHOW DATABASES"```
 
 This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:
 
-```mysqldump -u root -p"root" "SHOW DATABASES"```
+```mysql -u root -p"root" "SHOW DATABASES"```
 
-```mysqldump -u root --password="root" "SHOW DATABASES"```
+```mysql -u root --password="root" "SHOW DATABASES"```
 
 This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: 
 
@@ -173,14 +173,14 @@ This will allow you to set the username and password as variables in your script
 SQLUSER=root
 SQLPASS=root
 # show all databases 
-mysqldump -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
+mysql -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
 ```
 
 # For Next Time
 
 Next time we are going to begin talking about presentations and creating good presentation materials. 
 
-I would like you to read/deep skim Edward Tufte's piece on the stupidity of PowerPoint.{% sidenote 'powerpoint' 'Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. https://paperpile.com/shared/gQqL5P.' %} 
+I would like you to read/deep skim Edward Tufte's piece on the terrible adaptability of PowerPoint.{% sidenote 'powerpoint' 'Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. https://paperpile.com/shared/gQqL5P.' %} 
 
 ## Exemplars
 
