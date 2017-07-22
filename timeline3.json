@@ -488,26 +488,6 @@
             "start_date": {
                 "year": "2017",
                 "month": "07",
-                "day": "23",
-                "hour": "23",
-                "minute": "59"
-            },
-            "end_date": {
-                "year": "2017",
-                "month": "07",
-                "day": "23"
-            },
-            "text": {
-                "headline": "<a href='/assignments/2017/07/23/assignment-4-data/'>Assignment #4: Collect Data and Make a Database</a>",
-                "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. </p>\n\n<p>This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. </p>\n\n<p>You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.</p>"
-            },
-            "unique_id": "assignments-2017-07-23-assignment-4-data",
-            "group": "assignments"
-        },
-        {
-            "start_date": {
-                "year": "2017",
-                "month": "07",
                 "day": "24",
                 "hour": "11",
                 "minute": "30"
@@ -525,6 +505,26 @@
             },
             "unique_id": "class-2017-07-24-presentation-basics",
             "group": "class"
+        },
+        {
+            "start_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "25",
+                "hour": "23",
+                "minute": "59"
+            },
+            "end_date": {
+                "year": "2017",
+                "month": "07",
+                "day": "25"
+            },
+            "text": {
+                "headline": "<a href='/assignments/2017/07/25/assignment-4-data/'>Assignment #4: Collect Data and Make a Database</a>",
+                "text": "<p>For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. </p>\n\n<p>This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. </p>\n\n<p>You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.</p>"
+            },
+            "unique_id": "assignments-2017-07-25-assignment-4-data",
+            "group": "assignments"
         },
         {
             "start_date": {

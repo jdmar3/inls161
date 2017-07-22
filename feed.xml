@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Jul 2017 11:23:25 -0400</pubDate>
-    <lastBuildDate>Fri, 21 Jul 2017 11:23:25 -0400</lastBuildDate>
+    <pubDate>Fri, 21 Jul 2017 23:06:02 -0400</pubDate>
+    <lastBuildDate>Fri, 21 Jul 2017 23:06:02 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -600,6 +600,73 @@ You can download audacity and read more documentation on the audacity homepage.&
       </item>
     
       <item>
+        <title>Assignment #4: Collect Data and Make a Database</title>
+        <description>&lt;p&gt;For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. &lt;/p&gt;
+
+&lt;p&gt;This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. &lt;/p&gt;
+
+&lt;p&gt;You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.&lt;/p&gt;
+
+&lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;skillsets&quot;&gt;Skillsets&lt;/h2&gt;
+
+&lt;p&gt;You will be exposed to the following skillsets;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Scripting user input&lt;/li&gt;
+&lt;li&gt;Saving data to csv file&lt;/li&gt;
+&lt;li&gt;Writing to temporary files&lt;/li&gt;
+&lt;li&gt;Scripting database interface&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;expectations&quot;&gt;Expectations&lt;/h2&gt;
+
+&lt;p&gt;I expect you to create two scripts 
+1. One that will take input from users and then store their responses to a CSV file. It must aggregate the responses of multiple users and therefore needs to have some form of disambiguation involved in the data generation process. 
+2. A second script that will allow you to write the information gathered into a MySQL database instead of into a CSV file as the final output form. &lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;The only thing that you will need is Bash and text files, and MySQL, all of which are available in CodeAnywhere (you can use the MySQL stack to start your project).&lt;/p&gt;
+
+&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
+
+&lt;p&gt;You will need to do the following for this assignment to be considered complete. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a list of five survey-type questions.&lt;/li&gt;
+&lt;li&gt;Write a script that will do the following:
+
+&lt;ul&gt;
+&lt;li&gt;Ask each question of the user running the script.&lt;/li&gt;
+&lt;li&gt;Write a random string of characters to a variable as a unique identifier.&lt;/li&gt;
+&lt;li&gt;Write the datestamp to a variable.&lt;/li&gt;
+&lt;li&gt;Accept text input from the user and write each answer as a variable.&lt;/li&gt;
+&lt;li&gt;Save all answers and other data to a CSV file.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Create a database that has the appropriate variables and variable types (NB: You can script this: it might be an accessory script or a conditional statement in your script).&lt;/li&gt;
+&lt;li&gt;Write a script to write your data into a MySQL database (you can call this script from your other one, or vice versa):
+
+&lt;ul&gt;
+&lt;li&gt;connect to a MySQL database (HINT: this will involve setting variables for MySQL USERNAME, PASSWORD, and LOCATION)&lt;/li&gt;
+&lt;li&gt;enter the data input by users into a MySQL database &lt;/li&gt;
+&lt;li&gt;dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with new data (IMPORTANT: make sure the filename has a timestamp)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Collect some data from your peers: collect at least 5 responses to your survey. Each time someone new takes, the script should add a response to your database.&lt;/li&gt;
+&lt;li&gt;Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/assignments/2017/07/25/assignment-4-data/</link>
+        <guid isPermaLink="true">/assignments/2017/07/25/assignment-4-data/</guid>
+        
+        
+        <category>assignments</category>
+        
+      </item>
+    
+      <item>
         <title>Presentation Basics</title>
         <description>&lt;p&gt;Today we&amp;#39;re going to talk about what is wrong with presentations and presentation software as they have come to be used.
 &lt;excerpt/&gt;&lt;/p&gt;
@@ -747,73 +814,6 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
       </item>
     
       <item>
-        <title>Assignment #4: Collect Data and Make a Database</title>
-        <description>&lt;p&gt;For this assignment, you will write a bash script to prompt a user for input, collect responses, and manipulate those responses into a structured data format. Then you will enhance it with the ability to interact with a database. &lt;/p&gt;
-
-&lt;p&gt;This assignment aims at strengthening our scripting skills and learning how to create a well-formed dataset to work with. &lt;/p&gt;
-
-&lt;p&gt;You will create a short questionnaire and then use Bash to script collection of answers, write them to a temp file and then import the data in that temp file into a database.&lt;/p&gt;
-
-&lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;skillsets&quot;&gt;Skillsets&lt;/h2&gt;
-
-&lt;p&gt;You will be exposed to the following skillsets;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Scripting user input&lt;/li&gt;
-&lt;li&gt;Saving data to csv file&lt;/li&gt;
-&lt;li&gt;Writing to temporary files&lt;/li&gt;
-&lt;li&gt;Scripting database interface&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;expectations&quot;&gt;Expectations&lt;/h2&gt;
-
-&lt;p&gt;I expect you to create two scripts 
-1. One that will take input from users and then store their responses to a CSV file. It must aggregate the responses of multiple users and therefore needs to have some form of disambiguation involved in the data generation process. 
-2. A second script that will allow you to write the information gathered into a MySQL database instead of into a CSV file as the final output form. &lt;/p&gt;
-
-&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
-
-&lt;p&gt;The only thing that you will need is Bash and text files, and MySQL, all of which are available in CodeAnywhere (you can use the MySQL stack to start your project).&lt;/p&gt;
-
-&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
-
-&lt;p&gt;You will need to do the following for this assignment to be considered complete. &lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a list of five survey-type questions.&lt;/li&gt;
-&lt;li&gt;Write a script that will do the following:
-
-&lt;ul&gt;
-&lt;li&gt;Ask each question of the user running the script.&lt;/li&gt;
-&lt;li&gt;Write a random string of characters to a variable as a unique identifier.&lt;/li&gt;
-&lt;li&gt;Write the datestamp to a variable.&lt;/li&gt;
-&lt;li&gt;Accept text input from the user and write each answer as a variable.&lt;/li&gt;
-&lt;li&gt;Save all answers and other data to a CSV file.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Create a database that has the appropriate variables and variable types (NB: You can script this: it might be an accessory script or a conditional statement in your script).&lt;/li&gt;
-&lt;li&gt;Write a script to write your data into a MySQL database (you can call this script from your other one, or vice versa):
-
-&lt;ul&gt;
-&lt;li&gt;connect to a MySQL database (HINT: this will involve setting variables for MySQL USERNAME, PASSWORD, and LOCATION)&lt;/li&gt;
-&lt;li&gt;enter the data input by users into a MySQL database &lt;/li&gt;
-&lt;li&gt;dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with new data (IMPORTANT: make sure the filename has a timestamp)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Collect some data from your peers: collect at least 5 responses to your survey. Each time someone new takes, the script should add a response to your database.&lt;/li&gt;
-&lt;li&gt;Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Sun, 23 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/23/assignment-4-data/</link>
-        <guid isPermaLink="true">/assignments/2017/07/23/assignment-4-data/</guid>
-        
-        
-        <category>assignments</category>
-        
-      </item>
-    
-      <item>
         <title>Databases, tables, queries, and relationships</title>
         <description>&lt;p&gt;Today we will continue with our discussion of databases and then learn ALL THE SQL. &lt;/p&gt;
 
@@ -957,13 +957,13 @@ If you find something useful, share it with me and I will put links here.&lt;/p&
 
 &lt;p&gt;To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the &lt;code&gt;-e&lt;/code&gt; switch for &amp;quot;execute,&amp;quot; like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;mysqldump -u root -p &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql -u root -p &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;mysqldump -u root -p&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql -u root -p&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;mysqldump -u root --password=&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql -u root --password=&amp;quot;root&amp;quot; &amp;quot;SHOW DATABASES&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;#1/bin/bash
@@ -971,13 +971,13 @@ If you find something useful, share it with me and I will put links here.&lt;/p&
 SQLUSER=root
 SQLPASS=root
 # show all databases 
-mysqldump -u SQLUSER --password=&quot;$SQLPASS&quot; &quot;SHOW DATABASES&quot;
+mysql -u SQLUSER --password=&quot;$SQLPASS&quot; &quot;SHOW DATABASES&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h1 id=&quot;for-next-time&quot;&gt;For Next Time&lt;/h1&gt;
 
 &lt;p&gt;Next time we are going to begin talking about presentations and creating good presentation materials. &lt;/p&gt;
 
-&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the stupidity of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;https://paperpile.com/shared/gQqL5P&quot;&gt;https://paperpile.com/shared/gQqL5P&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
+&lt;p&gt;I would like you to read/deep skim Edward Tufte&amp;#39;s piece on the terrible adaptability of PowerPoint.&lt;label for=&#39;powerpoint&#39; class=&#39;margin-toggle sidenote-number&#39;&gt;&lt;/label&gt;&lt;input type=&#39;checkbox&#39; id=&#39;powerpoint&#39; class=&#39;margin-toggle&#39;/&gt;&lt;span class=&#39;sidenote&#39;&gt;Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. &lt;a href=&quot;https://paperpile.com/shared/gQqL5P&quot;&gt;https://paperpile.com/shared/gQqL5P&lt;/a&gt;. &lt;/span&gt; &lt;/p&gt;
 
 &lt;h2 id=&quot;exemplars&quot;&gt;Exemplars&lt;/h2&gt;
 

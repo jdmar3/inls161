@@ -307,13 +307,13 @@ If you find something useful, share it with me and I will put links here.</p>
 
 <p>To execute MySQL commands from within BASH (i.e., not logging into MySQL first), you have to use the <code>-e</code> switch for &quot;execute,&quot; like this:</p>
 
-<p><code>mysqldump -u root -p &quot;SHOW DATABASES&quot;</code></p>
+<p><code>mysql -u root -p &quot;SHOW DATABASES&quot;</code></p>
 
 <p>This will still prompt you for your password. If you want to add the password into the command, you can do it in one of the two following ways:</p>
 
-<p><code>mysqldump -u root -p&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
+<p><code>mysql -u root -p&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
 
-<p><code>mysqldump -u root --password=&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
+<p><code>mysql -u root --password=&quot;root&quot; &quot;SHOW DATABASES&quot;</code></p>
 
 <p>This will allow you to set the username and password as variables in your scripts and then run commands to work with data inside a database from the script: </p>
 <div class="highlight"><pre><code class="language-" data-lang="">#1/bin/bash
@@ -321,13 +321,13 @@ If you find something useful, share it with me and I will put links here.</p>
 SQLUSER=root
 SQLPASS=root
 # show all databases 
-mysqldump -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
+mysql -u SQLUSER --password="$SQLPASS" "SHOW DATABASES"
 </code></pre></div>
 <h1 id="for-next-time">For Next Time</h1>
 
 <p>Next time we are going to begin talking about presentations and creating good presentation materials. </p>
 
-<p>I would like you to read/deep skim Edward Tufte&#39;s piece on the stupidity of PowerPoint.<label for='powerpoint' class='margin-toggle sidenote-number'></label><input type='checkbox' id='powerpoint' class='margin-toggle'/><span class='sidenote'>Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. <a href="https://paperpile.com/shared/gQqL5P">https://paperpile.com/shared/gQqL5P</a>. </span> </p>
+<p>I would like you to read/deep skim Edward Tufte&#39;s piece on the terrible adaptability of PowerPoint.<label for='powerpoint' class='margin-toggle sidenote-number'></label><input type='checkbox' id='powerpoint' class='margin-toggle'/><span class='sidenote'>Tufte, Edward R. The Cognitive Style of Powerpoint: Pitching Out Corrupts Within. Cheshire, Connecticut: Graphics Press, 2011. <a href="https://paperpile.com/shared/gQqL5P">https://paperpile.com/shared/gQqL5P</a>. </span> </p>
 
 <h2 id="exemplars">Exemplars</h2>
 
@@ -383,7 +383,7 @@ Also, it is amusing.</p>
       <a class="prev" href="/class/2017/07/20/sql-bootcamp/">&laquo;&nbsp;<span class="smaller">Previous:</span>&nbsp;Database software and MySQL</a>
     
     
-      <a class="next" href="/assignments/2017/07/23/assignment-4-data/"><span class="smaller">Next:</span>&nbsp;Assignment #4: Collect Data and Make a Database&nbsp;&raquo;</a>
+      <a class="next" href="/era/2017/07/24/present/"><span class="smaller">Next:</span>&nbsp;Present&nbsp;&raquo;</a>
     
   </div>
   <hr class="slender">
