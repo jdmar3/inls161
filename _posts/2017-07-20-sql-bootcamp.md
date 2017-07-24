@@ -10,6 +10,7 @@ category: class
 media:
   url: /assets/img/sql-shell.png
   thumbnail: /assets/img/sql-shell.png
+quiz: https://goo.gl/forms/YRhpW2j2nsuSIVjS2
 ---
 
 Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  

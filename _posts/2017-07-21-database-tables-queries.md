@@ -12,6 +12,7 @@ category: class
 media:
   url: /assets/img/learnallthesql.jpg
   thumbnail: /assets/img/learnallthesql.jpg
+quiz: https://goo.gl/forms/LaSJMspFf6BRejxC2
 ---
 
 Today we will continue with our discussion of databases and then learn ALL THE SQL. 
