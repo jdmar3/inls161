@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Jul 2017 11:30:14 -0400</pubDate>
-    <lastBuildDate>Mon, 24 Jul 2017 11:30:14 -0400</lastBuildDate>
+    <pubDate>Mon, 24 Jul 2017 11:51:36 -0400</pubDate>
+    <lastBuildDate>Mon, 24 Jul 2017 11:51:36 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -682,24 +682,26 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;p&gt;You will need to do the following for this assignment to be considered complete. &lt;/p&gt;
 
 &lt;ol&gt;
+&lt;li&gt;Fork this repository: &lt;a href=&quot;https://github.com/inls161/task-4-data&quot;&gt;https://github.com/inls161/task-4-data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clone it to your CodeAnywhere container.&lt;/li&gt;
 &lt;li&gt;Create a list of five survey-type questions.&lt;/li&gt;
 &lt;li&gt;Write a script that will do the following:
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Ask each question of the user running the script.&lt;/li&gt;
 &lt;li&gt;Write a random string of characters to a variable as a unique identifier.&lt;/li&gt;
 &lt;li&gt;Write the datestamp to a variable.&lt;/li&gt;
 &lt;li&gt;Accept text input from the user and write each answer as a variable.&lt;/li&gt;
 &lt;li&gt;Save all answers and other data to a CSV file.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;Create a database that has the appropriate variables and variable types (NB: You can script this: it might be an accessory script or a conditional statement in your script).&lt;/li&gt;
 &lt;li&gt;Write a script to write your data into a MySQL database (you can call this script from your other one, or vice versa):
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;connect to a MySQL database (HINT: this will involve setting variables for MySQL USERNAME, PASSWORD, and LOCATION)&lt;/li&gt;
 &lt;li&gt;enter the data input by users into a MySQL database &lt;/li&gt;
 &lt;li&gt;dump the MySQL database into a .sql file in your repository directory with the rest of your files after it has been modified with new data (IMPORTANT: make sure the filename has a timestamp)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;Collect some data from your peers: collect at least 5 responses to your survey. Each time someone new takes, the script should add a response to your database.&lt;/li&gt;
 &lt;li&gt;Write a blog post that links to your fork of the repository and write a brief explanation of what your scripts actually do. &lt;/li&gt;
 &lt;/ol&gt;
