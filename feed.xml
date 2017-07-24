@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Jul 2017 00:58:45 -0400</pubDate>
-    <lastBuildDate>Sat, 22 Jul 2017 00:58:45 -0400</lastBuildDate>
+    <pubDate>Mon, 24 Jul 2017 11:30:14 -0400</pubDate>
+    <lastBuildDate>Mon, 24 Jul 2017 11:30:14 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -26,6 +26,66 @@ We will also take a final questionnaire/quiz related to some of the overall them
         
         
         <category>class</category>
+        
+      </item>
+    
+      <item>
+        <title>Assignment #5: Presentation</title>
+        <description>&lt;p&gt;This assignment involves the creation of a well-formed presentation for use on screen. You also have the option of making your presentation run as a narrated self-running presentation with embedded audio. &lt;/p&gt;
+
+&lt;p&gt;The assignment aims to strengthen your HTML skills while also learning to create visual presentation materials and craft a short narrative for a presentation. &lt;/p&gt;
+
+&lt;p&gt;You will use reveal.js in combination with audio files to create an automated, narrated web object. &lt;/p&gt;
+
+&lt;h2 id=&quot;skillsets&quot;&gt;Skillsets&lt;/h2&gt;
+
+&lt;p&gt;You will be exposed to the following skillsets;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;HTML5&lt;/li&gt;
+&lt;li&gt;Presentation skills&lt;/li&gt;
+&lt;li&gt;Optional: Audio manipulation&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;expectations&quot;&gt;Expectations&lt;/h2&gt;
+
+&lt;p&gt;I expect you to write and construct a short (3-5 min) presentation on the topic of your choice. &lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;You will need a text editor. Your presentation will be stored in GitHub and you can manipulate the text using the editor in CodeAnywhere.&lt;/p&gt;
+
+&lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
+
+&lt;p&gt;You will need to do the following for this assignment to be considered complete. &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Fork the base repository &lt;a href=&quot;https://github.com/inls161/task-5-presentation&quot;&gt;https://github.com/inls161/task-5-presentation&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;Create your base presentation slides using the included Markdown template and convert it to HTML5 using Pandoc. Instructions for this are in the &lt;code&gt;INSTRUCTIONS.md&lt;/code&gt; file in this repository.&lt;/li&gt;
+&lt;li&gt;Add speaker notes to enclose the text of your presentation. &lt;/li&gt;
+&lt;li&gt;Add images, styles, and fragments accordingly. &lt;/li&gt;
+&lt;li&gt;Make sure that all of your changes are added, committed, and pushed. &lt;/li&gt;
+&lt;li&gt;Test your presentation to ensure that all runs smoothly.&lt;/li&gt;
+&lt;li&gt;Sync your repository fork with the main fork at the end of the work (Look here for how to do this: &lt;a href=&quot;https://help.github.com/articles/syncing-a-fork/&quot;&gt;https://help.github.com/articles/syncing-a-fork/&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Write a blog post that links to your presentation repository and write a brief synopsis of the content of the presentation. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;optional-instructions-for-extra-credit&quot;&gt;Optional instructions for extra credit&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Narrate and record audio of the presentation.&lt;/li&gt;
+&lt;li&gt;Use Audacity to cut the audio files into the appropriate lengths for the transitions (see instructions on class site).&lt;/li&gt;
+&lt;li&gt;Upload the audio files and insert the source links in each section and fragment.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For this you will need to use audio manipulation software, preferrably Audacity.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 31 Jul 2017 00:00:00 -0400</pubDate>
+        <link>/assignments/2017/07/31/assignment-5-presentation/</link>
+        <guid isPermaLink="true">/assignments/2017/07/31/assignment-5-presentation/</guid>
+        
+        
+        <category>assignments</category>
         
       </item>
     
@@ -143,19 +203,6 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
         
         
         <category>class</category>
-        
-      </item>
-    
-      <item>
-        <title>Assignment #5: Presentation</title>
-        <description>&lt;p&gt;For this assignment, you will create a slide presentation in HTML using the Reveal.js framework. You will also record audio narration and add it to the slides so that your presentation can run a self-contained with no presenter. &lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/27/assignment-5-presentation/</link>
-        <guid isPermaLink="true">/assignments/2017/07/27/assignment-5-presentation/</guid>
-        
-        
-        <category>assignments</category>
         
       </item>
     
