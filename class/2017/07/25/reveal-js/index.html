@@ -182,52 +182,12 @@ If you are sharing a single repo, remember to add your teammate as a contributor
 
 <p>The assignment repo is located here: </p>
 
-<p><a href="https://github.com/jdmar3/task-6-be-presentable">https://github.com/jdmar3/task-6-be-presentable</a></p>
+<p><a href="https://github.com/inls161/task-5-presentation">https://github.com/inls161/task-5-presentation</a></p>
 
 <p>Once you have forked, it would be a good idea to change the name of your repository to, say, &quot;presentation,&quot; so that you can easily link to the project page later. 
 It will become clear why this is necessary at the end of the assignment.</p>
 
 <p>Finally, clone it to your containers so that you can work on it. </p>
-
-<h2 id="making-sure-that-you-are-pushing-to-gh-pages">Making sure that you are pushing to gh-pages</h2>
-
-<p>If you do not do this, your reveal.js presentation will not show up at the correct address. </p>
-
-<p>Open .git/config and look for the <code>[remote &quot;origin&quot;]</code> section. </p>
-
-<p>Then add the following two lines into that section:</p>
-<div class="highlight"><pre><code class="language-" data-lang="">    push = +refs/heads/master:refs/heads/gh-pages
-    push = +refs/heads/master:refs/heads/master
-</code></pre></div>
-<p>So that the whole file should look something like this example:</p>
-<div class="highlight"><pre><code class="language-" data-lang="">[core]
-    repositoryformatversion = 0
-    filemode = true
-    bare = false
-    logallrefupdates = true
-[remote "origin"]
-    url = git@github.com:YOUR-USERNAME/YOUR-REPO-NAME.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-    push = +refs/heads/master:refs/heads/gh-pages
-    push = +refs/heads/master:refs/heads/master
-[branch "master"]
-    remote = origin
-    merge = refs/heads/master
-</code></pre></div>
-<p>Then we need to create a new branch. 
-This is necessary for github-pages to be able to generate a project page for us. 
-The branch must be called gh-pages. </p>
-
-<p><code>git checkout gh-pages</code></p>
-
-<p>Let&#39;s add, commit and push that just to be sure that it all worked and that our new branch was added. </p>
-
-<p>Alright. </p>
-
-<p>We have a new branch and our new branch is going to be synced with our master branch. 
-So, we can switch back to master for everything else now. </p>
-
-<p><code>git checkout master</code></p>
 
 <h1 id="creating-and-converting-markdown-to-reveal-ready-html5">Creating and converting markdown to Reveal-ready HTML5</h1>
 

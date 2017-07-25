@@ -5,8 +5,8 @@
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 25 Jul 2017 10:59:57 -0400</pubDate>
-    <lastBuildDate>Tue, 25 Jul 2017 10:59:57 -0400</lastBuildDate>
+    <pubDate>Tue, 25 Jul 2017 11:30:09 -0400</pubDate>
+    <lastBuildDate>Tue, 25 Jul 2017 11:30:09 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -480,52 +480,12 @@ If you are sharing a single repo, remember to add your teammate as a contributor
 
 &lt;p&gt;The assignment repo is located here: &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;https://github.com/jdmar3/task-6-be-presentable&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/inls161/task-5-presentation&quot;&gt;https://github.com/inls161/task-5-presentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have forked, it would be a good idea to change the name of your repository to, say, &amp;quot;presentation,&amp;quot; so that you can easily link to the project page later. 
 It will become clear why this is necessary at the end of the assignment.&lt;/p&gt;
 
 &lt;p&gt;Finally, clone it to your containers so that you can work on it. &lt;/p&gt;
-
-&lt;h2 id=&quot;making-sure-that-you-are-pushing-to-gh-pages&quot;&gt;Making sure that you are pushing to gh-pages&lt;/h2&gt;
-
-&lt;p&gt;If you do not do this, your reveal.js presentation will not show up at the correct address. &lt;/p&gt;
-
-&lt;p&gt;Open .git/config and look for the &lt;code&gt;[remote &amp;quot;origin&amp;quot;]&lt;/code&gt; section. &lt;/p&gt;
-
-&lt;p&gt;Then add the following two lines into that section:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;    push = +refs/heads/master:refs/heads/gh-pages
-    push = +refs/heads/master:refs/heads/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;So that the whole file should look something like this example:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;[core]
-    repositoryformatversion = 0
-    filemode = true
-    bare = false
-    logallrefupdates = true
-[remote &quot;origin&quot;]
-    url = git@github.com:YOUR-USERNAME/YOUR-REPO-NAME.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-    push = +refs/heads/master:refs/heads/gh-pages
-    push = +refs/heads/master:refs/heads/master
-[branch &quot;master&quot;]
-    remote = origin
-    merge = refs/heads/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Then we need to create a new branch. 
-This is necessary for github-pages to be able to generate a project page for us. 
-The branch must be called gh-pages. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git checkout gh-pages&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s add, commit and push that just to be sure that it all worked and that our new branch was added. &lt;/p&gt;
-
-&lt;p&gt;Alright. &lt;/p&gt;
-
-&lt;p&gt;We have a new branch and our new branch is going to be synced with our master branch. 
-So, we can switch back to master for everything else now. &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;creating-and-converting-markdown-to-reveal-ready-html5&quot;&gt;Creating and converting markdown to Reveal-ready HTML5&lt;/h1&gt;
 
