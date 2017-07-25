@@ -37,7 +37,7 @@ The only thing that you will need is Bash and text files, and MySQL, all of whic
 
 ## Instructions
 
-You will need to do the following for this assignment to be considered complete. 
+You will need to do the following for this assignment to be considered complete. {% marginnote 'examplescript' 'I wrote some example scripts that work. You can feel free to adapt anything within them for your assignment. https://github.com/jdmar3/task-4-data' %}
 
 1. Fork this repository: https://github.com/inls161/task-4-data
 2. Rename it as YOURGITHUBUSERNAME-data (or something similar).

@@ -191,6 +191,7 @@ We should see the DB with the name that we created in the list. Let's move into 
 ## Add tables
 
 Now we have to create two tables so that we can import data from our CSV files.
+In addition to creating the tables, we have to spcecify the column names and data types.{% sidenote 'datatypes' 'SQL General Data Tyoes, W3Schools https://www.w3schools.com/sql/sql_datatypes_general.asp' %}
 
 ```CREATE TABLE tblBook (ID INT, Title VARCHAR(255), Date INT, RetailPrice DECIMAL(5,2), Copies INT, ShelfNumber VARCHAR(255), PubID INT);```
 
