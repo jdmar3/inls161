@@ -8,6 +8,7 @@ tags:
 - presentations
 - Tufte
 category: class
+quiz: https://goo.gl/forms/a4gagCgbrJ0K31Pp2
 ---
 
 Today we're going to talk about what is wrong with presentations and presentation software as they have come to be used.
