@@ -12,6 +12,7 @@ tags:
 - MP4
 - Jekyll
 category: class
+quiz: https://goo.gl/forms/dHSRE3UandwrFKLJ3
 ---
 
 Today we are going to work with Audacity to create and edit some audio to embed in our presentations. 
