@@ -8,7 +8,7 @@ tags:
 - MySQL
 category: class
 media:
-  url: /assets/img/sql-shell.png
+# https://twitter.com/drob/status/975417816345169927?s=19  url: /assets/img/sql-shell.png
   thumbnail: /assets/img/sql-shell.png
 quiz: https://goo.gl/forms/YRhpW2j2nsuSIVjS2
 ---

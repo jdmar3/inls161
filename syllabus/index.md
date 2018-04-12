@@ -304,6 +304,10 @@ As an academic community committed to preparing our graduates to be leaders in a
 
 The statement represents a commitment of resources to the development and maintenance of an academic environment that is open, representative, reflective and committed to the concepts of equity and fairness.
 
+https://www.glsen.org/sites/default/files/Challenging-Ableist-Language.pdf
+
+http://www.apastyle.org/manual/related/nonhandicapping-language.aspx
+
 ## Class conduct and expectations
 
 This class is not a safe space, but a brave space. 

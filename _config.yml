@@ -5,7 +5,7 @@ description: "Tools and concepts for information literacy. Includes software use
 
 ## Comment this section if setting up an archive site ##################
 baseurl: ""
-#url: "https://inls161.johndmart.in"
+url: "https://inls161.johndmart.in"
 enforce-ssl: "inls161.johndmart.in"
 ########################################################################
 
