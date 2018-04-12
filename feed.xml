@@ -3,10 +3,10 @@
   <channel>
     <title>Tools for Information Literacy</title>
     <description>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Oct 2017 09:35:51 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Oct 2017 09:35:51 -0400</lastBuildDate>
+    <link>https://inls161.johndmart.in/</link>
+    <atom:link href="https://inls161.johndmart.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 12 Apr 2018 12:38:09 -0400</pubDate>
+    <lastBuildDate>Thu, 12 Apr 2018 12:38:09 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -17,8 +17,8 @@ We will also take a final questionnaire/quiz related to some of the overall them
 &lt;p&gt;&lt;excerpt/&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 31 Jul 2017 11:30:00 -0400</pubDate>
-        <link>/class/2017/07/31/presentations/</link>
-        <guid isPermaLink="true">/class/2017/07/31/presentations/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/31/presentations/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/31/presentations/</guid>
         
         <category>Final presentation</category>
         
@@ -80,8 +80,8 @@ We will also take a final questionnaire/quiz related to some of the overall them
 &lt;p&gt;For this you will need to use audio manipulation software, preferrably Audacity.&lt;/p&gt;
 </description>
         <pubDate>Mon, 31 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/31/assignment-5-presentation/</link>
-        <guid isPermaLink="true">/assignments/2017/07/31/assignment-5-presentation/</guid>
+        <link>https://inls161.johndmart.in/assignments/2017/07/31/assignment-5-presentation/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/assignments/2017/07/31/assignment-5-presentation/</guid>
         
         
         <category>assignments</category>
@@ -193,8 +193,8 @@ We will be viewing everyone&amp;#39;s presentations with Q&amp;amp;A to follow. 
 &lt;p&gt;This should not take the entire time alotted, but plan for at least an hour and half to be safe. &lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/27/what-do-we-know/</link>
-        <guid isPermaLink="true">/class/2017/07/27/what-do-we-know/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/27/what-do-we-know/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/27/what-do-we-know/</guid>
         
         <category>skillsets</category>
         
@@ -436,8 +436,8 @@ This is an important discussion because it will orient you to the kinds of thing
 &lt;p&gt;We will also discuss other future classes that you might want to take if you are interested in a particular aspect of this course. &lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/26/recording-and-editing-audio/</link>
-        <guid isPermaLink="true">/class/2017/07/26/recording-and-editing-audio/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/26/recording-and-editing-audio/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/26/recording-and-editing-audio/</guid>
         
         <category>reveal.js</category>
         
@@ -591,8 +591,8 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;p&gt;We will work together on editing audio in class tomorrow. &lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/25/reveal-js/</link>
-        <guid isPermaLink="true">/class/2017/07/25/reveal-js/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/25/reveal-js/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/25/reveal-js/</guid>
         
         <category>reveal.js</category>
         
@@ -667,8 +667,8 @@ You can download audacity and read more documentation on the audacity homepage.&
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/assignments/2017/07/25/assignment-4-data/</link>
-        <guid isPermaLink="true">/assignments/2017/07/25/assignment-4-data/</guid>
+        <link>https://inls161.johndmart.in/assignments/2017/07/25/assignment-4-data/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/assignments/2017/07/25/assignment-4-data/</guid>
         
         
         <category>assignments</category>
@@ -794,8 +794,8 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/jdmar3/task-6-be-presentable&quot;&gt;Assignment #6: Be Presentable&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/24/presentation-basics/</link>
-        <guid isPermaLink="true">/class/2017/07/24/presentation-basics/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/24/presentation-basics/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/24/presentation-basics/</guid>
         
         <category>powerpoint</category>
         
@@ -814,8 +814,8 @@ It is not even a terribly sophisticated example. &lt;/p&gt;
         <title>Present</title>
         <description></description>
         <pubDate>Mon, 24 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/era/2017/07/24/present/</link>
-        <guid isPermaLink="true">/era/2017/07/24/present/</guid>
+        <link>https://inls161.johndmart.in/era/2017/07/24/present/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/era/2017/07/24/present/</guid>
         
         
         <category>era</category>
@@ -1029,8 +1029,8 @@ Also, it is amusing.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 21 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/21/database-tables-queries/</link>
-        <guid isPermaLink="true">/class/2017/07/21/database-tables-queries/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/21/database-tables-queries/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/21/database-tables-queries/</guid>
         
         <category>database</category>
         
@@ -1284,8 +1284,8 @@ I would like you to read something about databases.&lt;label for=&#39;db&#39; cl
 &lt;p&gt;We will look at other resources and tutorials in class as well. &lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
-        <link>/class/2017/07/20/sql-bootcamp/</link>
-        <guid isPermaLink="true">/class/2017/07/20/sql-bootcamp/</guid>
+        <link>https://inls161.johndmart.in/class/2017/07/20/sql-bootcamp/</link>
+        <guid isPermaLink="true">https://inls161.johndmart.in/class/2017/07/20/sql-bootcamp/</guid>
         
         <category>database</category>
         

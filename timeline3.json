@@ -464,7 +464,7 @@
                 "text": "<p>Today we will jump head-first into working with databases as an extension of our discussions earlier in the week about data.  </p>"
             },
             "media": {
-                "url": "/assets/img/sql-shell.png",
+                "url": "",
                 "thumbnail": "/assets/img/sql-shell.png"
             },
             "unique_id": "class-2017-07-20-sql-bootcamp",

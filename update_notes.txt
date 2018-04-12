@@ -1,0 +1,15 @@
+# Scripting
+
+2018-03-09
+
+Calorie count allowance per day
+
+https://www.mensfitness.com/nutrition/what-to-eat/best-and-worst-time-eat-fatty-meal
+
+How do we turn this into a script? 
+
+How do we set up a spreadsheet so that it can do this? 
+
+How can we make this into an interactive script? 
+
+Can we build a script that will run on a CSV file and output a new CSV with the result of this script appended as a new column?
